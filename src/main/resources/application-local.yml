@@ -14,3 +14,7 @@ spring:
     database: Mysql
     show-sql: true
     generate-ddl: false
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    use-column-label: true
