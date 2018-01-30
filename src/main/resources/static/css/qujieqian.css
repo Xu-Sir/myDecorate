@@ -1,0 +1,247 @@
+.body-tab {
+  height: 100%;
+  overflow: hidden; }
+
+.qujieqian {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #3387FF;
+  /*height: 100%; */
+}
+  .qujieqian .qu-top {
+    width: 100%;
+    height: 22.92rem;
+    background: url(../images/qujieqian03.png) no-repeat top left;
+    background-size: 100% 22.92rem;
+    position: relative; }
+    .qujieqian .qu-top .qu-top-logo {
+      position: absolute;
+      left: 1.28rem;
+      top: 1.07rem; }
+      .qujieqian .qu-top .qu-top-logo img {
+        height: 1.78rem; }
+  .qujieqian .qu-bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.14rem;
+    background: #3387FF;
+    height: 24rem; }
+    .qujieqian .qu-bottom .qu-bottom-div {
+      margin-bottom: 0.71rem;
+      position: relative; }
+      .qujieqian .qu-bottom .qu-bottom-div input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1rem; }
+      .qujieqian .qu-bottom .qu-bottom-div #gain {
+        position: absolute;
+        top: 2px;
+        right: 1.8rem;
+        width: 10rem;
+        height: 3.14rem;
+        font-size: 14px;
+        color: #FFDE00;
+        line-height: 3.14rem;
+        text-align: right; }
+    .qujieqian .qu-bottom .qu-bottom-input {
+      background: #086BF8;
+      display: block;
+      border: 0;
+      color: #fff;
+      border-radius: 3.14rem;
+      width: 90%;
+      height: 3.14rem;
+      margin: 0 auto;
+      padding-left: 1.42rem; }
+    .qujieqian .qu-bottom .qu-submit {
+      text-align: center;
+      background: #DDDDDD;
+      width: 90%;
+      margin-top: 0.71rem;
+      font-size: 1.28rem;
+      color: #999;
+      line-height: 3.14rem;
+      padding: 0 0.71rem; }
+    .qujieqian .qu-bottom .submit-active {
+      background: #FFEA00;
+      color: #000; }
+    .qujieqian .qu-bottom .argee {
+      padding: 0.71rem 0rem 2.14rem; }
+      .qujieqian .qu-bottom .argee p {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.5);
+        text-align: center; }
+        .qujieqian .qu-bottom .argee p a {
+          padding: 0 0.07rem;
+          font-size: 1rem;
+          color: #fff; }
+
+.qujie {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: none; }
+  .qujie .agree-pop {
+    width: 90%;
+    background: #fff;
+    height: 20rem;
+    margin-left: -45%;
+    margin-top: -10rem;
+    position: absolute;
+    border-radius: 0.71rem;
+    top: 50%;
+    left: 50%;
+    overflow: hidden; }
+    .qujie .agree-pop .agree-pop-top {
+      height: 5.71rem;
+      background: #3387FF;
+      display: flex;
+      flex-direction: row; }
+      .qujie .agree-pop .agree-pop-top .agree-pop-left {
+        width: 70%;
+        line-height: 5.71rem;
+        padding-left: 1.07rem;
+        color: #fff;
+        background: url(../images/qujieqian04.png) no-repeat 1.07rem bottom;
+        background-size: 7.92rem; }
+        .qujie .agree-pop .agree-pop-top .agree-pop-left h3 {
+          font-size: 1.42rem; }
+      .qujie .agree-pop .agree-pop-top .agree-pop-right {
+        width: 30%;
+        line-height: 5.71rem;
+        padding-right: 1.07rem;
+        text-align: right;
+        font-size: 1.42rem;
+        color: #fff;
+        background: url(../images/qujieqian05.png) no-repeat left top;
+        background-size: 6.64rem; }
+    .qujie .agree-pop .agree-pop-bottom {
+      padding: 2.5rem 1.07rem 0rem; }
+      .qujie .agree-pop .agree-pop-bottom .agree-pop-input {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+      .qujie .agree-pop .agree-pop-bottom .argee-pop-inner {
+        width: 0;
+        flex: 1;
+        border: 0.07rem solid #CCCCCC; }
+        .qujie .agree-pop .agree-pop-bottom .argee-pop-inner input::-webkit-input-placeholder {
+          color: #999;
+          font-size: 1rem; }
+        .qujie .agree-pop .agree-pop-bottom .argee-pop-inner #pop-input {
+          display: block;
+          height: 3rem;
+          border: 0px;
+          padding-left: 0.71rem;
+          color: #333333; }
+      .qujie .agree-pop .agree-pop-bottom #argee-pop-img {
+        width: 30%;
+        height: 3.28rem;
+        background: #F4F4F4;
+        user-select: none;
+        font-family: Arial;
+        font-style: italic;
+        color: blue;
+        font-size: 1.42rem;
+        border: 0;
+        padding: 2px 3px;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        float: left;
+        cursor: pointer;
+        line-height: 3.28rem;
+        text-align: center;
+        vertical-align: middle; }
+        .qujie .agree-pop .agree-pop-bottom #argee-pop-img img {
+          width: 8.21rem;
+          height: 3.28rem; }
+      .qujie .agree-pop .agree-pop-bottom .tab-img {
+        margin: 0.35rem auto 1.64rem;
+        height: 1.21rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .qujie .agree-pop .agree-pop-bottom .tab-img .tab-img-left {
+          font-size: 0.85rem;
+          color: #FF0000;
+          visibility: hidden; }
+        .qujie .agree-pop .agree-pop-bottom .tab-img #tab-one {
+          font-size: 0.85rem;
+          color: #3387FF;
+          line-height: 1.21rem; }
+      .qujie .agree-pop .agree-pop-bottom .agree-submit {
+        display: block;
+        height: 2.85rem;
+        text-align: center;
+        font-size: 1.28rem;
+        color: #fff;
+        line-height: 2.85rem;
+        background: #3387FF;
+        border-radius: 7rem;
+        margin: 0 auto; }
+
+.qu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  display: none; }
+  .qu .qu-text {
+    width: 80%;
+    height: 60%;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -45%;
+    margin-top: -60%;
+    padding: 0rem 1.35rem 1.35rem;
+    overflow: hidden; }
+    .qu .qu-text h3 {
+      font-size: 1.42rem;
+      line-height: 1.42rem;
+      padding: 1.78rem 0rem 0.71rem;
+      text-align: center;
+      color: #333; }
+    .qu .qu-text .qu-text-content {
+      overflow-y: auto;
+      width: 100%;
+      height: 80%;
+      text-align: justify; }
+      .qu .qu-text .qu-text-content p {
+        line-height: 1.42rem;
+        color: #333;
+        overflow-y: auto;
+        text-align: left; }
+  .qu .qu-text-off {
+    width: 2.85rem;
+    height: 2.85rem;
+    background: url(../images/qujieqian01.png) no-repeat;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-left: -1.43rem;
+    background-size: 2.85rem 2.85rem; }
+
+#tishi {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: rgba(40, 40, 40, 0.75);
+  border-radius: 5px;
+  width: 11.42rem;
+  height: 3.57rem;
+  line-height: 3.57rem;
+  margin-left: -5.71rem;
+  margin-top: -1.78rem;
+  text-align: center;
+  color: #fff;
+  display: none; }
+
+/*# sourceMappingURL=qujieqian.css.map */

@@ -14,4 +14,10 @@ public class RequestArgs {
     private String phoneNum;
 
     private Long userId;
+
+    private String ip;
+
+    private Long startTime;
+
+    private Long endTime;
 }

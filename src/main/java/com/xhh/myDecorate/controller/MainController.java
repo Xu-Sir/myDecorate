@@ -28,6 +28,7 @@ public class MainController {
 
     @RequestMapping(value = "/findCq")
     public ResultR findCq(RequestArgs args){
+        System.out.println("进入方法");
         User user = userService.findQc(args);
         if (user != null){
             Map<String, Object> map = new HashMap();

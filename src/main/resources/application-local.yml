@@ -14,7 +14,20 @@ spring:
     database: Mysql
     show-sql: true
     generate-ddl: false
+
+#Freemark 配置#
+  freemarker:
+    request-context-attribute: req  #req访问request
+    suffix: .html                   #后缀名
+    settings:
+      number_format: '0.##'             #数字格式化，无小数点
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
     use-column-label: true
+
+server:
+  port: 5001  #Tomcat端口
+  max-http-header-size: 4194304
+  tomcat:
+    max-http-post-size: 0

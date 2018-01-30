@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>我的网站</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=9,10,11">
+<meta charset="UTF-8" />
+
+<!-- Bootstrap -->
+
+
+
+    <![endif]-->
+<style>
+.searchInput{
+	height: 38px;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+	color: rgba(255, 255, 255, 0.6) !important;font-size: 16px !important;
+	border: 1px solid rgba(255,​ 255,​ 255,​ 0.1) !important;
+	width: 220px;
+}
+.searchText {
+	cursor: pointer;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 7px;
+	width: 50px;
+	color: #01baf2;
+	font-size: 16px;
+}
+ul.dropdown-menu.example2 {
+  position: absolute;
+  right:-100px;
+  display: block;
+  margin-bottom: 5px;
+  float: right;
+  top:40px;
+  left:240px;
+  max-width: 170px; 
+}
+</style>
+</head>
+<body style="overflow-y: scroll;">
+
+	<!-- Wrap all page content here -->
+	<div id="wrap">
+
+		<!-- Make page fluid -->
+		<div class="row">
+			<!-- Fixed navbar -->
+			<div style="background: #535353 none repeat scroll 0 0;"
+				class="navbar navbar-default navbar-fixed-top navbar-transparent-black mm-fixed-top"
+				role="navigation" id="navbar">
+				<div class="">
+					<ul style="text-align: center !important; margin: 0 auto; width: 100%;border-bottom: 1px solid rgba(255, 255, 255, 0.1);"
+						class="nav navbar-nav quick-actions">
+						<!-- Logo -->
+						<li style="display: inline-block; float: none; margin: 0 15px;"><a
+							href="${req.contextPath}/" style="font-weight: bold;">诸葛钱包</a></li>
+							
+                  		<#if user??>
+						<li class="dropdown divided user" style="display: inline-block; float: none; margin: 0 15px;">
+							<div class="profile-photo">
+	                        	<img src="${req.contextPath}/static/assets/images/random-avatar7.jpg" alt style="height: 45px;width: 45x;border-radius: 50% !important;"/>
+							</div>
+							<a class="dropdown-toggle button" data-toggle="dropdown" href="#">${user.name!''}${user.roleCn!''}
+								<i class="fa fa-caret-down"></i>
+							</a>
+							<ul class="dropdown-menu wide arrow nopadding bordered">
+								<li><h1>客户信息</h1></li>
+								<li>
+			                    	<a href="#">
+										<span>注册日期：${user.regTime?number_to_date?string("yyyy-MM-dd")}</span>
+				                    </a>
+	                    		</li>
+								<li>
+			                    	<a href="">
+										<span>我的账户</span>
+				                    </a>
+	                    		</li>
+	                    		
+	                    		<#if user.roleSet?seq_contains('ROLE_Admin')>
+								<li>
+			                    	<a href="">
+										<span>系统管理</span>
+				                    </a>
+	                    		</li>
+	                    		</#if>
+								<li>
+			                    	<a href="${req.contextPath}/logout">
+										<i class="fa fa-power-off"></i><span>登出系统</span>
+				                    </a>
+	                    		</li>
+		                    </ul>
+						</li>
+						<#else>
+						<li style="display: inline-block; float: none; margin: 0 15px;">
+							<a href="${req.contextPath}/login">登录 [访客]</a>
+						</li>
+						</#if>
+					</ul>
+					
+					<!-- Sidebar -->
+            <ul class="nav navbar-nav side-nav" id="sidebar">
+              
+              <li class="collapsed-content"> 
+                <ul>
+                  <li class="search"><!-- Collapsed search pasting here at 768px --></li>
+                </ul>
+              </li>
+
+              <li class="navigation" id="navigation">
+                <a href="#" class="sidebar-toggle" data-toggle="#navigation" style="color: rgba(255, 255, 255, 0.4);">导航 </a>
+                
+                <ul class="menu">
+					<li class="active">
+                    <a href="${req.contextPath}/web/my/summary">
+                      <i class="fa fa-tachometer"></i>
+                      <span name="menu_main" > 我的仪表盘</span>
+                    </a>
+                    
+					<li>
+                    <a href="${req.contextPath}/web/my/waitVerifyList">
+                      <i class="fa fa-tachometer"></i>
+                      <span name="menu_main" > 我的待审核列表</span>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="${req.contextPath}/web/my/verifiedList">
+                      <i class="fa fa-tachometer"></i>
+                      <span name="menu_main" > 我的已审列表</span>
+                    </a>
+                  </li>
+
+                  
+                </ul>
+
+              </li>
+            </ul>
+            <!-- Sidebar end -->
+				</div>
+			</div>
+			<!-- Fixed navbar end -->
+
+
+			<!-- Page content -->
+			<div id="content" class="col-md-12" style="height: auto;">
+                
+	          <!-- page header -->
+	          <div class="pageheader">
+	            <h2>
+	            	<i class="fa fa-puzzle-piece" style="line-height: 48px;padding-left: 5px;"></i> 应用系统列表
+	            	<button onclick="addSystem();" type="button" class="btn btn-success" style="margin-left: 50px;">新增应用系统</button>
+	            </h2>
+	          </div>
+	          <!-- /page header -->
+	          
+              <div id="tipMsgDiv" style="display:none;" class="alert alert-red text-center">Tip Message!</div>
+	          
+<!-- cards -->
+            <div class="row cards">
+              
+              <div class="card-container col-lg-3 col-sm-6 col-sm-12">
+                <div class="card card-redbrown hover">
+                  <div class="front"> 
+
+                    <div class="media">        
+                      <span class="pull-left">
+                        <i class="fa fa-users media-object"></i>
+                      </span>
+
+                      <div class="media-body">
+                        <small>新用户</small>
+                        <h2 class="media-heading animate-number" data-value="3659" data-animation-duration="1500">0</h2>
+                      </div>
+                    </div> 
+
+                    <div class="progress-list">
+                      <div class="details">
+                        <div class="title">本月计划 %</div>
+                      </div>
+                      <div class="status pull-right bg-transparent-black-1">
+                        <span class="animate-number" data-value="83" data-animation-duration="1500">0</span>%
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="progress progress-little progress-transparent-black">
+                        <div class="progress-bar animate-progress-bar" data-percentage="83%"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="back">
+                    <a href="#">
+                      <i class="fa fa-bar-chart-o fa-4x"></i>
+                      <span>详情查看</span>
+                    </a>  
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card-container col-lg-3 col-sm-6 col-sm-12">
+                <div class="card card-blue hover">
+                  <div class="front">        
+                    
+                    <div class="media">                  
+                      <span class="pull-left">
+                        <i class="fa fa-shopping-cart media-object"></i>
+                      </span>
+
+                      <div class="media-body">
+                        <small>新订单</small>
+                        <h2 class="media-heading animate-number" data-value="19214" data-animation-duration="1500">0</h2>
+                      </div>
+                    </div> 
+
+                    <div class="progress-list">
+                      <div class="details">
+                        <div class="title">本月计划 %</div>
+                      </div>
+                      <div class="status pull-right bg-transparent-black-1">
+                        <span class="animate-number" data-value="100" data-animation-duration="1500">0</span>%
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="progress progress-little progress-transparent-black">
+                        <div class="progress-bar animate-progress-bar" data-percentage="100%"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="back">
+                    <a href="#">
+                      <i class="fa fa-bar-chart-o fa-4x"></i>
+                      <span>详情查看</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="card-container col-lg-3 col-sm-6 col-sm-12">
+                <div class="card card-greensea hover">
+                  <div class="front">        
+                    
+                    <div class="media">
+                      <span class="pull-left">
+                        <i class="fa fa-usd media-object"></i>
+                      </span>
+
+                      <div class="media-body">
+                        <small>销售额</small>
+                        <h2 class="media-heading animate-number" data-value="169541" data-animation-duration="1500">0</h2>
+                      </div>
+                    </div>
+
+                    <div class="progress-list">
+                      <div class="details">
+                        <div class="title">本月计划 %</div>
+                      </div>
+                      <div class="status pull-right bg-transparent-black-1">
+                        <span class="animate-number" data-value="42" data-animation-duration="1500">0</span>%
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="progress progress-little progress-transparent-black">
+                        <div class="progress-bar animate-progress-bar" data-percentage="42%"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="back">
+                    <a href="#">
+                      <i class="fa fa-bar-chart-o fa-4x"></i>
+                      <span>详情查看</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card-container col-lg-3 col-sm-6 col-xs-12">
+                <div class="card card-slategray hover">
+                  <div class="front"> 
+
+                    <div class="media">                   
+                      <span class="pull-left">
+                        <i class="fa fa-eye media-object"></i>
+                      </span>
+
+                      <div class="media-body">
+                        <small>访客</small>
+                        <h2 class="media-heading animate-number" data-value="9634" data-animation-duration="1500">0</h2>
+                      </div>
+                    </div> 
+
+                    <div class="progress-list">
+                      <div class="details">
+                        <div class="title">本月计划 %</div>
+                      </div>
+                      <div class="status pull-right bg-transparent-black-1">
+                        <span class="animate-number" data-value="25" data-animation-duration="1500">0</span>%
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="progress progress-little progress-transparent-black">
+                        <div class="progress-bar animate-progress-bar" data-percentage="25%"></div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="back">
+                    <a href="#">
+                      <i class="fa fa-bar-chart-o fa-4x"></i>
+                      <span>详情查看</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <!-- /cards -->
+			</div>
+			<!-- Page content end -->
+		</div>
+		<!-- Make page fluid-->
+
+
+
+                	
+		<!-- 版权信息 -->
+		<div style="margin-bottom:10px;width:100%;text-align: center;">
+			<span style="color: rgba(255, 255, 255, 0.7); text-align: center;">
+				@2014-<span id="cr_year">2016</span> - 诸葛钱包 - 版权所有
+			</span><br>
+			<span style="color: rgba(255, 255, 255, 0.7); text-align: center;">
+				诸葛钱包
+			</span>
+		</div>
+	</div>
+	<!-- Wrap all page content end -->
+
+    <script src="./js/jquery-1.7.2.js" ></script>
+
+    <script >
+        $(function () {
+            $.ajax({
+                type:'post',
+                url:'/countPv',
+                date:{
+                    name:"zhangsan "
+                },
+                success:function (data) {
+                    alert(data)
+                }
+            })
+        })
+
+    </script>
+</body>
+</html>

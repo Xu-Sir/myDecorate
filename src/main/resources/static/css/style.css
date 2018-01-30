@@ -1,0 +1,16 @@
+a, input, em, h2 {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+.pubw {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header-wapper .header-title {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
