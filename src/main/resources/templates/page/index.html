@@ -60,7 +60,7 @@ ul.dropdown-menu.example2 {
 						class="nav navbar-nav quick-actions">
 						<!-- Logo -->
 						<li style="display: inline-block; float: none; margin: 0 15px;"><a
-							href="${req.contextPath}/" style="font-weight: bold;">诸葛钱包</a></li>
+							href="${req.contextPath}/" style="font-weight: bold;">网站title</a></li>
 							
                   		<#if user??>
 						<li class="dropdown divided user" style="display: inline-block; float: none; margin: 0 15px;">
@@ -346,20 +346,6 @@ ul.dropdown-menu.example2 {
 
     <script src="./js/jquery-1.7.2.js" ></script>
 
-    <script >
-        $(function () {
-            $.ajax({
-                type:'post',
-                url:'/countPv',
-                date:{
-                    name:"zhangsan "
-                },
-                success:function (data) {
-                    alert(data)
-                }
-            })
-        })
-
-    </script>
+    <script src="./js/index.js"> </script>
 </body>
 </html>
