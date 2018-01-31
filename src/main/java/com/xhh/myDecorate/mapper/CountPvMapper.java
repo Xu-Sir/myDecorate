@@ -2,12 +2,16 @@ package com.xhh.myDecorate.mapper;
 
 import com.xhh.myDecorate.common.RequestArgs;
 import com.xhh.myDecorate.mapper.provider.CountPvProvider;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.SelectProvider;
+import org.springframework.stereotype.Repository;
 
 /**
  * @author xuhaihong
  * @create 2018-01-30 18:16
  **/
+@Mapper
+@Repository
 public interface CountPvMapper {
 
     @SelectProvider(type = CountPvProvider.class, method = "save")

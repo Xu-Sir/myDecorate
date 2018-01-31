@@ -17,7 +17,7 @@ public class CountPvProvider {
                 .VALUES("create_time", "#{startTime}");
         if (StringUtil.isNotEmpty(ip)){
 
-            sql.VALUES("ip", ip);
+            sql.VALUES("ip", "'"+ip+"'");
         }
         String sqlS = sql.toString();
         System.out.println(sqlS);
@@ -29,6 +29,7 @@ public class CountPvProvider {
 
         Long startTime = args.getStartTime();
         Long endTime = args.getEndTime();
+        String ip = args.getIp();
         SQL sql = new SQL().SELECT(" count(*)")
                 .FROM("count_pv");
         if (startTime != null){
@@ -36,6 +37,9 @@ public class CountPvProvider {
         }
         if (endTime != null){
             sql.AND().WHERE(" create_time <= "+endTime);
+        }
+        if (StringUtil.isNotEmpty(ip)){
+            sql.AND().WHERE(" ip = "+"'"+ip+"'");
         }
         String sqlS = sql.toString();
         System.out.println(sqlS);
