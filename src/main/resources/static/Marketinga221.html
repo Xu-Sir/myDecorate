@@ -1,0 +1,1183 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.xydec.com.cn/Marketing.aspx?type=all by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 01 Feb 2018 02:19:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>营销活动-广东星艺装饰集团股份有限公司</title>
+<meta name="keywords" content="星艺装饰,星艺装饰官网,装饰公司,装修公司,家庭装修,室内装修,豪华装修,别墅装修,装修效果图,装修设计,星艺,装修,装饰,整装,家装,工装" />
+<meta name="description" content="星艺装饰创办于1991年，中国装饰装修行业十大品牌！全国400+分支机构，50000+专业人员，27年专注大中型住宅、酒店、办公空间等装修设计与施工服务。爱家专线：4009617001！星艺装饰每年为30000+家庭提供定制设计、环保施工、材料配送等高品质装修服务，深受百万家庭信赖！" />
+
+    
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/layer/layer.js"></script>
+<script type="text/javascript" src="js/form_js.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript" charset="utf-8" src="../lead.soperson.com/20002178/10068539.html"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "../hm.baidu.com/hmcc2d.js?bc4d0695158d3e46228dd96a3b56fee4";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+    <script type="text/javascript" src="js/YMDClass.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var type = 'all';
+            switch (type) {
+                case "new":
+                    $(".new").css("color", "#ff0000");
+                    $(".new").siblings().css("color", "#666");
+                    $(".fsx").css("color", "#999");
+                    break;
+                case "hot":
+                    $(".hot").css("color", "#ff0000");
+                    $(".hot").siblings().css("color", "#666");
+                    $(".fsx").css("color", "#999");
+                    break;
+                case "all":
+                    $(".fsx").css("color", "#ff0000");
+                    $(".fsx").siblings().css("color", "#666");
+                    break;
+            }
+
+            new YMDselect("year", "month");
+
+            $(".bc_m_select").change(function () {
+                var url = window.location.href;
+                if ($(".bp_m_select").val() != "" && $(".bp_m_select").val() != undefined)
+                    url = UrlAddParams(url, "provincecode", $(".bp_m_select").val());
+                if ($(".bc_m_select").val() != "" && $(".bc_m_select").val() != undefined)
+                    url = UrlAddParams(url, "citycode", $(".bc_m_select").val());
+                location.href = url;
+            });
+
+            $(".bp_m_select").change(function () {
+                var provinceid = $(".bp_m_select").val();
+                var citycode = '';
+                if (provinceid != "-1") {
+                    $.ajax({
+                        type: "POST",
+                        url: "/ajax/ajax.aspx?action=load_city&t=" + Math.random(),
+                        data: { id: provinceid },
+                        dataType: "json",
+                        success: function (data) {
+                            if (data != "") {
+                                $(".bc_m_select").empty();
+                                $(".bc_m_select").append("<option value=\"-1\">城市</option>");
+                                $(data).each(function (ck, cv) {
+                                    $(".bc_m_select").append("<option value=\"" + cv.id + "\">" + cv.areaname + "</option>");
+                                });
+
+                                if (citycode == -1) {
+                                    $(".bc_m_select option:eq(0)").prop("selected", true);
+                                } else {
+                                    $(".bc_m_select").find("option").each(function () {
+                                        if ($(this).val() == citycode)
+                                            $(this).prop("selected", true);
+                                    });
+                                }
+                            }
+                        }
+                    });
+                }
+            });
+
+            $("#iTime").click(function () {
+                var url = window.location.href;
+                if ($("#year").val())
+                    url = UrlAddParams(url, "year", $("#year").val());
+                if ($("#month").val())
+                    url = UrlAddParams(url, "month", $("#month").val());
+                location.href = url;
+            });
+
+            $("#btnkeyword").click(function () {
+                var url = window.location.href;
+                if ($("#keyword").val())
+                    url = UrlAddParams(url, "keyword", $("#keyword").val());
+                location.href = url;
+            });
+
+            setA();
+        });
+
+        function setA() {
+            var provincecode = '';
+            if (provincecode == -1) {
+                $(".bp_m_select option:eq(0)").prop("selected", true);
+            } else {
+                $(".bp_m_select").find("option").each(function () {
+                    if ($(this).val() == provincecode) {
+                        $(this).prop("selected", true);
+                        $(".bp_m_select").change();
+                    }
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+    
+<div class="header">
+    
+    <div class="Menu">
+        <div class="wrap clearfix">
+            <div class="logo">
+                <a href="Default.html">
+                    <img alt="" class="lazyload" data-original="upload/1702/201702230818558672167.png" src="upload/1702/201702230818558672167.png" /></a>
+            </div>
+            <div class="fl" style="padding: 50px 10px 0 10px; line-height: 16px;">
+                <span class="hc_span">全国</span>
+                <a href="BranchSearch.html">切换</a>
+            </div>
+            <div class="Nav">
+                <ul class="clearfix">
+                    <li><a href="Default.html">首页</a></li>
+                    
+                    <li>
+                        <a href="Detaild10a.html?code=0601">走进星艺</a>
+                        
+                        <div class="Drop_Down">
+                            <div class="clearfix">
+                                <ul>
+                                    
+                                    <li>
+                                        <a href="Detaild10a.html?code=0601" >品牌介绍</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="Detail1f37.html?code=0602" >发展历程</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="Detailf4b5.html?code=0603" >资质荣誉</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="Detail23ac.html?code=0608" >社会公益</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="BranchSearch.html">星艺网点</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="NewListabec.html?code=0606" >企业动态</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="NewListdb5f.html?code=0802">分公司动态</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="Detaila1e6.html?code=0609" >人才培训</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="Marketinga221.html?type=all">营销活动</a>
+                        
+                        <div class="Drop_Down">
+                            <div class="clearfix">
+                                <ul>
+                                    
+                                    <li>
+                                        <a href="Marketing6e2c.html?kindcode=0101" >全国活动</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="Marketing9e17.html?kindcode=0102" >地区活动</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="DesignerList5eb6.html?code=0201">设计团队</a>
+                        
+                        <div class="Drop_Down">
+                            <div class="clearfix">
+                                <ul>
+                                    
+                                    <li>
+                                        <a href="DesignerList5eb6.html?code=0201" >设计精英</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="Detail2b79.html?code=0203" >设计研究</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="CaseList.html">设计案例</a>
+                        
+                        <div class="Drop_Down">
+                            <div class="clearfix">
+                                <ul>
+                                    
+                                    <li>
+                                        <a href="CaseList.html" >精品案例</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="Detail9fbf.html?code=0302" >获奖案例</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="SiteLive.html">品质工程</a>
+                        
+                        <div class="Drop_Down">
+                            <div class="clearfix">
+                                <ul>
+                                    
+                                    <li>
+                                        <a href="EngineeringDetailbc2d.html?code=0401" >标准工艺</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="EngineeringDetaile169.html?code=0402" >环保材料</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="SiteLive.html" >在建工地</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="Detail1c03.html?code=0403" >工艺专利</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="NewList78c6.html?code=0704">无忧服务</a>
+                        
+                        <div class="Drop_Down">
+                            <div class="clearfix">
+                                <ul>
+                                    
+                                    <li>
+                                        <a href="javascript:;" class="tachu2">在线下单</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="DesignerList44dc.html?code=0702" >预约设计</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="javascript:;" class="tachu">投诉建议</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="Detaile4f1.html?code=0706" >服务保障</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="Detail64d6.html?code=0705" >服务流程</a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a href="NewList78c6.html?code=0704" >客户故事</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <!--在线下单-->
+    <div class="customer-04 div2">
+        <script src="js/contact.js"></script>
+        <form id="FrmXiadan" style="margin-left: -345px; margin-top: -270px; width: 690px; height: 540px;">
+            <h3>在线下单</h3>
+            <div class="a2 clearfix">
+                <label><i>*</i>您的姓名：</label>
+                <input type="text" name="b2_r_username" />
+            </div>
+            <div class="a3 clearfix">
+                <label><i>*</i>联系电话：</label>
+                <input type="text" name="b2_r_phone" />
+            </div>
+            <div class="a4 clearfix">
+                <label><i>*</i>省 / 市：</label>
+                <select class="bp_select2" name="b1_rp_select">
+                    <option value="">省/市</option>
+                </select>
+                <select class="bc_select2" name="b1_rc_select">
+                    <option value="">城区</option>
+                </select>
+            </div>
+            <div class="a3 clearfix">
+                <label><i>*</i>楼盘名称：</label>
+                <input type="text" name="b3_r_building" />
+            </div>
+            <div class="a4 clearfix">
+                <label><i>*</i>建筑面积：</label>
+                <input type="text" class="bs_select" name="b3_r_size" />
+            </div>
+            <div class="a3 clearfix">
+                <label><i>*</i>验证码：</label>
+                <input name="xd_atoucode" type="text" maxlength="4" placeholder="验证码" />
+                <img src="tools/verify_code.png" onclick="this.src='/tools/verify_code.ashx?'+Math.random()" alt="" class="l" style="height: 28px; margin-left: 5px;" id="xd_code" />
+            </div>
+            <div class="a6">
+                <input type="submit" value="提交" class="b1" />
+                <input type="button" value="取消" class="b2" onclick="$('div.customer-04.div2').fadeOut();" />
+            </div>
+        </form>
+    </div>
+    <!--投诉建议-->
+    <div class="customer-04 div1">
+        <form id="msgFrm">
+            <h3>投诉 / 建议</h3>
+            <div class="a1">
+                <font><input class="gb" type="radio" name="type" value="1">投诉 </font>
+                <font><input class="gb" type="radio" name="type" value="2" checked>建议</font>
+            </div>
+            <div class="a2 clearfix">
+                <label><i>*</i>您的姓名：</label>
+                <input type="text" name="CustomerName" />
+            </div>
+            <div class="a3 clearfix">
+                <label><i>*</i>联系电话：</label>
+                <input type="text" name="Phone" />
+            </div>
+            <div class="a4 clearfix">
+                <label><i>*</i>所在地区：</label>
+                <select name="Bs_ProvinceCode" class="bp_select">
+                    <option value="">省/市</option>
+                </select>
+                <select name="Bs_CityCode" class="bc_select">
+                    <option value="">城区</option>
+                </select>
+            </div>
+            <div class="a3 clearfix">
+                <label><i>*</i>详细地址：</label>
+                <input type="text" style="width: 530px;" name="Address" />
+            </div>
+            <h4>请填写真实地址，不需要重复填写所在地区</h4>
+            <div class="a5 clearfix">
+                <label><i>*</i>投诉/建议内容：</label>
+                <textarea name="content"></textarea>
+            </div>
+            <div class="a3 clearfix">
+                <label><i>*</i>验证码：</label>
+                <input type="text" maxlength="4" placeholder="验证码" name="msg_atoucode" />
+                <img src="tools/verify_code.png" onclick="this.src='/tools/verify_code.ashx?'+Math.random()" alt="" class="l" style="height: 28px; margin-left: 5px;" id="msg_code" />
+            </div>
+            <div class="a6">
+                <input type="submit" value="提交" class="b1" />
+                <input type="button" value="取消" class="b2" onclick="$('div.customer-04.div1').fadeOut();" />
+            </div>
+        </form>
+    </div>
+</div>
+
+    
+    <div class="article">
+        <div class="sub-banner">
+            <div class="bd">
+                <ul>
+                    
+                    <li style="background-image: url(upload/ad/1801/201801301117113024342.jpg);"><a target="_blank" href="#"></a></li>
+                            
+                    <li style="background-image: url(upload/ad/1710/201710201442096884519.jpg);"><a target="_blank" href="SpecialActivityNew.html"></a></li>
+                            
+                    <li style="background-image: url(upload/ad/1705/201705101333222729389.jpg);"><a target="_blank" href="ccbbank.html"></a></li>
+                            
+                </ul>
+            </div>
+            <div class="hd">
+                <ul></ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery(".sub-banner").slide({ titCell: ".hd ul", mainCell: ".bd ul", effect: "fold", autoPlay: true, autoPage: true, trigger: "click" });
+        </script>
+        <div class="screen_column">
+            <div class="fl">
+                <a href="index.html">首页</a>
+                <font>&gt;</font>
+                <a href="Marketing.html">营销活动</a>
+            </div>
+            <div class="wrap">
+                <ul>
+                    <li class="clearfix">
+                        <span>选择推荐活动</span>
+                        
+                        <a href="Marketinga221.html?type=all" class="fsx">全部</a>
+                        <a class="new" href="Marketing6f03.html?type=new">最新</a>
+                        <a class="hot" href="Marketingf089.html?type=hot">热门</a>
+                        
+                    </li>
+                    <li class="clearfix">
+                        <span>选择活动开始时间</span>
+                        <form>
+                            <select id="year" name="year"></select>
+                            <select id="month" name="month"></select>
+                            <input type="button" value="" id="iTime" />
+                        </form>
+                    </li>
+                </ul>
+                <form class="clearfix">
+                    <div class="fl">
+                        <font>搜索你所在城市的活动</font>
+                        <select class="bp_m_select" name="bp_select">
+                            <option value="-1">省</option>
+                        </select>
+                        <select class="bc_m_select" name="bc_select">
+                            <option value="-1">城区</option>
+                        </select>
+                        <span>共已筛选到273个</span>
+                    </div>
+                    <div class="fr">
+                        <input id="keyword" name="keyword" type="text" placeholder="关键词" />
+                        <input type="button" value=" " id="btnkeyword" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="Marketing">
+            <div class="wrap">
+                <ul>
+                    
+                    <li class="clearfix">
+                        <div class="fl">
+                            <a target="_blank" href="MarketingDel3224.html?m_id=3887">
+                                <img alt="" src="upload/1801/201801190921060504813.jpg" /></a>
+                        </div>
+                        <div class="fr">
+                            
+                            <h4><a target="_blank" href="MarketingDel3224.html?m_id=3887">
+                                
+                                【内江市】
+                                内江星艺《12周年庆&整装馆开业》
+                                
+                            </a></h4>
+                            <h5><a target="_blank" href="MarketingDel3224.html?m_id=3887">《12周年庆&amp;整装馆开业》  
+
+
+	
+ 
+
+
+	  
+
+2018年是广东星艺装饰成立28周年，集团28年来的迅速发展和壮大，离不开新老客户的信任和支持，才成就了广东星艺装饰品牌迅速成长的机遇和星艺自强不息奉献幸福的动力，未来的征途，我们需...</a></h5>
+                            <p>
+                                <span>
+                                    <span><font>活动时间：</font>2018/01/15至2018/03/11</span>
+                                    <span><font>活动状态：</font>剩余38天</span>
+                                </span>
+                            </p>
+                            <h6 class="clearfix">
+                                <a target="_blank" href="MarketingDel3224.html?m_id=3887" class="a2">查看详情</a>
+                            </h6>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <div class="fl">
+                            <a target="_blank" href="MarketingDel7230.html?m_id=3875">
+                                <img alt="" src="upload/1801/201801150952577222460.jpg" /></a>
+                        </div>
+                        <div class="fr">
+                            
+                            <h4><a target="_blank" href="MarketingDel7230.html?m_id=3875">
+                                
+                                【贵阳市】
+                                “新春大戏,钜惠美的” 2018星钻工程样板征集特...
+                                
+                            </a></h4>
+                            <h5><a target="_blank" href="MarketingDel7230.html?m_id=3875">2018新年之际，广东星艺装饰集团为回馈各位新老业主的支持，也应更多业主响应，特巨资让利征集星钻工程2018新春样板工程。本次集团样板让利政策只对美的林城时代业主开放，限时限量征集20套样板工程。
+
+	        活动时间：2018年1月10日——2018年...</a></h5>
+                            <p>
+                                <span>
+                                    <span><font>活动时间：</font>2018/01/13至2018/01/31</span>
+                                    <span><font>活动状态：</font>已结束</span>
+                                </span>
+                            </p>
+                            <h6 class="clearfix">
+                                <a target="_blank" href="MarketingDel7230.html?m_id=3875" class="a2">查看详情</a>
+                            </h6>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <div class="fl">
+                            <a target="_blank" href="MarketingDelf72c.html?m_id=3873">
+                                <img alt="" src="upload/1801/201801121548145789288.jpg" /></a>
+                        </div>
+                        <div class="fr">
+                            
+                            <h4><a target="_blank" href="MarketingDelf72c.html?m_id=3873">
+                                
+                                【南京市】
+                                遇见星艺预见家|2018，给新年装样板！
+                                
+                            </a></h4>
+                            <h5><a target="_blank" href="MarketingDelf72c.html?m_id=3873">2018年给新年做样板 
+
+
+	星艺装饰南京站新年征集百套星钻样板房 
+
+
+	活动时间：2018年1月27日 
+
+
+	活动地点：南京广州路古南都饭店二楼梅花厅</a></h5>
+                            <p>
+                                <span>
+                                    <span><font>活动时间：</font>2018/01/12至2018/01/27</span>
+                                    <span><font>活动状态：</font>已结束</span>
+                                </span>
+                            </p>
+                            <h6 class="clearfix">
+                                <a target="_blank" href="MarketingDelf72c.html?m_id=3873" class="a2">查看详情</a>
+                            </h6>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <div class="fl">
+                            <a target="_blank" href="MarketingDeld498.html?m_id=3871">
+                                <img alt="" src="upload/1801/201801121719395159868.jpg" /></a>
+                        </div>
+                        <div class="fr">
+                            
+                            <h4><a target="_blank" href="MarketingDeld498.html?m_id=3871">
+                                
+                                【潮州市】
+                                2018全新出发，【跨年装修保你无忧之潮州站】全面...
+                                
+                            </a></h4>
+                            <h5><a target="_blank" href="MarketingDeld498.html?m_id=3871">为了在家装建材市场全面涨价前，能够帮广大潮州市民及时保价护航，潮州星艺装饰在2018年到来之际， 迅速推出“跨年装修，保你无忧”家装跨年保价无忧活动！
+在涨价之前，用2017的价格，装2018年的新家，即保价又省心！
+
+	
+
+
+	 
+
+
+	
+
+...</a></h5>
+                            <p>
+                                <span>
+                                    <span><font>活动时间：</font>2018/01/12至2018/02/04</span>
+                                    <span><font>活动状态：</font>剩余3天</span>
+                                </span>
+                            </p>
+                            <h6 class="clearfix">
+                                <a target="_blank" href="MarketingDeld498.html?m_id=3871" class="a2">查看详情</a>
+                            </h6>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <div class="fl">
+                            <a target="_blank" href="MarketingDeld39f.html?m_id=3862">
+                                <img alt="" src="upload/1801/201801041712554058011.jpg" /></a>
+                        </div>
+                        <div class="fr">
+                            
+                            <h4><a target="_blank" href="MarketingDeld39f.html?m_id=3862">
+                                
+                                【楚雄彝族自治州】
+                                “跨年装修，保你无忧”【楚雄站】活动火热进行中！
+                                
+                            </a></h4>
+                            <h5><a target="_blank" href="MarketingDeld39f.html?m_id=3862">跨年装修  保你无忧 
+
+
+	2017.12.28-2018.1.28 
+
+
+	全国征集20180套样板工程 
+
+
+	保价格！保质量！保健康！ 
+
+
+	【楚雄站】活动火热进行中......... 
+
+
+	一、到店礼 
+
+
+	凡量房...</a></h5>
+                            <p>
+                                <span>
+                                    <span><font>活动时间：</font>2017/12/30至2018/01/28</span>
+                                    <span><font>活动状态：</font>已结束</span>
+                                </span>
+                            </p>
+                            <h6 class="clearfix">
+                                <a target="_blank" href="MarketingDeld39f.html?m_id=3862" class="a2">查看详情</a>
+                            </h6>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <div class="fl">
+                            <a target="_blank" href="MarketingDel25a1.html?m_id=3861">
+                                <img alt="" src="upload/1801/201801041024001495221.jpg" /></a>
+                        </div>
+                        <div class="fr">
+                            
+                            <h4><a target="_blank" href="MarketingDel25a1.html?m_id=3861">
+                                
+                                【玉溪市】
+                                星艺装饰“跨年装修 保价无忧”——玉溪站
+                                
+                            </a></h4>
+                            <h5><a target="_blank" href="MarketingDel25a1.html?m_id=3861">星艺装饰“跨年装修 保价无忧”——玉溪站 
+
+
+	 
+
+
+	 
+
+
+	 
+
+
+	 
+
+
+	 
+
+
+	签约客户免费赠送 
+
+
+	1.维达提供全屋开关。  
+
+
+	2.芒果提供客卫墙地、砖一间。 
+
+
+	3.美尔凯特...</a></h5>
+                            <p>
+                                <span>
+                                    <span><font>活动时间：</font>2017/12/01至2018/01/14</span>
+                                    <span><font>活动状态：</font>已结束</span>
+                                </span>
+                            </p>
+                            <h6 class="clearfix">
+                                <a target="_blank" href="MarketingDel25a1.html?m_id=3861" class="a2">查看详情</a>
+                            </h6>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <div class="fl">
+                            <a target="_blank" href="MarketingDel4203.html?m_id=3855">
+                                <img alt="" src="upload/1801/201801021532271879255.jpg" /></a>
+                        </div>
+                        <div class="fr">
+                            
+                            <h4><a target="_blank" href="MarketingDel4203.html?m_id=3855">
+                                
+                                【芜湖市】
+                                跨年装修，保你无忧——芜湖站火热进行中！！！
+                                
+                            </a></h4>
+                            <h5><a target="_blank" href="MarketingDel4203.html?m_id=3855">活动主题：跨年装修，保你无忧 
+
+
+	星艺装饰集团芜湖站跨年装修“保价、保质、保健康”，尊享三大特权礼遇！还有更多特权等着您！ 
+
+
+	活动时间：2017年12月21日-2018年1月21日</a></h5>
+                            <p>
+                                <span>
+                                    <span><font>活动时间：</font>2017/12/21至2018/01/21</span>
+                                    <span><font>活动状态：</font>已结束</span>
+                                </span>
+                            </p>
+                            <h6 class="clearfix">
+                                <a target="_blank" href="MarketingDel4203.html?m_id=3855" class="a2">查看详情</a>
+                            </h6>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <div class="fl">
+                            <a target="_blank" href="MarketingDelf268.html?m_id=3848">
+                                <img alt="" src="upload/1712/201712271720097574196.jpg" /></a>
+                        </div>
+                        <div class="fr">
+                            
+                            <h4><a target="_blank" href="MarketingDelf268.html?m_id=3848">
+                                
+                                【扬州市】
+                                星艺装饰“跨年装修 保价无忧”——扬州站
+                                
+                            </a></h4>
+                            <h5><a target="_blank" href="MarketingDelf268.html?m_id=3848">坊间古话曾流传 
+
+
+	
+ 
+
+
+	冬日不宜动土 
+
+
+	
+ 
+
+
+	各种原因大抵是 
+
+
+	
+ 
+
+
+	气候寒冷、工期漫长…… 
+
+
+	
+ 
+
+
+	眼看年关将至 
+
+
+	
+ 
+
+
+	房子到手 ...</a></h5>
+                            <p>
+                                <span>
+                                    <span><font>活动时间：</font>2017/12/27至2018/01/20</span>
+                                    <span><font>活动状态：</font>已结束</span>
+                                </span>
+                            </p>
+                            <h6 class="clearfix">
+                                <a target="_blank" href="MarketingDelf268.html?m_id=3848" class="a2">查看详情</a>
+                            </h6>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <div class="fl">
+                            <a target="_blank" href="MarketingDel4292.html?m_id=3843">
+                                <img alt="" src="upload/1712/201712271512583675628.jpg" /></a>
+                        </div>
+                        <div class="fr">
+                            
+                            <h4><a target="_blank" href="MarketingDel4292.html?m_id=3843">
+                                
+                                【杭州市】
+                                跨年装修，保你无忧——星艺装饰集团临安站：跨年感恩...
+                                
+                            </a></h4>
+                            <h5><a target="_blank" href="MarketingDel4292.html?m_id=3843">跨年装修，保你无忧 
+
+
+	星艺装饰集团全国征集20180套样板工程，“保价格、保质量、保健康”，尊享三大特权礼遇！ 
+
+
+	 【临安站】  
+
+
+	 跨年感恩钜惠  
+
+
+	 尊享多重豪礼  
+
+
+	
+ 
+
+
+	 咨询礼、签单...</a></h5>
+                            <p>
+                                <span>
+                                    <span><font>活动时间：</font>2017/12/22至2018/01/28</span>
+                                    <span><font>活动状态：</font>已结束</span>
+                                </span>
+                            </p>
+                            <h6 class="clearfix">
+                                <a target="_blank" href="MarketingDel4292.html?m_id=3843" class="a2">查看详情</a>
+                            </h6>
+                            
+                        </div>
+                    </li>
+                    
+                    <li class="clearfix">
+                        <div class="fl">
+                            <a target="_blank" href="MarketingDeld0e7.html?m_id=3842">
+                                <img alt="" src="upload/1712/201712271351111956763.jpg" /></a>
+                        </div>
+                        <div class="fr">
+                            
+                            <h4><a target="_blank" href="MarketingDeld0e7.html?m_id=3842">
+                                
+                                【玉林市】
+                                跨年装修 保你无忧——玉林站火热进行中！！！
+                                
+                            </a></h4>
+                            <h5><a target="_blank" href="MarketingDeld0e7.html?m_id=3842">“跨年装修，保你无忧”全国480城诚挚联动（玉林站）
+活动时间：即日起至2018年1月21日
+活动地点：玉林市花园国际大酒店五楼
+ 
+
+
+	
+ 
+
+ 
+
+	 
+
+ 
+
+	
+
+ 
+
+	
+		2017年，装饰装修建材“涨”声一片，...</a></h5>
+                            <p>
+                                <span>
+                                    <span><font>活动时间：</font>2017/12/27至2018/01/21</span>
+                                    <span><font>活动状态：</font>已结束</span>
+                                </span>
+                            </p>
+                            <h6 class="clearfix">
+                                <a target="_blank" href="MarketingDeld0e7.html?m_id=3842" class="a2">查看详情</a>
+                            </h6>
+                            
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="Paging">
+            <form name="form1" method="post" action="http://www.xydec.com.cn/Marketing.aspx?type=all" id="form1" style="width: 1200px;">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY5NzQ3Njc2OQ9kFgICAw9kFgICAQ8PFgYeCFBhZ2VTaXplAgoeEEN1cnJlbnRQYWdlSW5kZXgCAR4LUmVjb3JkY291bnQCkQJkZGQqrLNxdenhiLAbvQzjdhO0ApGad4PuwbErH56VHaGo+A==" />
+</div>
+
+<script language="Javascript"><!--
+function ANP_goToPage(boxEl){if(boxEl!=null){var pi;if(boxEl.tagName=="SELECT"){pi=boxEl.options[boxEl.selectedIndex].value;}else{pi=boxEl.value;}location.href="Marketing.aspx?type=all&page="+pi+"";}}
+function ANP_checkInput(bid,mv){var el=document.getElementById(bid);var r=new RegExp("^\\s*(\\d+)\\s*$");
+if(r.test(el.value)){if(RegExp.$1<1||RegExp.$1>mv){alert("页索引超出范围！");el.focus();el.select();return false;}
+return true;}alert("页索引不是有效的数值！");el.focus();el.select();return false;}
+function ANP_keydown(e,btnId){
+var kcode;
+if(window.event){kcode=e.keyCode;}
+else if(e.which){kcode=e.which;}
+var validKey=(kcode==8||kcode==46||kcode==37||kcode==39||(kcode>=48&&kcode<=57)||(kcode>=96&&kcode<=105));
+if(!validKey){
+if(kcode==13) document.getElementById(btnId).click();
+if(e.preventDefault) e.preventDefault();else{event.returnValue=false};
+}
+}
+--></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BC293E00" />
+</div>
+                
+<!-- AspNetPager V7.0.2 for VS2005 & VS2008  Copyright:2003-2007 Webdiyer (www.webdiyer.com) -->
+<div id="AspNetPager1" class="paginator" style="width:100%;text-align:right;">
+<div align="right" style="width:75%;float:left;">
+	<a disabled="disabled" style="margin-right:5px;">上一页</a><span class="cpb" style="margin-right:5px;">1</span><a href="Marketingb886.html?type=all&amp;page=2" style="margin-right:5px;">2</a><a href="Marketing3dad.html?type=all&amp;page=3" style="margin-right:5px;">3</a><span style="margin-right:5px;"><a href="Marketing9d6b.html?type=all&amp;page=4">...</a></span><a href="Marketingb886.html?type=all&amp;page=2" style="margin-right:5px;">下一页</a>&nbsp;&nbsp;到   <input type="text" value="1" class="text" name="AspNetPager1_input" id="AspNetPager1_input" onkeydown="ANP_keydown(event,&#39;AspNetPager1_btn&#39;);" style="width:30px;width:40px" /> 页 <input type="Button" name="AspNetPager1" id="AspNetPager1_btn" value="确定" class="submit" onclick="if(ANP_checkInput(&#39;AspNetPager1_input&#39;,28)){ANP_goToPage(document.getElementById(&#39;AspNetPager1_input&#39;));}" />
+</div><div class="pagecount" style="float:left;width:25%;">
+	共 28 页
+</div>
+</div>
+<!-- AspNetPager V7.0.2 for VS2005 & VS2008 End -->
+
+
+            </form>
+        </div>
+        <style type="text/css">
+            #AspNetPager1 a, #AspNetPager1_input, #AspNetPager1_btn {
+                border: 1px solid #c8c8c8;
+                color: #c0c0c0;
+                display: inline-block;
+                /*padding: 3px 12px;*/
+                font-size: 18px;
+                color: #666;
+                vertical-align: middle;
+            }
+
+            #AspNetPager1 span {
+                vertical-align: middle;
+            }
+
+            #AspNetPager1 a:hover {
+                border: 1px solid #FF0000;
+                background: #FF0000;
+                color: #fff;
+            }
+
+            #AspNetPager1 {
+                color: #c0c0c0;
+            }
+
+            .Paging form input[type="text"], .Paging form input[type="button"] {
+                float: initial;
+            }
+
+            .Paging .pagecount {
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+            }
+        </style>
+        <script type="text/javascript">
+            $("#AspNetPager1 span.cpb").eq(0).css("display", "inline-block").css("padding", "3px 12px").css("font-size", "18px");
+            $("#AspNetPager1 a").eq(0).css("margin-left", "10px;");
+        </script>
+    </div>
+
+    
+<div class="roll-nav">
+    <ul>
+        <li class="a1">
+            <div class="_box">
+                <i></i>
+                <span>二维码</span>
+            </div>
+            <div class="_sig">
+                <span>
+                    <img alt="" src="upload/1612/201612229413.jpg" />
+                </span>
+            </div>
+        </li>
+        <li class="a2 tachu2">
+            <a class="_box" href="javascript:;">
+                <i></i>
+                <span>在线下单</span>
+            </a>
+        </li>
+        <li class="a3">
+            
+	    <a class="_box" id="openChant">
+                <i></i>
+                <span>在线咨询</span>
+            </a>
+        </li>
+        <li class="a4">
+            <div class="_box">
+                <i></i>
+                <span>返回顶部</span>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+
+
+    
+<div class="idc">
+    <div class="fork-sig"></div>
+    <div class="banner-fork on">
+        <i></i>
+        <form id="queryOffer" class="wrap clearfix">
+            <div class="a1">
+                <select class="bp_f_select" name="bp_f_province">
+                    <option value="">省/市</option>
+                </select>
+                <input type="text" name="bp_f_phone" placeholder="您的手机号" />
+            </div>
+            <div class="a2">
+                <select class="bc_f_select" name="bp_f_city">
+                    <option value="">城区</option>
+                </select>
+                <input type="text" placeholder="楼盘名称" name="bp_f_building" />
+            </div>
+            <div class="a3">
+                <input type="text" placeholder="您的姓名" name="bp_f_username" />
+                <span class="clearfix">
+                    <input class="bs_select" name="bp_f_size" type="text" placeholder="建筑面积" /><font>M<sup style="vertical-align:super;">2</sup></font></span>
+            </div>
+            <div class="a4">
+                <a href="javascript:;" class="a_submit_f">在线<br />
+                    下单</a>
+            </div>
+            <div class="a5">
+                <h6>全国咨询热线</h6>
+                <p>400-9617-001</p>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="foot_1">
+        <div class="wrap">
+            <div class="First clearfix">
+                <div class="fl">
+                    <dl class="a1">
+                        <dt>友情链接</dt>
+                        
+                    </dl>
+                    <dl class="a2">
+                        <dt>关于我们</dt>
+                        
+                        <dd><a target="_blank" href="Detaild10a.html?code=0601">品牌介绍</a></dd>
+                        
+                        <dd><a target="_blank" href="Detailf4b5.html?code=0603">资质荣誉</a></dd>
+                        
+                        <dd><a target="_blank" href="BranchSearch.html">星艺网点</a></dd>
+                        
+                    </dl>
+                    <dl class="a3">
+                        <dt>联系我们</dt>
+                        
+                        <dd><span>总部地址：广东省广州市黄埔区科学大道243号总部经济区A5栋13、14楼</span></dd>
+                        
+                        <dd><span>电话：400-9617-001</span></dd>
+                        
+                        <dd><span>时间：周一至周日 9:00-21:00</span></dd>
+                    </dl>
+                </div>
+                <div class="fr">
+                    <ul>
+                        <li>
+                            <h4>
+                                
+                                
+                                <img class="lazyload" alt="关注集团微信公众号" data-original="upload/1612/201612229413.jpg" src="upload/1612/201612229413.jpg" />
+                                
+                            </h4>
+                            <p>关注集团微信公众号</p>
+                        </li>
+                        <li>
+                            <h4>
+                                
+                                
+                                <img class="lazyload" alt="关注手机端官网" data-original="upload/1712/201712181059593756989.jpg" src="upload/1712/201712181059593756989.jpg" />
+                                
+                            </h4>
+                            <p>关注手机端官网</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Second">
+                <ul class="clearfix">
+                    <li class="a1">
+                        <div class="fl"><i></i></div>
+                        <div class="fr">
+                            <font>设计专项甲级</font>
+                            <span>专业承包壹级</span>
+                        </div>
+                    </li>
+                    <li class="a2">
+                        <div class="fl"><i></i></div>
+                        <div class="fr">
+                            <font>五年质保</font>
+                            <span>与国家标准同步</span>
+                        </div>
+                    </li>
+                    <li class="a3">
+                        <div class="fl"><i></i></div>
+                        <div class="fr">
+                            <font>无忧售后</font>
+                            <span>服务终身不变，热情不减</span>
+                        </div>
+                    </li>
+                    <li class="a4">
+                        <div class="fl"><i></i></div>
+                        <div class="fr">
+                            <font>行业开创者</font>
+                            <span>品质27年，值得信赖</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="foot_2">
+        <div class="wrap clearfix">
+            <div class="fl" style="width: 100%;text-align: center;">
+                <p>
+                    (c)Copyright 2017 广东星艺装饰集团股份有限公司 版权所有 粤ICP备13022898号
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261996347'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1261996347%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    
+    <script type="text/javascript">
+        setNav(2);
+    </script>
+    
+</body>
+
+<!-- Mirrored from www.xydec.com.cn/Marketing.aspx?type=all by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 01 Feb 2018 02:21:32 GMT -->
+</html>
+
+

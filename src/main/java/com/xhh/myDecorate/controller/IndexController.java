@@ -27,7 +27,7 @@ public class IndexController {
     public String index(){
 
         System.out.println("进入首页");
-        return "page/index";
+        return "index";
     }
     @RequestMapping(value = "/home")
     public String home(){
