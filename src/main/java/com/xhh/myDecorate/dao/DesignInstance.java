@@ -3,6 +3,7 @@ package com.xhh.myDecorate.dao;
 import lombok.Data;
 
 /**
+ * 设计案例
  * @author xuhaihong
  * @create 2018-01-31 18:06
  **/

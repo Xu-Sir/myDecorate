@@ -5,4 +5,6 @@ package com.xhh.myDecorate.mapper.provider;
  * @create 2018-02-02 10:07
  **/
 public class CampaignProvider {
+
+
 }
