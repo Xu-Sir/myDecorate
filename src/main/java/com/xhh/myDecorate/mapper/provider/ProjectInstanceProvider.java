@@ -1,6 +1,5 @@
 package com.xhh.myDecorate.mapper.provider;
 
-import com.xhh.myDecorate.dao.OrderOnline;
 import com.xhh.myDecorate.dao.ProjectInstance;
 import com.xhh.myDecorate.util.StringUtil;
 import org.apache.ibatis.jdbc.SQL;

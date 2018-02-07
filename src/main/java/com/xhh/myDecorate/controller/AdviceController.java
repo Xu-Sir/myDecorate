@@ -5,4 +5,5 @@ package com.xhh.myDecorate.controller;
  * @create 2018-02-02 11:44
  **/
 public class AdviceController {
+
 }
