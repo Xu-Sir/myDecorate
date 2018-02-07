@@ -35,7 +35,6 @@ public class IndexController {
         System.out.println("进入首页");
         return "page/homepage";
     }
-
     /**
      * 统计访问量
      */
