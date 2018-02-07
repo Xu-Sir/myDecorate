@@ -35,53 +35,53 @@ var _hmt = _hmt || [];
     <!--<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>-->
     <script type="text/javascript" src="js/uaredirect.js"></script>
     <script type="text/javascript">
-
-        uaredirect("http://m.xydec.com.cn/m/WapDefault.aspx");
-
-        var myprovince = remote_ip_info['province'];
-        var mycity = remote_ip_info['city'];
-
-        $(function () {
-
-            loadOu();
-
-            $("img.lazyload").lazyload({
-                effect: "fadeIn",
-                threshold: 180,
-                skip_invisible: false,
-                container: $(".bd_i3")
-            });
-
-            var T = setInterval(function () {
-                $('.Region').fadeIn();
-                clearInterval(T);
-            }, 10000);
-
-            var Y = setInterval(function () {
-                $('.Region').fadeOut();
-                clearInterval(Y);
-            }, 50000);
-
-            $(".index_02>.wrap>.mian>.hd>.clearfix>li:first").click();
-            $(".index_06 .mian").slide({ titCell: ".hd li", mainCell: ".bd div.fr", effect: "fold", trigger: "mouseover", interTime: 7000 });
-            $(".index_06 .mian .bd>div.fl").slide({ titCell: "._hd ul", mainCell: "._bd ul", autoPage: true, effect: "left", trigger: "mouseover", autoPlay: true, interTime: 7000 });
-        });
-
-        function loadOu() {
-            $("#areaname").val(mycity);
-
-            $.ajax({
-                type: "POST",
-                url: "/ajax/ajax.aspx?action=getou&t=" + Math.random(),
-                data: { areaname: $("#areaname").val() },
-                dataType: "html",
-                success: function (data) {
-                    $("#ul_ou").empty();
-                    $("#ul_ou").append(data);
-                    $("#ou_count").text($("#ul_ou li").length);
-                }
-            });
-        }
+        <!-- 手机网页访问时候 跳转到指定网页 -->
+        uaredirect("101.200.63.82");
+//        var myprovince = remote_ip_info['province'];
+//        var mycity = remote_ip_info['city'];
+//        alert(1);
+//
+//        $(function () {
+//            alert(2);
+//            loadOu();
+//
+//            $("img.lazyload").lazyload({
+//                effect: "fadeIn",
+//                threshold: 180,
+//                skip_invisible: false,
+//                container: $(".bd_i3")
+//            });
+//
+//            var T = setInterval(function () {
+//                $('.Region').fadeIn();
+//                clearInterval(T);
+//            }, 10000);
+//
+//            var Y = setInterval(function () {
+//                $('.Region').fadeOut();
+//                clearInterval(Y);
+//            }, 50000);
+//
+//            $(".index_02>.wrap>.mian>.hd>.clearfix>li:first").click();
+//            $(".index_06 .mian").slide({ titCell: ".hd li", mainCell: ".bd div.fr", effect: "fold", trigger: "mouseover", interTime: 7000 });
+//            $(".index_06 .mian .bd>div.fl").slide({ titCell: "._hd ul", mainCell: "._bd ul", autoPage: true, effect: "left", trigger: "mouseover", autoPlay: true, interTime: 7000 });
+//        });
+//
+//        function loadOu() {
+//            alert(3)
+//            $("#areaname").val(mycity);
+//            $.ajax({
+//                type: "POST",
+//                url: "/ajax/ajax.aspx?action=getou&t=" + Math.random(),
+//                data: { areaname: $("#areaname").val() },
+//                dataType: "html",
+//                success: function (data) {
+//                    $("#ul_ou").empty();
+//                    $("#ul_ou").append(data);
+//                    $("#ou_count").text($("#ul_ou li").length);
+//                }
+//            });
+//        }
     </script>
 <title>
 
@@ -297,15 +297,15 @@ var _hmt = _hmt || [];
                 <label><i>*</i>联系电话：</label>
                 <input type="text" name="b2_r_phone" />
             </div>
-            <div class="a4 clearfix">
-                <label><i>*</i>省 / 市：</label>
-                <select class="bp_select2" name="b1_rp_select">
-                    <option value="">省/市</option>
-                </select>
-                <select class="bc_select2" name="b1_rc_select">
-                    <option value="">城区</option>
-                </select>
-            </div>
+            <!--<div class="a4 clearfix">-->
+                <!--<label><i>*</i>省 / 市：</label>-->
+                <!--<select class="bp_select2" name="b1_rp_select">-->
+                    <!--<option value="">省/市</option>-->
+                <!--</select>-->
+                <!--<select class="bc_select2" name="b1_rc_select">-->
+                    <!--<option value="">城区</option>-->
+                <!--</select>-->
+            <!--</div>-->
             <div class="a3 clearfix">
                 <label><i>*</i>楼盘名称：</label>
                 <input type="text" name="b3_r_building" />
@@ -317,7 +317,8 @@ var _hmt = _hmt || [];
             <div class="a3 clearfix">
                 <label><i>*</i>验证码：</label>
                 <input name="xd_atoucode" type="text" maxlength="4" placeholder="验证码" />
-                <img src="tools/verify_code.png" onclick="this.src='/tools/verify_code.ashx?'+Math.random()" alt="" class="l" style="height: 28px; margin-left: 5px;" id="xd_code" />
+                <img  onclick="this.src='/verifyCode?'+Math.random()" alt="" class="l" style="height: 28px; margin-left: 5px;" id="xd_code" />
+
             </div>
             <div class="a6">
                 <input type="submit" value="提交" class="b1" />
@@ -341,15 +342,15 @@ var _hmt = _hmt || [];
                 <label><i>*</i>联系电话：</label>
                 <input type="text" name="Phone" />
             </div>
-            <div class="a4 clearfix">
-                <label><i>*</i>所在地区：</label>
-                <select name="Bs_ProvinceCode" class="bp_select">
-                    <option value="">省/市</option>
-                </select>
-                <select name="Bs_CityCode" class="bc_select">
-                    <option value="">城区</option>
-                </select>
-            </div>
+            <!--<div class="a4 clearfix">-->
+                <!--<label><i>*</i>所在地区：</label>-->
+                <!--<select name="Bs_ProvinceCode" class="bp_select">-->
+                    <!--<option value="">省/市</option>-->
+                <!--</select>-->
+                <!--<select name="Bs_CityCode" class="bc_select">-->
+                    <!--<option value="">城区</option>-->
+                <!--</select>-->
+            <!--</div>-->
             <div class="a3 clearfix">
                 <label><i>*</i>详细地址：</label>
                 <input type="text" style="width: 530px;" name="Address" />
@@ -362,7 +363,7 @@ var _hmt = _hmt || [];
             <div class="a3 clearfix">
                 <label><i>*</i>验证码：</label>
                 <input type="text" maxlength="4" placeholder="验证码" name="msg_atoucode" />
-                <img src="tools/verify_code.png" onclick="this.src='/tools/verify_code.ashx?'+Math.random()" alt="" class="l" style="height: 28px; margin-left: 5px;" id="msg_code" />
+                <img  onclick="this.src='/verifyCode?'+Math.random()" alt="" class="l" style="height: 28px; margin-left: 5px;" id="msg_code" />
             </div>
             <div class="a6">
                 <input type="submit" value="提交" class="b1" />
@@ -400,6 +401,7 @@ var _hmt = _hmt || [];
         </div>
     </div>
     <script type="text/javascript">
+        <!--轮播js-->
         $(document).ready(function () {
             jQuery(".banner").slide({ titCell: ".hd ul", mainCell: ".bd ul", effect: "left", autoPlay: true, autoPage: true, vis: "auto", trigger: "click", interTime: 5000 });
         });
@@ -1390,29 +1392,26 @@ var _hmt = _hmt || [];
     <div class="banner-fork on">
         <i></i>
         <form id="queryOffer" class="wrap clearfix">
-            <div class="a1">
-                <select class="bp_f_select" name="bp_f_province">
-                    <option value="">省/市</option>
-                </select>
-                <input type="text" name="bp_f_phone" placeholder="您的手机号" />
-            </div>
-            <div class="a2">
-                <select class="bc_f_select" name="bp_f_city">
-                    <option value="">城区</option>
-                </select>
-                <input type="text" placeholder="楼盘名称" name="bp_f_building" />
-            </div>
             <div class="a3">
-                <input type="text" placeholder="您的姓名" name="bp_f_username" />
+                <input type="text" name="bp_f_phone" placeholder="您的手机号" />
                 <span class="clearfix">
                     <input class="bs_select" name="bp_f_size" type="text" placeholder="建筑面积" /><font>M<sup style="vertical-align:super;">2</sup></font></span>
             </div>
+            <div class="a3">
+                <input type="text" placeholder="楼盘名称" name="bp_f_building" />
+                <span class="clearfix">
+                    <input type="text" placeholder="您的姓名" name="bp_f_username" /></span>
+            </div>
+            <!--<div class="a3">-->
+                <!--<input type="text" placeholder="您的姓名" name="bp_f_username" />-->
+                <!--<span class="clearfix">-->
+                    <!--<input class="bs_select" name="bp_f_size" type="text" placeholder="建筑面积" /><font>M<sup style="vertical-align:super;">2</sup></font></span>-->
+            <!--</div>-->
             <div class="a4">
-                <a href="javascript:;" class="a_submit_f">在线<br />
-                    下单</a>
+                <a href="javascript:;" class="a_submit_f">在线<br /> 下单</a>
             </div>
             <div class="a5">
-                <h6>全国咨询热线</h6>
+                <h6>咨询热线</h6>
                 <p>400-9617-001</p>
             </div>
         </form>
@@ -1441,9 +1440,9 @@ var _hmt = _hmt || [];
                     <dl class="a3">
                         <dt>联系我们</dt>
                         
-                        <dd><span>总部地址：广东省广州市黄埔区科学大道243号总部经济区A5栋13、14楼</span></dd>
+                        <dd><span>公司地址：</span></dd>
                         
-                        <dd><span>电话：400-9617-001</span></dd>
+                        <dd><span>电话：</span></dd>
                         
                         <dd><span>时间：周一至周日 9:00-21:00</span></dd>
                     </dl>
@@ -1454,10 +1453,10 @@ var _hmt = _hmt || [];
                             <h4>
                                 
                                 
-                                <img class="lazyload" alt="关注集团微信公众号" data-original="upload/1612/201612229413.jpg" src="upload/1612/201612229413.jpg" />
+                                <img class="lazyload" alt="关注公司微信公众号" data-original="upload/1612/201612229413.jpg" src="upload/1612/201612229413.jpg" />
                                 
                             </h4>
-                            <p>关注集团微信公众号</p>
+                            <p>关注公司微信公众号</p>
                         </li>
                         <li>
                             <h4>

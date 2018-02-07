@@ -27,7 +27,7 @@ mybatis:
     use-column-label: true
 
 server:
-  port: 5001  #Tomcat端口
+  port: 5000  #Tomcat端口
   max-http-header-size: 4194304
   tomcat:
     max-http-post-size: 0

@@ -130,7 +130,7 @@ $(document).ready(function () {
             var flag = false;
             $.ajax({
                 type: "post",
-                url: "/ajax/CheckREG.aspx",
+                url: "/checkVcode",
                 data: { "action": "checkform", "type": "msg", "values": $("[name=xd_atoucode]").val(), "r": Math.random() },
                 async: false,
                 success: function (data) {
@@ -155,7 +155,7 @@ $(document).ready(function () {
                 ou_id = $("#ou_id").val();
             $.ajax({
                 type: "POST",
-                url: "/ajax/ajax.aspx?action=queryoffer_r&t=" + Math.random(),
+                url: "/orderOnline?action=queryoffer_r&t=" + Math.random(),
                 data: $("#FrmXiadan").serialize() + "&ou_id=" + ou_id,
                 dataType: "json",
                 beforeSend: function () {
