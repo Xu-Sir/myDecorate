@@ -16,6 +16,9 @@ public class Campaign {
     private String url;
     private Long createTime;
     private Long overdueTime;
+    /**
+     * 1.有效  2.无效
+     */
     private String status;
 
 }

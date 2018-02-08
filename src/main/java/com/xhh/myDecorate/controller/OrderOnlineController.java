@@ -32,6 +32,18 @@ public class OrderOnlineController {
         orderOnlineService.save(orderOnline);
         return Constant.SUCCESS;
     }
+
+    @RequestMapping(value = "/orderOnlineT")
+    public String orderOnlineT(@RequestParam Map<String,Object> param){
+        //保存用户数据
+        OrderOnline orderOnline = new OrderOnline();
+        orderOnline.setUserName((String) param.get("bp_f_username"));
+        orderOnline.setPhoneNum((String) param.get("bp_f_phone"));
+        orderOnline.setBuilding((String) param.get("bp_f_building"));
+        orderOnline.setSize((String) param.get("bp_f_size"));
+        orderOnlineService.save(orderOnline);
+        return Constant.SUCCESS;
+    }
 }
 
 

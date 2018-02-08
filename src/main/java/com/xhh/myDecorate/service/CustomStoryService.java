@@ -1,6 +1,10 @@
 package com.xhh.myDecorate.service;
 
+import com.xhh.myDecorate.common.RequestArgs;
 import com.xhh.myDecorate.dao.CustomStory;
+import com.xhh.myDecorate.mapper.provider.CustomStoryProvider;
+
+import java.util.List;
 
 /**
  * @author xuhaihong
@@ -9,4 +13,8 @@ import com.xhh.myDecorate.dao.CustomStory;
 public interface CustomStoryService {
 
     void save(CustomStory story);
+
+    List<CustomStory> findCustomStory(RequestArgs args);
+
+    Integer countCustomStory(RequestArgs args);
 }
