@@ -11,6 +11,7 @@ import lombok.Data;
 public class CustomStory {
 
     private Long id;
+    private Long userId;
     private String title;
     private String content;
     private String url;

@@ -1,10 +1,13 @@
 package com.xhh.myDecorate.mapper;
 
+import com.xhh.myDecorate.common.RequestArgs;
 import com.xhh.myDecorate.dao.OrderOnline;
 import com.xhh.myDecorate.mapper.provider.OrderOnlineProvider;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.SelectProvider;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * @author xuhaihong
@@ -16,4 +19,10 @@ public interface OrderOnlineMapper {
 
     @SelectProvider(type = OrderOnlineProvider.class, method = "save")
     void save(OrderOnline orderOnline);
+
+    @SelectProvider(type = OrderOnlineProvider.class, method = "findOrderOnline")
+    List<OrderOnline> findOrderOnline(RequestArgs args);
+
+    @SelectProvider(type = OrderOnlineProvider.class, method = "countOrderOnline")
+    Integer countOrderOnline(RequestArgs args);
 }

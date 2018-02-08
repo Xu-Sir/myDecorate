@@ -11,6 +11,7 @@ import lombok.Data;
 public class DesignInstance {
 
     public Long id;
+    public Long userId;
     public String title;
     public String content;
     public String url;

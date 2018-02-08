@@ -1,5 +1,6 @@
 package com.xhh.myDecorate.service.impl;
 
+import com.xhh.myDecorate.common.RequestArgs;
 import com.xhh.myDecorate.dao.CustomStory;
 import com.xhh.myDecorate.mapper.CustomStoryMapper;
 import com.xhh.myDecorate.service.CustomStoryService;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Calendar;
+import java.util.List;
 
 /**
  * @author xuhaihong
@@ -22,5 +24,15 @@ public class CustomStoryServiceImpl implements CustomStoryService{
     public void save(CustomStory story){
        story.setCreateTime(Calendar.getInstance().getTimeInMillis());
         customStoryMapper.save(story);
+    }
+
+    @Override
+    public List<CustomStory> findCustomStory(RequestArgs args){
+        return customStoryMapper.findCustomStory(args);
+    }
+
+    @Override
+    public Integer countCustomStory(RequestArgs args){
+        return customStoryMapper.countCustomStory(args);
     }
 }

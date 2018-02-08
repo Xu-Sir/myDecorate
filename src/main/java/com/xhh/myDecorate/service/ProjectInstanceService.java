@@ -1,6 +1,9 @@
 package com.xhh.myDecorate.service;
 
+import com.xhh.myDecorate.common.RequestArgs;
 import com.xhh.myDecorate.dao.ProjectInstance;
+
+import java.util.List;
 
 /**
  * @author xuhaihong
@@ -9,4 +12,8 @@ import com.xhh.myDecorate.dao.ProjectInstance;
 public interface ProjectInstanceService {
 
     void save(ProjectInstance instance);
+
+    List<ProjectInstance> findProjectInstance(RequestArgs args);
+
+    Integer countProjectInstance(RequestArgs args);
 }

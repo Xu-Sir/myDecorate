@@ -1,6 +1,10 @@
 package com.xhh.myDecorate.service;
 
+import com.xhh.myDecorate.common.RequestArgs;
 import com.xhh.myDecorate.dao.DesignInstance;
+import com.xhh.myDecorate.mapper.provider.DesignInstanceProveder;
+
+import java.util.List;
 
 /**
  * @author xuhaihong
@@ -9,4 +13,8 @@ import com.xhh.myDecorate.dao.DesignInstance;
 public interface DesignInstanceService {
 
     void save(DesignInstance instance);
+
+    List<DesignInstance> findDesignInstance(RequestArgs args);
+
+    Integer countDesignInstance(RequestArgs args);
 }
