@@ -19,5 +19,7 @@ public interface CampaignService {
 
     List<Campaign> findCampaign(RequestArgs args);
 
+    Campaign marketDetail(RequestArgs args);
+
     Integer countCampaign(RequestArgs args);
 }

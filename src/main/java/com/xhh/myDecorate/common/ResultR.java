@@ -19,4 +19,8 @@ public class ResultR<T> {
 
     }
 
+    @Override
+    public String toString(){
+        return null;
+    }
 }

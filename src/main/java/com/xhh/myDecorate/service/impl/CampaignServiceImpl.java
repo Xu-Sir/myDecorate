@@ -37,6 +37,10 @@ public class CampaignServiceImpl implements CampaignService{
     }
 
     @Override
+    public Campaign marketDetail(RequestArgs args){
+        return campaignMapper.marketDetail(args);
+    }
+    @Override
     public Integer countCampaign(RequestArgs args){
         return campaignMapper.countCampaign(args);
     }

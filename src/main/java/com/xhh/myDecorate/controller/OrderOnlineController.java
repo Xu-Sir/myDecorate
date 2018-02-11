@@ -29,6 +29,7 @@ public class OrderOnlineController {
         orderOnline.setPhoneNum((String) param.get("b2_r_phone"));
         orderOnline.setBuilding((String) param.get("b3_r_building"));
         orderOnline.setSize((String) param.get("b3_r_size"));
+        orderOnline.setUnits((String) param.get("units"));
         orderOnlineService.save(orderOnline);
         return Constant.SUCCESS;
     }

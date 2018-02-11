@@ -9,6 +9,7 @@ import lombok.Data;
 @Data
 public class RequestArgs {
 
+    private Long id;
     private Integer page;
     private Integer size;
 
@@ -40,5 +41,7 @@ public class RequestArgs {
      */
     private String building;
 
+    private String units;
 
+    private String ids;
 }
