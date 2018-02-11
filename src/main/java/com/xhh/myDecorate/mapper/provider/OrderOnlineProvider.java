@@ -19,6 +19,9 @@ public class OrderOnlineProvider {
                 .VALUES("building", "#{building}")
                 .VALUES("size", "#{size}")
                 .VALUES("create_time", "#{createTime}");
+        if (StringUtil.isNotBlank(order.getUnits())){
+            sql.VALUES("units","#{units}");
+        }
 
         String sqlS = sql.toString();
         System.out.println(sqlS);
@@ -32,6 +35,7 @@ public class OrderOnlineProvider {
         String phoneNum = args.getPhoneNum();
         String building = args.getBuilding();
         String sizeH = args.getSizeH();
+        String units = args.getUnits();
         Long startTime = args.getStartTime();
         Long endTime = args.getEndTime();
         Integer page = args.getPage();
@@ -51,6 +55,9 @@ public class OrderOnlineProvider {
         }
         if (StringUtil.isNotBlank(sizeH)){
             sql.AND().WHERE("size like '%"+sizeH+"%'");
+        }
+        if (StringUtil.isNotBlank(units)){
+            sql.AND().WHERE("units = '%"+units+"%'");
         }
         if (startTime != null){
             sql.AND().WHERE("create_time >= "+startTime+"");

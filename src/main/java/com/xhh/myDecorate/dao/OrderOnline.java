@@ -19,5 +19,9 @@ public class OrderOnline {
     private String size;
     private Long createTime;
     private String type;
+    /**
+     * 户型
+     */
+    private String units;
 
 }

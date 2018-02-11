@@ -31,6 +31,9 @@ public interface CampaignMapper {
     @SelectProvider(type = CampaignProvider.class, method = "findCampaign")
     List<Campaign> findCampaign(RequestArgs args);
 
+    @SelectProvider(type = CampaignProvider.class, method = "marketDetail")
+    Campaign marketDetail(RequestArgs args);
+
     @SelectProvider(type = CampaignProvider.class, method = "countCampaign")
     Integer countCampaign(RequestArgs args);
 }
