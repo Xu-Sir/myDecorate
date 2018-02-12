@@ -39,7 +39,7 @@ $(document).ready(function () {
         if (!flag) { return flag; }
         $.ajax({
             type: "post",
-            url: "/ajax/CheckREG.aspx",
+            url: "/checkVcode",
             data: { "action": "checkform", "type": "msg", "values": $("input[name='msg_atoucode']").val(), "r": Math.random() },
             async: false,
             success: function (data) {
@@ -65,7 +65,7 @@ $(document).ready(function () {
             ou_id = $("#ou_id").val();
         $.ajax({
             type: "POST",
-            url: "ajax/ajax2.aspx",
+            url: "/advice",
             data: $("#msgFrm").serialize() + "&action=msg&ou_id=" + ou_id,
             dataType: "json",
             beforeSend: function () {

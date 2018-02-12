@@ -364,7 +364,7 @@ body {
             display: inline-block;
             width: 26px;
             height: 24px;
-            background: url(../images/icon_1.png) no-repeat left top;
+            background: url(../image/icon_1.png) no-repeat left top;
             vertical-align: middle;
         }
 
@@ -401,7 +401,7 @@ body {
             display: inline-block;
             width: 26px;
             height: 24px;
-            background: url(../images/icon_1.png) no-repeat left top;
+            background: url(../image/icon_1.png) no-repeat left top;
             vertical-align: middle;
         }
 
@@ -436,7 +436,7 @@ body {
             	position: relative;
                 float: left;
                 width: 106px;
-                background: url(../images/icon_2.png) no-repeat bottom center;
+                background: url(../image/icon_2.png) no-repeat bottom center;
                 -webkit-transition: all .3s;
                 transition: all .3s;
             }
@@ -452,7 +452,7 @@ body {
                 }
 
                 .header .Menu .Nav > ul > li:hover, .header .Menu .Nav > ul > li.on {
-                    background-image: url(../images/icon_3.png);
+                    background-image: url(../image/icon_3.png);
                     z-index: 1;
                 }
 
@@ -468,7 +468,7 @@ body {
            /* margin-left: -50px;*/
             border-top: 0;
             z-index: 9; /*width: 100%;*/
-            background: url(../images/icon_5.png) repeat;
+            background: url(../image/icon_5.png) repeat;
             text-align: right;
         }
 
@@ -479,7 +479,7 @@ body {
             }
 
                 .header .Menu .Nav .Drop_Down ul:hover {
-                    background: url(../images/icon_76.png) no-repeat top center;
+                    background: url(../image/icon_76.png) no-repeat top center;
                 }
 
                 .header .Menu .Nav .Drop_Down ul li {
@@ -546,7 +546,7 @@ body {
             .header .Menu .sub-Nav > ul > li {
                 float: left;
                 width: 97px;
-                background: url(../images/icon_2.png) no-repeat bottom center;
+                background: url(../image/icon_2.png) no-repeat bottom center;
                 -webkit-transition: all .3s;
                 transition: all .3s;
             }
@@ -562,7 +562,7 @@ body {
                 }
 
                 .header .Menu .sub-Nav > ul > li:hover, .header .Menu .sub-Nav > ul > li.on {
-                    background-image: url(../images/icon_3.png);
+                    background-image: url(../image/icon_3.png);
                     z-index: 1;
                 }
 
@@ -575,7 +575,7 @@ body {
             position: absolute;
             border-top: 0;
             z-index: 9; /*width: 100%;*/
-            background: url(../images/icon_5.png) repeat;
+            background: url(../image/icon_5.png) repeat;
             text-align: right;
         }
 
@@ -586,7 +586,7 @@ body {
             }
 
                 .header .Menu .sub-Nav .Drop_Down ul:hover {
-                    background: url(../images/icon_76.png) no-repeat top center;
+                    background: url(../image/icon_76.png) no-repeat top center;
                 }
 
                 .header .Menu .sub-Nav .Drop_Down ul li {
@@ -740,14 +740,14 @@ body {
         right: 4%;
         width: 34px;
         height: 34px;
-        background: url(../images/icon_26.png) no-repeat center;
+        background: url(../image/icon_26.png) no-repeat center;
         cursor: pointer;
     }
 
     .banner-fork form {
         height: 135px;
         padding-left: 300px;
-        background: url(../images/icon_27.png) no-repeat left bottom;
+        background: url(../image/icon_27.png) no-repeat left bottom;
         box-sizing: border-box;
     }
 
@@ -916,7 +916,7 @@ body {
     bottom: 0;
     width: 137px;
     height: 135px;
-    background: url(../images/icon_73.png) no-repeat center;
+    background: url(../image/icon_73.png) no-repeat center;
     cursor: default;
     opacity: 0;
     -webkit-transition: all .6s;
@@ -1011,7 +1011,7 @@ body {
     height: 1152px;
     padding: 50px 0;
     overflow: hidden;
-    background: #fff url(../images/index_c_bg1.jpg) no-repeat top center;
+    background: #fff url(../image/index_c_bg1.jpg) no-repeat top center;
     box-sizing: border-box;
 }
 
@@ -1022,7 +1022,7 @@ body {
 
         .index_02 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -1081,7 +1081,7 @@ body {
 
                 .index_02 .mian .bd .box .gg > div > a > img {
                     width: 100%;
-                    background: url(../images/loading.gif) no-repeat center;
+                    background: url(../image/loading.gif) no-repeat center;
                     -webkit-transition: all .8s;
                     transition: all .8s;
                 }
@@ -1093,7 +1093,7 @@ body {
                     width: 100%;
                     height: 64px;
                     padding: 6px 20px 0 20px;
-                    background: url(../images/icon_5.png) repeat;
+                    background: url(../image/icon_5.png) repeat;
                     box-sizing: border-box;
                     -webkit-transition: all .5s;
                     transition: all .5s;
@@ -1206,7 +1206,7 @@ body {
                 z-index: 1;
                 width: 100%;
                 height: 100%;
-                background: url(../images/icon_68.png) repeat;
+                background: url(../image/icon_68.png) repeat;
                 -webkit-transition: all .5s;
                 transition: all .5s;
                 /*opacity: 0;*/
@@ -1226,7 +1226,7 @@ body {
                 vertical-align: middle;
                 -webkit-transition: all .3s;
                 transition: all .3s;
-                background: url(../images/icon_74.png) no-repeat top center;
+                background: url(../image/icon_74.png) no-repeat top center;
                 color: #fff;
             }
 
@@ -1296,7 +1296,7 @@ body {
 
         .index_03 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -1382,11 +1382,11 @@ body {
                         }
 
                         .index_03 .mian ul li a .a3 span.b1 i {
-                            background-image: url(../images/icon_6.png);
+                            background-image: url(../image/icon_6.png);
                         }
 
                         .index_03 .mian ul li a .a3 span.b2 i {
-                            background-image: url(../images/icon_7.png);
+                            background-image: url(../image/icon_7.png);
                         }
 
         .index_03 .mian .kk {
@@ -1427,7 +1427,7 @@ body {
             overflow: hidden;
             text-indent: -999px;
             cursor: pointer;
-            background: url(../images/btn.png) no-repeat;
+            background: url(../image/btn.png) no-repeat;
         }
 
         .index_03 .mian .prev {
@@ -1455,7 +1455,7 @@ body {
 
         .index_04 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -1472,7 +1472,7 @@ body {
         position: relative;
         height: 600px;
         padding: 100px 0;
-        background: url(../images/icon_9.png) no-repeat center;
+        background: url(../image/icon_9.png) no-repeat center;
     }
 
         .index_04 .mian .gg > div {
@@ -1667,35 +1667,35 @@ body {
         }
 
         .index_04 .mian .gg .a1 i {
-            background-image: url(../images/index_4_01.png);
+            background-image: url(../image/index_4_01.png);
         }
 
         .index_04 .mian .gg .a2 i {
-            background-image: url(../images/index_4_02.png);
+            background-image: url(../image/index_4_02.png);
         }
 
         .index_04 .mian .gg .a3 i {
-            background-image: url(../images/index_4_03.png);
+            background-image: url(../image/index_4_03.png);
         }
 
         .index_04 .mian .gg .a4 i {
-            background-image: url(../images/index_4_04.png);
+            background-image: url(../image/index_4_04.png);
         }
 
         .index_04 .mian .gg .a5 i {
-            background-image: url(../images/index_4_05.png);
+            background-image: url(../image/index_4_05.png);
         }
 
         .index_04 .mian .gg .a6 i {
-            background-image: url(../images/index_4_06.png);
+            background-image: url(../image/index_4_06.png);
         }
 
         .index_04 .mian .gg .a7 i {
-            background-image: url(../images/index_4_07.png);
+            background-image: url(../image/index_4_07.png);
         }
 
         .index_04 .mian .gg .a8 i {
-            background-image: url(../images/index_4_08.png);
+            background-image: url(../image/index_4_08.png);
         }
 
         .index_04 .mian .gg > div {
@@ -1740,7 +1740,7 @@ body {
     height: 776px;
     padding: 50px 0;
     overflow: hidden;
-    background: #fff url(../images/index_c_bg2.jpg) no-repeat top center;
+    background: #fff url(../image/index_c_bg2.jpg) no-repeat top center;
     box-sizing: border-box;
 }
 
@@ -1751,7 +1751,7 @@ body {
 
         .index_05 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_10.png) no-repeat bottom center;
+            background: url(../image/icon_10.png) no-repeat bottom center;
             font-size: 28px;
             color: #fff;
             line-height: 40px;
@@ -1785,7 +1785,7 @@ body {
                     overflow: hidden;
                     margin-left: 20px;
                     border-radius: 50%;
-                    background: #2C2C2C url(../images/people-bg2.jpg) no-repeat center;
+                    background: #2C2C2C url(../image/people-bg2.jpg) no-repeat center;
                     box-sizing: border-box;
                     text-align: center;
                     -webkit-transition: all .5s;
@@ -1864,7 +1864,7 @@ body {
                 width: 30px;
                 height: 32px;
                 border: none;
-                background: url(../images/icon_11.png) no-repeat;
+                background: url(../image/icon_11.png) no-repeat;
                 font-size: 0;
                 cursor: pointer;
             }
@@ -1919,7 +1919,7 @@ body {
 
         .index_06 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -2210,7 +2210,7 @@ body {
         .footer .foot_1 .Second ul li {
             float: left;
             padding: 0 59px;
-            background: url(../images/icon_12.png) no-repeat left center;
+            background: url(../image/icon_12.png) no-repeat left center;
         }
 
             .footer .foot_1 .Second ul li.a1 {
@@ -2230,19 +2230,19 @@ body {
             }
 
             .footer .foot_1 .Second ul li.a1 div.fl i {
-                background-image: url(../images/foot_1_01.png);
+                background-image: url(../image/foot_1_01.png);
             }
 
             .footer .foot_1 .Second ul li.a2 div.fl i {
-                background-image: url(../images/foot_1_02.png);
+                background-image: url(../image/foot_1_02.png);
             }
 
             .footer .foot_1 .Second ul li.a3 div.fl i {
-                background-image: url(../images/foot_1_03.png);
+                background-image: url(../image/foot_1_03.png);
             }
 
             .footer .foot_1 .Second ul li.a4 div.fl i {
-                background-image: url(../images/foot_1_04.png);
+                background-image: url(../image/foot_1_04.png);
             }
 
             .footer .foot_1 .Second ul li div.fr {
@@ -2290,7 +2290,7 @@ body {
             }
 
 .article {
-    background: url(../images/index_c_bg1.jpg) repeat center;
+    background: url(../image/index_c_bg1.jpg) repeat center;
 }
 /*筛选部分*/
 .screen_column {
@@ -2390,7 +2390,7 @@ body {
                     width: 60px;
                     height: 35px;
                     border: none;
-                    background: #FF0000 url(../images/icon_18.png) no-repeat center;
+                    background: #FF0000 url(../image/icon_18.png) no-repeat center;
                     margin-bottom: 5px;
                 }
 
@@ -2442,7 +2442,7 @@ body {
             width: 58px;
             height: 32px;
             border: none;
-            background: #FF0000 url(../images/icon_18.png) no-repeat center;
+            background: #FF0000 url(../image/icon_18.png) no-repeat center;
         }
 
         .screen_column .wrap > form div.fr input[type="submit"] {
@@ -2450,7 +2450,7 @@ body {
             width: 58px;
             height: 32px;
             border: none;
-            background: #FF0000 url(../images/icon_18.png) no-repeat center;
+            background: #FF0000 url(../image/icon_18.png) no-repeat center;
         }
 
 
@@ -2494,23 +2494,23 @@ body {
         }
 
         .roll-nav ul li.a1 ._box i {
-            background-image: url(../images/roll-nav-06.png);
+            background-image: url(../image/roll-nav-06.png);
         }
 
         .roll-nav ul li.a2 ._box i {
-            background-image: url(../images/roll-nav-07.png);
+            background-image: url(../image/roll-nav-07.png);
         }
 
         .roll-nav ul li.a3 ._box i {
-            background-image: url(../images/roll-nav-08.png);
+            background-image: url(../image/roll-nav-08.png);
         }
 
         .roll-nav ul li.a4 ._box i {
-            background-image: url(../images/roll-nav-09.png);
+            background-image: url(../image/roll-nav-09.png);
         }
 
         .roll-nav ul li.a5 ._box i {
-            background-image: url(../images/roll-nav-11.png);
+            background-image: url(../image/roll-nav-11.png);
         }
 
         .roll-nav ul li:hover {
@@ -2522,23 +2522,23 @@ body {
             }
 
         .roll-nav ul li.a1:hover ._box i {
-            background-image: url(../images/roll-nav-01.png);
+            background-image: url(../image/roll-nav-01.png);
         }
 
         .roll-nav ul li.a2:hover ._box i {
-            background-image: url(../images/roll-nav-02.png);
+            background-image: url(../image/roll-nav-02.png);
         }
 
         .roll-nav ul li.a3:hover ._box i {
-            background-image: url(../images/roll-nav-03.png);
+            background-image: url(../image/roll-nav-03.png);
         }
 
         .roll-nav ul li.a4:hover ._box i {
-            background-image: url(../images/roll-nav-04.png);
+            background-image: url(../image/roll-nav-04.png);
         }
 
         .roll-nav ul li.a5:hover ._box i {
-            background-image: url(../images/roll-nav-12.png);
+            background-image: url(../image/roll-nav-12.png);
         }
 
         .roll-nav ul li.a1 ._sig {
@@ -2798,7 +2798,7 @@ body {
     width: 100%;
     height: 400px;
     overflow: hidden;
-    background: #333 url(../images/DesignTeam_banner.jpg) no-repeat top center;
+    background: #333 url(../image/DesignTeam_banner.jpg) no-repeat top center;
 }
 
     .DesignTeam_banner .DesTeam_tab {
@@ -2958,7 +2958,7 @@ body {
                         display: inline-block;
                         width: 18px;
                         height: 14px;
-                        background: url(../images/icon_19.png) no-repeat right top;
+                        background: url(../image/icon_19.png) no-repeat right top;
                         vertical-align: middle;
                     }
 
@@ -2985,7 +2985,7 @@ body {
                 width: 100%;
                 height: 100%;
                 padding: 37px 22px;
-                background: url(../images/data_02.png) no-repeat top center;
+                background: url(../image/data_02.png) no-repeat top center;
                 box-sizing: border-box;
                 opacity: 0;
                 -webkit-transition: all .5s;
@@ -3028,7 +3028,7 @@ body {
                             display: inline-block;
                             width: 18px;
                             height: 14px;
-                            background: url(../images/icon_19.png) no-repeat right top;
+                            background: url(../image/icon_19.png) no-repeat right top;
                             vertical-align: middle;
                         }
 
@@ -3056,7 +3056,7 @@ body {
                         left: 0;
                         width: 100%;
                         height: 34px;
-                        background: url(../images/icon_20.png) repeat;
+                        background: url(../image/icon_20.png) repeat;
                         font-size: 12px;
                         color: #999;
                         text-align: center;
@@ -3088,7 +3088,7 @@ body {
         width: 395px;
         height: 510px;
         overflow: hidden;
-        background: url(../images/people-bg2.jpg) repeat top center;
+        background: url(../image/people-bg2.jpg) repeat top center;
     }
 
         .DesignTeam-list .des-list1 .dl-a1 img {
@@ -3197,7 +3197,7 @@ body {
                     width: 21px;
                     height: 20px;
                     margin: 0 5px;
-                    background: url(../images/icon_71.png) no-repeat right center;
+                    background: url(../image/icon_71.png) no-repeat right center;
                 }
 
                 .DesignTeam-list .des-list1 .dl-a2 div.fr h5.on1 span.a1,
@@ -3232,7 +3232,7 @@ body {
                         display: inline-block;
                         width: 35px;
                         height: 20px;
-                        background: url(../images/icon_58.png) no-repeat left top;
+                        background: url(../image/icon_58.png) no-repeat left top;
                         vertical-align: middle;
                     }
 
@@ -3275,7 +3275,7 @@ body {
 
         .DesignTeam-list .des-list2 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -3446,7 +3446,7 @@ body {
                         display: inline-block;
                         width: 52px;
                         height: 14px;
-                        background: url(../images/icon_21.png) no-repeat center;
+                        background: url(../image/icon_21.png) no-repeat center;
                         vertical-align: top;
                     }
 
@@ -3596,7 +3596,7 @@ body {
                         display: inline-block;
                         width: 26px;
                         height: 16px;
-                        background: url(../images/icon_22.png) no-repeat left top;
+                        background: url(../image/icon_22.png) no-repeat left top;
                         vertical-align: middle;
                     }
 
@@ -3625,11 +3625,11 @@ body {
                             height: 17px;
                             content: ' ';
                             margin-left: -8px;
-                            background: url(../images/icon_24.png) no-repeat center;
+                            background: url(../image/icon_24.png) no-repeat center;
                         }
 
                     .B-search .B-s1 > ul > li div.fr .a2.on1 span.gb1:before, .B-search .B-s1 > ul > li div.fr .a2.on2 span.gb1:before, .B-search .B-s1 > ul > li div.fr .a2.on2 span.gb2:before, .B-search .B-s1 > ul > li div.fr .a2.on3 span.gb1:before, .B-search .B-s1 > ul > li div.fr .a2.on3 span.gb2:before, .B-search .B-s1 > ul > li div.fr .a2.on3 span.gb3:before, .B-search .B-s1 > ul > li div.fr .a2.on4 span.gb1:before, .B-search .B-s1 > ul > li div.fr .a2.on4 span.gb2:before, .B-search .B-s1 > ul > li div.fr .a2.on4 span.gb3:before, .B-search .B-s1 > ul > li div.fr .a2.on4 span.gb4:before, .B-search .B-s1 > ul > li div.fr .a2.on5 span:before {
-                        background-image: url(../images/icon_23.png);
+                        background-image: url(../image/icon_23.png);
                         color: #e60021;
                     }
 
@@ -3745,7 +3745,7 @@ body {
 
         .engineer-1 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -3853,27 +3853,27 @@ body {
                 }
 
                 .engineer-1 .mian ul li.a1:before {
-                    background: url(../images/engineer-01.png) no-repeat bottom right;
+                    background: url(../image/engineer-01.png) no-repeat bottom right;
                 }
 
                 .engineer-1 .mian ul li.a2:before {
-                    background: url(../images/engineer-02.png) no-repeat bottom right;
+                    background: url(../image/engineer-02.png) no-repeat bottom right;
                 }
 
                 .engineer-1 .mian ul li.a3:before {
-                    background: url(../images/engineer-03.png) no-repeat bottom right;
+                    background: url(../image/engineer-03.png) no-repeat bottom right;
                 }
 
                 .engineer-1 .mian ul li.a4:before {
-                    background: url(../images/engineer-04.png) no-repeat bottom right;
+                    background: url(../image/engineer-04.png) no-repeat bottom right;
                 }
 
                 .engineer-1 .mian ul li.a5:before {
-                    background: url(../images/engineer-05.png) no-repeat bottom right;
+                    background: url(../image/engineer-05.png) no-repeat bottom right;
                 }
 
                 .engineer-1 .mian ul li.a6:before {
-                    background: url(../images/engineer-06.png) no-repeat bottom right;
+                    background: url(../image/engineer-06.png) no-repeat bottom right;
                 }
 
 .engineer-2 {
@@ -3889,7 +3889,7 @@ body {
 
         .engineer-2 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -4005,35 +4005,35 @@ body {
                 }
 
                 .engineer-2 .mian ul li.a1:before {
-                    background: url(../images/engineer-07.png) no-repeat bottom right;
+                    background: url(../image/engineer-07.png) no-repeat bottom right;
                 }
 
                 .engineer-2 .mian ul li.a2:before {
-                    background: url(../images/engineer-08.png) no-repeat bottom right;
+                    background: url(../image/engineer-08.png) no-repeat bottom right;
                 }
 
                 .engineer-2 .mian ul li.a3:before {
-                    background: url(../images/engineer-09.png) no-repeat bottom right;
+                    background: url(../image/engineer-09.png) no-repeat bottom right;
                 }
 
                 .engineer-2 .mian ul li.a4:before {
-                    background: url(../images/engineer-10.png) no-repeat bottom right;
+                    background: url(../image/engineer-10.png) no-repeat bottom right;
                 }
 
                 .engineer-2 .mian ul li.a5:before {
-                    background: url(../images/engineer-11.png) no-repeat bottom right;
+                    background: url(../image/engineer-11.png) no-repeat bottom right;
                 }
 
                 .engineer-2 .mian ul li.a6:before {
-                    background: url(../images/engineer-12.png) no-repeat bottom right;
+                    background: url(../image/engineer-12.png) no-repeat bottom right;
                 }
 
                 .engineer-2 .mian ul li.a7:before {
-                    background: url(../images/engineer-13.png) no-repeat bottom right;
+                    background: url(../image/engineer-13.png) no-repeat bottom right;
                 }
 
                 .engineer-2 .mian ul li.a8:before {
-                    background: url(../images/engineer-14.png) no-repeat bottom right;
+                    background: url(../image/engineer-14.png) no-repeat bottom right;
                 }
 
 .engineer-3 {
@@ -4049,7 +4049,7 @@ body {
 
         .engineer-3 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -4090,7 +4090,7 @@ body {
             width: 14px;
             height: 26px;
             margin-top: -13px;
-            background: url(../images/icon_25.png) no-repeat;
+            background: url(../image/icon_25.png) no-repeat;
         }
 
             .engineer-3 .mian > a.prev {
@@ -4168,7 +4168,7 @@ body {
                         overflow: hidden;
                         padding: 5px;
                         border-radius: 50%;
-                        background: #e5e5e5 url(../images/people-bg2.jpg) no-repeat center;
+                        background: #e5e5e5 url(../image/people-bg2.jpg) no-repeat center;
                         box-sizing: border-box;
                     }
 
@@ -4198,7 +4198,7 @@ body {
                                 display: inline-block;
                                 width: 16px;
                                 height: 16px;
-                                background: url(../images/icon_19.png) no-repeat right top;
+                                background: url(../image/icon_19.png) no-repeat right top;
                                 vertical-align: middle;
                             }
 
@@ -4223,14 +4223,14 @@ body {
                     width: 18px;
                     height: 10px;
                     content: ' ';
-                    background: url(../images/icon_29.png) no-repeat center;
+                    background: url(../image/icon_29.png) no-repeat center;
                 }
 
                 .Boutique-case ul li .hide h6 span.fl {
                     width: 77px;
                     height: 77px;
                     overflow: hidden;
-                    background: #C0C0C0 url(../images/people-bg2.jpg) no-repeat center;
+                    background: #C0C0C0 url(../image/people-bg2.jpg) no-repeat center;
                 }
 
                     .Boutique-case ul li .hide h6 span.fl img {
@@ -4339,7 +4339,7 @@ body {
 
     .about-01 .tit h3 {
         padding-bottom: 13px;
-        background: url(../images/icon_4.png) no-repeat bottom center;
+        background: url(../image/icon_4.png) no-repeat bottom center;
         font-size: 28px;
         color: #000;
         line-height: 40px;
@@ -4432,7 +4432,7 @@ body {
 
     .about-02 .tit h3 {
         padding-bottom: 13px;
-        background: url(../images/icon_4.png) no-repeat bottom center;
+        background: url(../image/icon_4.png) no-repeat bottom center;
         font-size: 28px;
         color: #000;
         line-height: 40px;
@@ -4516,12 +4516,12 @@ body {
 
     .about-02 .mian .prev {
         left: 0;
-        background-image: url(../images/icon_30.png);
+        background-image: url(../image/icon_30.png);
     }
 
     .about-02 .mian .next {
         right: 0;
-        background-image: url(../images/icon_31.png);
+        background-image: url(../image/icon_31.png);
     }
 
     .about-02 .mian .change_b:hover {
@@ -4551,7 +4551,7 @@ body {
             width: 50px;
             height: 18px;
             content: ' ';
-            background: url(../images/icon_32.png) no-repeat center;
+            background: url(../image/icon_32.png) no-repeat center;
         }
 
         .about-02 .mian .hb ul li .fzlc_hide h4 {
@@ -4606,7 +4606,7 @@ body {
 
         .about-03 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -4702,7 +4702,7 @@ body {
 
     .about-04 .tit h3 {
         padding-bottom: 13px;
-        background: url(../images/icon_4.png) no-repeat bottom center;
+        background: url(../image/icon_4.png) no-repeat bottom center;
         font-size: 28px;
         color: #000;
         line-height: 40px;
@@ -4741,7 +4741,7 @@ body {
                 float: right;
                 width: 30px;
                 height: 50px;
-                background: url(../images/icon_33.png) no-repeat center;
+                background: url(../image/icon_33.png) no-repeat center;
                 line-height: 50px;
             }
 
@@ -4804,7 +4804,7 @@ body {
     height: 769px;
     overflow: hidden;
     padding: 50px 0;
-    background: url(../images/index_test_27.jpg) no-repeat center;
+    background: url(../image/index_test_27.jpg) no-repeat center;
     box-sizing: border-box;
 }
 
@@ -4816,7 +4816,7 @@ body {
 
         .about-05 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_10.png) no-repeat bottom center;
+            background: url(../image/icon_10.png) no-repeat bottom center;
             font-size: 28px;
             color: #fff;
             line-height: 40px;
@@ -4860,7 +4860,7 @@ body {
                 height: 432px;
                 padding-right: 220px;
                 padding-top: 130px;
-                background: url(../images/icon_34.png) no-repeat right center;
+                background: url(../image/icon_34.png) no-repeat right center;
                 box-sizing: border-box;
                 text-align: right;
             }
@@ -4884,7 +4884,7 @@ body {
 
     .about-06 .tit h3 {
         padding-bottom: 13px;
-        background: url(../images/icon_4.png) no-repeat bottom center;
+        background: url(../image/icon_4.png) no-repeat bottom center;
         font-size: 28px;
         color: #000;
         line-height: 40px;
@@ -4940,7 +4940,7 @@ body {
         overflow: hidden;
         text-indent: -999px;
         cursor: pointer;
-        background: url(../images/btn.png) no-repeat;
+        background: url(../image/btn.png) no-repeat;
     }
 
     .about-06 .mian .prev {
@@ -4963,7 +4963,7 @@ body {
 
         .about-07 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -5176,7 +5176,7 @@ body {
 
     .customer-01 .tit h3 {
         padding-bottom: 13px;
-        background: url(../images/icon_4.png) no-repeat bottom center;
+        background: url(../image/icon_4.png) no-repeat bottom center;
         font-size: 28px;
         color: #000;
         line-height: 40px;
@@ -5229,7 +5229,7 @@ body {
                     z-index: 9;
                     width: 41px;
                     height: 49px;
-                    background: url(../images/icon_35.png) no-repeat center;
+                    background: url(../image/icon_35.png) no-repeat center;
                     text-align: center;
                 }
 
@@ -5279,7 +5279,7 @@ body {
 .customer-02 {
     width: 100%;
     height: 797px;
-    background: url(../images/index_test_36.jpg) no-repeat center;
+    background: url(../image/index_test_36.jpg) no-repeat center;
 }
 
     .customer-02 .tit {
@@ -5290,7 +5290,7 @@ body {
 
         .customer-02 .tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_10.png) no-repeat bottom center;
+            background: url(../image/icon_10.png) no-repeat bottom center;
             font-size: 28px;
             color: #fff;
             line-height: 40px;
@@ -5314,12 +5314,12 @@ body {
             height: 205px;
             margin-left: 14px;
             margin-bottom: 15px;
-            background: url(../images/icon_40.png) repeat;
+            background: url(../image/icon_40.png) repeat;
         }
 
         .customer-02 .mian ul {
             padding: 40px 0 20px;
-            background: url(../images/icon_41.png) no-repeat bottom center;
+            background: url(../image/icon_41.png) no-repeat bottom center;
         }
 
             .customer-02 .mian ul li {
@@ -5367,7 +5367,7 @@ body {
                     }
 
                 .customer-02 .mian ul li.on, .customer-02 .mian ul li:hover {
-                    background: url(../images/icon_42.png) no-repeat top center;
+                    background: url(../image/icon_42.png) no-repeat top center;
                 }
 
                     .customer-02 .mian ul li.on span, .customer-02 .mian ul li:hover span {
@@ -5455,7 +5455,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1000;
-    background: url(../images/icon_5.png) repeat;
+    background: url(../image/icon_5.png) repeat;
 }
 
     .customer-04 form {
@@ -5523,7 +5523,7 @@ body {
                 width: 17px;
                 height: 17px;
                 margin-right: 5px;
-                background-image: url(../images/icon_43.png);
+                background-image: url(../image/icon_43.png);
                 background-position: right center;
                 vertical-align: middle;
                 cursor: pointer;
@@ -5641,7 +5641,7 @@ body {
                 display: inline-block;
                 width: 18px;
                 height: 14px;
-                background: url(../images/icon_44.png) no-repeat left top;
+                background: url(../image/icon_44.png) no-repeat left top;
                 vertical-align: middle;
             }
 
@@ -5649,7 +5649,7 @@ body {
                 display: inline-block;
                 width: 20px;
                 height: 16px;
-                background: url(../images/icon_45.png) no-repeat left top;
+                background: url(../image/icon_45.png) no-repeat left top;
                 vertical-align: middle;
             }
 
@@ -5657,7 +5657,7 @@ body {
                 display: inline-block;
                 width: 15px;
                 height: 15px;
-                background: url(../images/icon_46.png) no-repeat left top;
+                background: url(../image/icon_46.png) no-repeat left top;
                 vertical-align: middle;
             }
 
@@ -5782,7 +5782,7 @@ body {
                     display: inline-block;
                     width: 22px;
                     height: 20px;
-                    background: url(../images/icon_47.png) no-repeat left top;
+                    background: url(../image/icon_47.png) no-repeat left top;
                     vertical-align: middle;
                 }
 
@@ -5790,7 +5790,7 @@ body {
                     display: inline-block;
                     width: 22px;
                     height: 20px;
-                    background: url(../images/icon_48.png) no-repeat left top;
+                    background: url(../image/icon_48.png) no-repeat left top;
                     vertical-align: middle;
                 }
 
@@ -5798,7 +5798,7 @@ body {
                     display: inline-block;
                     width: 22px;
                     height: 20px;
-                    background: url(../images/icon_49.png) no-repeat left top;
+                    background: url(../image/icon_49.png) no-repeat left top;
                     vertical-align: middle;
                 }
 
@@ -5835,11 +5835,11 @@ body {
                 height: 23px;
                 content: ' ';
                 margin-left: -13px;
-                background: url(../images/icon_53.png) no-repeat center;
+                background: url(../image/icon_53.png) no-repeat center;
             }
 
         .Site-live-detail .live-a2 .mian_1 ul.on1 li.gb1:before, .Site-live-detail .live-a2 .mian_1 ul.on2 li.gb1:before, .Site-live-detail .live-a2 .mian_1 ul.on2 li.gb2:before, .Site-live-detail .live-a2 .mian_1 ul.on3 li.gb1:before, .Site-live-detail .live-a2 .mian_1 ul.on3 li.gb2:before, .Site-live-detail .live-a2 .mian_1 ul.on3 li.gb3:before, .Site-live-detail .live-a2 .mian_1 ul.on4 li.gb1:before, .Site-live-detail .live-a2 .mian_1 ul.on4 li.gb2:before, .Site-live-detail .live-a2 .mian_1 ul.on4 li.gb3:before, .Site-live-detail .live-a2 .mian_1 ul.on4 li.gb4:before, .Site-live-detail .live-a2 .mian_1 ul.on5 li:before {
-            background-image: url(../images/icon_52.png);
+            background-image: url(../image/icon_52.png);
             color: #e60021;
         }
 
@@ -5868,7 +5868,7 @@ body {
                 width: 28px;
                 height: 28px;
                 content: ' ';
-                background: url(../images/icon_50.png) no-repeat center;
+                background: url(../image/icon_50.png) no-repeat center;
             }
 
             .Site-live-detail .live-a2 .mian_2 .k1 span {
@@ -5876,7 +5876,7 @@ body {
                 width: 122px;
                 height: 36px;
                 padding-right: 8px;
-                background: url(../images/icon_51.png) no-repeat center;
+                background: url(../image/icon_51.png) no-repeat center;
                 box-sizing: border-box;
                 font-size: 18px;
                 color: #fff;
@@ -5928,7 +5928,7 @@ body {
                 width: 17px;
                 height: 17px;
                 content: ' ';
-                background: url(../images/icon_24.png) no-repeat center;
+                background: url(../image/icon_24.png) no-repeat center;
             }
 
 .pohot {
@@ -5951,7 +5951,7 @@ body {
         z-index: 1;
         width: 100%;
         height: 100%;
-        background: url(../images/icon_68.png) repeat;
+        background: url(../image/icon_68.png) repeat;
     }
 
     .pohot i {
@@ -5961,7 +5961,7 @@ body {
         z-index: 3;
         width: 50px;
         height: 50px;
-        background: #000 url(../images/icon_26.png) no-repeat center;
+        background: #000 url(../image/icon_26.png) no-repeat center;
     }
 
     .pohot .mian {
@@ -6096,7 +6096,7 @@ body {
 
         .engineer-details .mian-tit h3 {
             padding-bottom: 13px;
-            background: url(../images/icon_4.png) no-repeat bottom center;
+            background: url(../image/icon_4.png) no-repeat bottom center;
             font-size: 28px;
             color: #000;
             line-height: 40px;
@@ -6227,7 +6227,7 @@ body {
                     width: 42px;
                     height: 17px;
                     padding: 10px 0;
-                    background: url(../images/icon_54.png) no-repeat center;
+                    background: url(../image/icon_54.png) no-repeat center;
                 }
 
                 .Boutique_01 > div.fr .a1 div.fr p {
@@ -6274,7 +6274,7 @@ body {
                 display: inline-block;
                 width: 24px;
                 height: 22px;
-                background: url(../images/icon_57.png) no-repeat left top;
+                background: url(../image/icon_57.png) no-repeat left top;
                 vertical-align: middle;
             }
 
@@ -6282,7 +6282,7 @@ body {
                 display: inline-block;
                 width: 24px;
                 height: 20px;
-                background: url(../images/icon_58.png) no-repeat left top;
+                background: url(../image/icon_58.png) no-repeat left top;
                 vertical-align: middle;
             }
 
@@ -6361,7 +6361,7 @@ body {
                     display: inline-block;
                     width: 11px;
                     height: 6px;
-                    background: url(../images/icon_59.png) no-repeat;
+                    background: url(../image/icon_59.png) no-repeat;
                 }
 
                 .Boutique_02 .B_zb .bd .box.hh1 div.fl > a.hh_up {
@@ -6463,7 +6463,7 @@ body {
     z-index: 999;
     width: 46px;
     height: 36px;
-    background: url(../images/icon_60.png) no-repeat center;
+    background: url(../image/icon_60.png) no-repeat center;
 }
 
 .shead-left .nav {
@@ -6474,7 +6474,7 @@ body {
     width: 240px;
     padding: 20px 20px 70px 20px;
     margin-left: -240px;
-    background: url(../images/icon_62.png) repeat;
+    background: url(../image/icon_62.png) repeat;
     box-sizing: border-box;
     -webkit-transition: margin-left .5s;
     transition: margin-left .5s;
@@ -6514,7 +6514,7 @@ body {
     .shead-left .nav > ul {
         padding-bottom: 5px;
         padding-left: 21px;
-        background: url(../images/icon_63.png) no-repeat left top;
+        background: url(../image/icon_63.png) no-repeat left top;
     }
 
         .shead-left .nav > ul > li {
@@ -6546,40 +6546,40 @@ body {
                 }
 
             .shead-left .nav > ul > li.nav_a2 a i {
-                background-image: url(../images/sub-nav_02.png);
+                background-image: url(../image/sub-nav_02.png);
             }
 
             .shead-left .nav > ul > li.nav_a3 a i {
-                background-image: url(../images/sub-nav_03.png);
+                background-image: url(../image/sub-nav_03.png);
             }
 
             .shead-left .nav > ul > li.nav_a4 a i {
-                background-image: url(../images/sub-nav_04.png);
+                background-image: url(../image/sub-nav_04.png);
             }
 
             .shead-left .nav > ul > li.nav_a5 a i {
-                background-image: url(../images/sub-nav_05.png);
+                background-image: url(../image/sub-nav_05.png);
             }
 
             .shead-left .nav > ul > li.nav_a6 a i {
-                background-image: url(../images/sub-nav_06.png);
+                background-image: url(../image/sub-nav_06.png);
             }
 
             .shead-left .nav > ul > li.nav_a7 a i {
-                background-image: url(../images/sub-nav_07.png);
+                background-image: url(../image/sub-nav_07.png);
             }
 
             .shead-left .nav > ul > li.nav_a8 a i {
-                background-image: url(../images/sub-nav_08.png);
+                background-image: url(../image/sub-nav_08.png);
             }
 
             .shead-left .nav > ul > li.nav_a9 a i {
-                background-image: url(../images/sub-nav_09.png);
+                background-image: url(../image/sub-nav_09.png);
             }
 
             .shead-left .nav > ul > li:hover, .shead-left .nav > ul > li.on {
                 padding-left: 0;
-                background: url(../images/icon_64.png) no-repeat left top;
+                background: url(../image/icon_64.png) no-repeat left top;
             }
 
                 .shead-left .nav > ul > li:hover a, .shead-left .nav > ul > li.on a {
@@ -6613,7 +6613,7 @@ body {
                 display: inline-block;
                 width: 32px;
                 height: 27px;
-                background: url(../images/icon_65.png) no-repeat left top;
+                background: url(../image/icon_65.png) no-repeat left top;
                 vertical-align: middle;
             }
 
@@ -6630,7 +6630,7 @@ body {
                 display: inline-block;
                 width: 34px;
                 height: 34px;
-                background: url(../images/icon_26.png) no-repeat center;
+                background: url(../image/icon_26.png) no-repeat center;
                 cursor: pointer;
                 vertical-align: middle;
             }
@@ -6643,7 +6643,7 @@ body {
     z-index: 999;
     width: 45px;
     height: 45px;
-    background: url(../images/icon_61.png) no-repeat center;
+    background: url(../image/icon_61.png) no-repeat center;
 }
 
 .shead-right form {
@@ -6657,7 +6657,7 @@ body {
     padding: 15px 30px;
     margin-right: -360px;
     box-sizing: border-box;
-    background: #E1112A url(../images/index_test_49.jpg) no-repeat center top;
+    background: #E1112A url(../image/index_test_49.jpg) no-repeat center top;
     -webkit-transition: all .5s;
     transition: all .5s;
 }
@@ -6672,7 +6672,7 @@ body {
     right: 20px;
     width: 34px;
     height: 34px;
-    background: url(../images/icon_26.png) no-repeat center;
+    background: url(../image/icon_26.png) no-repeat center;
 }
 
 .shead-right form > h4 {
@@ -6857,7 +6857,7 @@ body {
                 right: 10px;
                 width: 34px;
                 height: 34px;
-                background: url(../images/icon_26.png) no-repeat center;
+                background: url(../image/icon_26.png) no-repeat center;
                 cursor: pointer;
             }
 
@@ -6904,27 +6904,27 @@ body {
             }
 
             .sub-index1 ul li.a1 img {
-                background-image: url(../images/index_1_01.jpg);
+                background-image: url(../image/index_1_01.jpg);
             }
 
             .sub-index1 ul li.a2 img {
-                background-image: url(../images/index_1_02.jpg);
+                background-image: url(../image/index_1_02.jpg);
             }
 
             .sub-index1 ul li.a3 img {
-                background-image: url(../images/index_1_03.jpg);
+                background-image: url(../image/index_1_03.jpg);
             }
 
             .sub-index1 ul li.a4 img {
-                background-image: url(../images/index_1_04.jpg);
+                background-image: url(../image/index_1_04.jpg);
             }
 
             .sub-index1 ul li.a5 img {
-                background-image: url(../images/index_1_05.jpg);
+                background-image: url(../image/index_1_05.jpg);
             }
 
             .sub-index1 ul li.a6 img {
-                background-image: url(../images/index_1_06.jpg);
+                background-image: url(../image/index_1_06.jpg);
             }
 
         .sub-index1 ul:hover li.a1 img {
@@ -6960,7 +6960,7 @@ body {
     height: 966px;
     padding: 60px 0;
     overflow: hidden;
-    background: #fff url(../images/index_c_bg1.jpg) no-repeat top center;
+    background: #fff url(../image/index_c_bg1.jpg) no-repeat top center;
     box-sizing: border-box;
 }
 
@@ -7029,7 +7029,7 @@ body {
                     display: block;
                     width: 100%;
                     height: 32px;
-                    background: url(../images/sub-index2-01.png) no-repeat center;
+                    background: url(../image/sub-index2-01.png) no-repeat center;
                 }
 
                 .sub-index2 .sub-case .case1 .a1 div.fl span {
@@ -7044,7 +7044,7 @@ body {
             .sub-index2 .sub-case .case1 .a1 div.fr {
                 width: 192px;
                 padding-left: 10px;
-                background: url(../images/icon_66.png) no-repeat left center;
+                background: url(../image/icon_66.png) no-repeat left center;
                 box-sizing: border-box;
             }
 
@@ -7062,7 +7062,7 @@ body {
                     }
 
             .sub-index2 .sub-case .case1 .a1:hover div.fl i {
-                background-image: url(../images/sub-index2-05.png);
+                background-image: url(../image/sub-index2-05.png);
             }
 
             .sub-index2 .sub-case .case1 .a1:hover div.fl span {
@@ -7084,7 +7084,7 @@ body {
                     display: block;
                     width: 100%;
                     height: 32px;
-                    background: url(../images/sub-index2-02.png) no-repeat center;
+                    background: url(../image/sub-index2-02.png) no-repeat center;
                 }
 
                 .sub-index2 .sub-case .case1 .a2 div.fl span {
@@ -7099,7 +7099,7 @@ body {
             .sub-index2 .sub-case .case1 .a2 div.fr {
                 width: 192px;
                 padding-left: 10px;
-                background: url(../images/icon_66.png) no-repeat left center;
+                background: url(../image/icon_66.png) no-repeat left center;
                 box-sizing: border-box;
             }
 
@@ -7117,7 +7117,7 @@ body {
                     }
 
             .sub-index2 .sub-case .case1 .a2:hover div.fl i {
-                background-image: url(../images/sub-index2-06.png);
+                background-image: url(../image/sub-index2-06.png);
             }
 
             .sub-index2 .sub-case .case1 .a2:hover div.fl span {
@@ -7139,7 +7139,7 @@ body {
                     display: block;
                     width: 100%;
                     height: 32px;
-                    background: url(../images/sub-index2-02.png) no-repeat center;
+                    background: url(../image/sub-index2-02.png) no-repeat center;
                 }
 
                 .sub-index2 .sub-case .case1 .a3 div.fl span {
@@ -7154,7 +7154,7 @@ body {
             .sub-index2 .sub-case .case1 .a3 div.fr {
                 width: 192px;
                 padding-left: 10px;
-                background: url(../images/icon_66.png) no-repeat left center;
+                background: url(../image/icon_66.png) no-repeat left center;
                 box-sizing: border-box;
             }
 
@@ -7172,7 +7172,7 @@ body {
                     }
 
             .sub-index2 .sub-case .case1 .a3:hover div.fl i {
-                background-image: url(../images/sub-index2-06.png);
+                background-image: url(../image/sub-index2-06.png);
             }
 
             .sub-index2 .sub-case .case1 .a3:hover div.fl span {
@@ -7194,7 +7194,7 @@ body {
                     display: block;
                     width: 100%;
                     height: 32px;
-                    background: url(../images/sub-index2-02.png) no-repeat center;
+                    background: url(../image/sub-index2-02.png) no-repeat center;
                 }
 
                 .sub-index2 .sub-case .case1 .a4 div.fl span {
@@ -7209,7 +7209,7 @@ body {
             .sub-index2 .sub-case .case1 .a4 div.fr {
                 width: 192px;
                 padding-left: 10px;
-                background: url(../images/icon_66.png) no-repeat left center;
+                background: url(../image/icon_66.png) no-repeat left center;
                 box-sizing: border-box;
             }
 
@@ -7227,7 +7227,7 @@ body {
                     }
 
             .sub-index2 .sub-case .case1 .a4:hover div.fl i {
-                background-image: url(../images/sub-index2-06.png);
+                background-image: url(../image/sub-index2-06.png);
             }
 
             .sub-index2 .sub-case .case1 .a4:hover div.fl span {
@@ -7304,7 +7304,7 @@ body {
                 width: 100%;
                 height: 56px;
                 padding: 0 20px;
-                background: url(../images/icon_20.png) repeat;
+                background: url(../image/icon_20.png) repeat;
                 box-sizing: border-box;
                 -webkit-transition: all .5s;
                 transition: all .5s;
@@ -7320,7 +7320,7 @@ body {
                         display: inline-block;
                         width: 32px;
                         height: 21px;
-                        background: url(../images/icon_67.png) no-repeat center;
+                        background: url(../image/icon_67.png) no-repeat center;
                         vertical-align: middle;
                     }
 
@@ -7356,7 +7356,7 @@ body {
     height: 900px;
     padding: 60px 0;
     overflow: hidden;
-    background: #fff url(../images/index_c_bg3.jpg) no-repeat top center;
+    background: #fff url(../image/index_c_bg3.jpg) no-repeat top center;
     box-sizing: border-box;
 }
 
@@ -7409,7 +7409,7 @@ body {
             width: 212px;
             height: 208px;
             overflow: hidden;
-            background: url(../images/people-bg1.jpg) no-repeat top center;
+            background: url(../image/people-bg1.jpg) no-repeat top center;
         }
 
             .sub-Design1 ul li .Des-a1 h4 img {
@@ -7437,7 +7437,7 @@ body {
                 display: inline-block;
                 width: 14px;
                 height: 20px;
-                background: url(../images/icon_19.png) no-repeat right top;
+                background: url(../image/icon_19.png) no-repeat right top;
                 vertical-align: middle;
             }
 
@@ -7449,7 +7449,7 @@ body {
             width: 100%;
             height: 100%;
             padding: 18px 16px;
-            background: url(../images/data_02.png) no-repeat center;
+            background: url(../image/data_02.png) no-repeat center;
             box-sizing: border-box;
             -webkit-transition: all .5s;
             transition: all .5s;
@@ -7460,7 +7460,7 @@ body {
                 width: 96px;
                 height: 96px;
                 overflow: hidden;
-                background: url(../images/people-bg1.jpg) no-repeat top center;
+                background: url(../image/people-bg1.jpg) no-repeat top center;
             }
 
                 .sub-Design1 ul li .Des-a2 p span.fl img {
@@ -7484,7 +7484,7 @@ body {
                     display: block;
                     width: 14px;
                     height: 13px;
-                    background: url(../images/icon_19.png) no-repeat right top;
+                    background: url(../image/icon_19.png) no-repeat right top;
                 }
 
             .sub-Design1 ul li .Des-a2 h5 {
@@ -7492,7 +7492,7 @@ body {
                 height: 74px;
                 margin: 8px 0;
                 padding: 10px;
-                background: url(../images/icon_68.png) repeat;
+                background: url(../image/icon_68.png) repeat;
                 box-sizing: border-box;
                 font-size: 12px;
                 color: #f5f5f5;
@@ -7560,7 +7560,7 @@ body {
                 width: 102px;
                 height: 102px;
                 overflow: hidden;
-                background: url(../images/people-bg1.jpg) no-repeat top center;
+                background: url(../image/people-bg1.jpg) no-repeat top center;
             }
 
                 .sub-Design2 .s_box ul li div.fl img {
@@ -7585,7 +7585,7 @@ body {
                     display: inline-block;
                     width: 14px;
                     height: 20px;
-                    background: url(../images/icon_19.png) no-repeat right top;
+                    background: url(../image/icon_19.png) no-repeat right top;
                     vertical-align: middle;
                 }
 
@@ -7643,7 +7643,7 @@ body {
     height: 750px;
     padding: 60px 0;
     overflow: hidden;
-    background: #fff url(../images/index_c_bg1.jpg) no-repeat top center;
+    background: #fff url(../image/index_c_bg1.jpg) no-repeat top center;
     box-sizing: border-box;
 }
 
@@ -7744,7 +7744,7 @@ body {
                 display: inline-block;
                 width: 14px;
                 height: 18px;
-                background: url(../images/icon_69.png) no-repeat left top;
+                background: url(../image/icon_69.png) no-repeat left top;
                 vertical-align: middle;
             }
 
@@ -7752,7 +7752,7 @@ body {
                 display: inline-block;
                 width: 17px;
                 height: 17px;
-                background: url(../images/icon_70.png) no-repeat left top;
+                background: url(../image/icon_70.png) no-repeat left top;
                 vertical-align: middle;
             }
 
@@ -7763,7 +7763,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 18px;
-    background: #333 url(../images/data_02.png) no-repeat top center;
+    background: #333 url(../image/data_02.png) no-repeat top center;
     box-sizing: border-box;
     visibility: hidden;
     opacity: 0;
@@ -7803,7 +7803,7 @@ body {
             display: inline-block;
             width: 14px;
             height: 18px;
-            background: url(../images/icon_69.png) no-repeat left top;
+            background: url(../image/icon_69.png) no-repeat left top;
             vertical-align: middle;
         }
 
@@ -7811,7 +7811,7 @@ body {
             display: inline-block;
             width: 17px;
             height: 17px;
-            background: url(../images/icon_70.png) no-repeat left top;
+            background: url(../image/icon_70.png) no-repeat left top;
             vertical-align: middle;
         }
 
@@ -7961,7 +7961,7 @@ body {
     height: 736px;
     overflow: hidden;
     padding: 40px 0;
-    background: url(../images/index_test_36.jpg) no-repeat center;
+    background: url(../image/index_test_36.jpg) no-repeat center;
     box-sizing: border-box;
 }
 
@@ -8007,12 +8007,12 @@ body {
             height: 205px;
             margin-left: 14px;
             margin-bottom: 15px;
-            background: url(../images/icon_40.png) repeat;
+            background: url(../image/icon_40.png) repeat;
         }
 
         .sub-index5 .mian ul {
             padding: 40px 0 20px;
-            background: url(../images/icon_41.png) no-repeat bottom center;
+            background: url(../image/icon_41.png) no-repeat bottom center;
         }
 
             .sub-index5 .mian ul li {
@@ -8062,7 +8062,7 @@ body {
                     }
 
                 .sub-index5 .mian ul li.on, .sub-index5 .mian ul li:hover {
-                    background: url(../images/icon_42.png) no-repeat top center;
+                    background: url(../image/icon_42.png) no-repeat top center;
                 }
 
                     .sub-index5 .mian ul li.on span, .sub-index5 .mian ul li:hover span {
@@ -8080,7 +8080,7 @@ body {
     height: 790px;
     padding: 60px 0;
     overflow: hidden;
-    background: #fff url(../images/index_c_bg1.jpg) no-repeat top center;
+    background: #fff url(../image/index_c_bg1.jpg) no-repeat top center;
     box-sizing: border-box;
 }
 
@@ -8351,7 +8351,7 @@ body {
 .search-country .search-banner {
     width: 100%;
     height: 550px;
-    background: url(../images/sub-banner5.jpg) no-repeat top center;
+    background: url(../image/sub-banner5.jpg) no-repeat top center;
 }
 
     .search-country .search-banner form {
@@ -8368,7 +8368,7 @@ body {
             margin-left: -395px;
             margin-top: -132px;
             padding: 0 70px;
-            background: url(../images/icon_72.png) repeat;
+            background: url(../image/icon_72.png) repeat;
             box-sizing: border-box;
         }
 
@@ -8413,7 +8413,7 @@ body {
                     margin-left: 2px;
                     padding-left: 30px;
                     border: none;
-                    background: #E11129 url(../images/icon_18.png) no-repeat 20px center;
+                    background: #E11129 url(../image/icon_18.png) no-repeat 20px center;
                     font-size: 14px;
                     color: #fff;
                 }
@@ -8455,7 +8455,7 @@ body {
             margin-left: 2px;
             padding-left: 30px;
             border: none;
-            background: #E11129 url(../images/icon_18.png) no-repeat 20px center;
+            background: #E11129 url(../image/icon_18.png) no-repeat 20px center;
             font-size: 14px;
             color: #fff;
         }
@@ -8573,7 +8573,7 @@ body {
         bottom: 0;
         right: 0;
         left: 0;
-        background: url(../images/icon_68.png) repeat;
+        background: url(../image/icon_68.png) repeat;
     }
 
     .Region .R-box {
@@ -8583,7 +8583,7 @@ body {
         width: 560px;
         height: 350px;
         margin: -250px 0 0 -230px;
-        background: #fff url(../images/index_c_bg1.jpg) repeat;
+        background: #fff url(../image/index_c_bg1.jpg) repeat;
         overflow: auto;
     }
 
@@ -8611,7 +8611,7 @@ body {
                 right: 20px;
                 width: 34px;
                 height: 74px;
-                background: url(../images/icon_75.png) no-repeat center;
+                background: url(../image/icon_75.png) no-repeat center;
                 cursor: default;
             }
 
