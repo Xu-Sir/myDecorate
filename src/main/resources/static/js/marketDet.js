@@ -6,19 +6,17 @@ $(function () {
     var marketMain = document.getElementById("main");
     var guideOther = document.getElementById("guideOther");
     var detailId = getQueryVariable("id");
-    var ids = detailId.split(",");
     $.ajax({
         type:'post',
         url:'/marketDetail',
-        data:{ids:detailId},
+        data:{id:detailId},
         success: function(data) {
             var ass = JSON.stringify(data.data);
             var arr = JSON.parse(ass);
             var htmlTit = '';
             var htmlMain = '';
             var htmlGuideOther = '';
-            var idLast = arr.idLast==null?"无":arr.idLast
-            var idNext = arr.idNext==null?"无":arr.idNext
+
             htmlTit+='<h3>'+arr.title+'</h3>' +
                 '<h4><font>发布时间：'+arr.createTimeS+'</h4>'
 
@@ -35,16 +33,21 @@ $(function () {
                 '\t<img src="'+arr.url+'" alt="公司" width="579" height="800" title="公司" align="" />\n' +
                 '</p>'
 
-            htmlGuideOther+='<span>上一篇：' +
-                '<a href="/MarketingDetail.html?id='+idLast+'">' +
-                arr.titleLast+'</a></span>' +
-                '<span>下一篇：' +
-                ' <a href="/MarketingDetail.html?id='+idNext+'">' +
-                arr.titleNext+'</a></span>'
+            arr.titleLast==null?htmlGuideOther+='<span>上一篇：' +"无"+'</a></span>'
+                :htmlGuideOther+='<span>上一篇：' +
+                '<a href="/MarketingDetail.html?id='+arr.idLast+'">' +
+                arr.titleLast+'</a></span>';
+
+            arr.titleNext==null? htmlGuideOther+='<span>下一篇：' +"无"+'</a></span>'
+                :htmlGuideOther+='<span>下一篇：' +
+                ' <a href="/MarketingDetail.html?id='+arr.idNext+'">' +
+                arr.titleNext+'</a></span>';
+
 
             marketTit.innerHTML = htmlTit;
             marketMain.innerHTML = htmlMain;
             guideOther.innerHTML = htmlGuideOther;
+            $("#sub-title").html(arr.title);
         }
     })
 

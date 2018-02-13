@@ -50,7 +50,12 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.4</version>
         </dependency>
-
+        <!--jsonObject-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.31</version>
+        </dependency>
 
     </dependencies>
 
