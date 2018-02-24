@@ -25,4 +25,7 @@ public interface CustomStoryMapper {
 
     @SelectProvider(type = CustomStoryProvider.class, method = "countCustomStory")
     Integer countCustomStory(RequestArgs args);
+
+    @SelectProvider(type = CustomStoryProvider.class, method = "customStoryDetail")
+    CustomStory customStoryDetail(RequestArgs args);
 }

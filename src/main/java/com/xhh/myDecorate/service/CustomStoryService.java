@@ -17,4 +17,6 @@ public interface CustomStoryService {
     List<CustomStory> findCustomStory(RequestArgs args);
 
     Integer countCustomStory(RequestArgs args);
+
+    CustomStory customStoryDetail(RequestArgs args);
 }

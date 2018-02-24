@@ -1,7 +1,6 @@
 package com.xhh.myDecorate.controller;
 
 import com.xhh.myDecorate.common.CodeEnum;
-import com.xhh.myDecorate.common.Constant;
 import com.xhh.myDecorate.common.RequestArgs;
 import com.xhh.myDecorate.common.ResultR;
 import com.xhh.myDecorate.dao.Campaign;

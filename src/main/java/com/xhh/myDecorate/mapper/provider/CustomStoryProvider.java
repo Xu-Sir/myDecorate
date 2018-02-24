@@ -94,4 +94,38 @@ public class CustomStoryProvider {
         String pageSql = sql.toString();
         return pageSql;
     }
+
+    public String customStoryDetail(RequestArgs args){
+        Long id = args.getId();
+        String title = args.getTitle();
+        String content = args.getContent();
+        Long startTime = args.getStartTime();
+        Long endTime = args.getEndTime();
+        Long userId = args.getUserId();
+
+        SQL sql = new SQL().SELECT("*")
+                .FROM("custom_story");
+
+        if (id != null){
+            sql.AND().WHERE("id = "+id);
+        }
+        if (StringUtil.isNotBlank(title)){
+            sql.AND().WHERE("title like '%"+title+"%'");
+        }
+        if (StringUtil.isNotBlank(content)){
+            sql.AND().WHERE("content like '%"+content+"%'");
+        }
+        if (startTime != null){
+            sql.AND().WHERE("create_time >= "+startTime);
+        }
+        if (endTime != null){
+            sql.AND().WHERE("create_time <= "+endTime);
+        }
+        if (userId != null){
+            sql.AND().WHERE("user_id = "+userId);
+        }
+        String pageSql = sql.toString();
+        System.out.println(pageSql);
+        return pageSql;
+    }
 }
