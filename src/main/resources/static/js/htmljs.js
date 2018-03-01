@@ -6,6 +6,7 @@ $(function () {
     $.ajax({
         type:'post',
         url:'/marketList',
+        data:{page:1,size:1},
         success: function(data) {
             var ass = JSON.stringify(data.data.list);
             total = JSON.stringify(data.data.total);
@@ -26,7 +27,7 @@ $(function () {
                 }
                 html+='<ul> <li class="clearfix">' +
                     '<div class="fl">' +
-                    ' <a target="_blank" href= "/MarketingDetail.html?id=${arr[i].id}">'
+                    ' <a target="_blank" href= "/MarketingDetail.html?id='+arr[i].id+'">'
                     +' <img alt="" src=" '+arr[i].url+'" />'+arr[i].content+'</a></div>'+
                     '<div class="fr"><h4><a target="_blank" href="/MarketingDetail.html?id='+arr[i].id+'">'+arr[i].title+
                      '</a></h4><h5><a target="_blank" href="/MarketingDetail.html?id='+arr[i].id+'">'+arr[i].content+
@@ -50,16 +51,17 @@ $(function () {
 
 
 });
-function pageOnclick(obj) {
-
+function pageOnclick(objs) {
     var obj = document.getElementById("xmnvls");
     var aspNetPager1 = document.getElementById("AspNetPager1")
+    // console.log(objs)
     $.ajax({
         type:'post',
         url:'/marketList',
+        data:{page:objs.curr},
         success: function(data) {
             var ass = JSON.stringify(data.data.list);
-            total = JSON.stringify(data.data.total);
+            //total = JSON.stringify(data.data.total);
             var arr = JSON.parse(ass);
             var html = '';
             for (var i = 0; i < arr.length; i++) {
@@ -77,7 +79,7 @@ function pageOnclick(obj) {
                 }
                 html+='<ul> <li class="clearfix">' +
                     '<div class="fl">' +
-                    ' <a target="_blank" href= "/MarketingDetail.html?id=${arr[i].id}">'
+                    ' <a target="_blank" href= "/MarketingDetail.html?id='+arr[i].id+'">'
                     +' <img alt="" src=" '+arr[i].url+'" />'+arr[i].content+'</a></div>'+
                     '<div class="fr"><h4><a target="_blank" href="/MarketingDetail.html?id='+arr[i].id+'">'+arr[i].title+
                     '</a></h4><h5><a target="_blank" href="/MarketingDetail.html?id='+arr[i].id+'">'+arr[i].content+
@@ -91,9 +93,9 @@ function pageOnclick(obj) {
                     ' </li> </ul>'
 
             }
-            var htmlPage = '';
-            htmlPage+='<div id="demo1"></div>'
-            aspNetPager1.innerHTML=htmlPage;
+            // var htmlPage = '';
+            // htmlPage+='<div id="demo1"></div>'
+            // aspNetPager1.innerHTML=htmlPage;
             obj.innerHTML = html;
         }
     })
