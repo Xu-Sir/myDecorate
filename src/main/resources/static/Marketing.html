@@ -32,7 +32,7 @@
 <script type="text/javascript" src="js/htmljs.js"></script>
     <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
     <script src="./layui/layui.js" charset="utf-8"></script>
-<script type="text/javascript" charset="utf-8" src="../lead.soperson.com/20002178/10068539.html"></script>
+<!--<script type="text/javascript" charset="utf-8" src="../lead.soperson.com/20002178/10068539.html"></script>-->
 <script>
 var _hmt = _hmt || [];
 (function() {
@@ -523,13 +523,14 @@ if(e.preventDefault) e.preventDefault();else{event.returnValue=false};
 </div>
                 
 <!-- AspNetPager V7.0.2 for VS2005 & VS2008  Copyright:2003-2007 Webdiyer (www.webdiyer.com) -->
-<div id="AspNetPager1" id="aspNetPager1" class="paginator" style="width:100%;text-align:right;">
-<div align="right" style="width:75%;float:left;">
-	<a disabled="disabled" style="margin-right:5px;">上一页</a><span class="cpb" style="margin-right:5px;">1</span><a href="Marketing4658.html?page=2" style="margin-right:5px;">2</a><a href="Marketing9ba9.html?page=3" style="margin-right:5px;">3</a><span style="margin-right:5px;"><a href="Marketingfdb0.html?page=4">...</a></span><a href="Marketing4658.html?page=2" style="margin-right:5px;">下一页</a>&nbsp;&nbsp;到   <input type="text" value="1" class="text" name="AspNetPager1_input" id="AspNetPager1_input" onkeydown="ANP_keydown(event,&#39;AspNetPager1_btn&#39;);" style="width:30px;width:40px" /> 页 <input type="Button" name="AspNetPager1" id="AspNetPager1_btn" value="确定" class="submit" onclick="if(ANP_checkInput(&#39;AspNetPager1_input&#39;,28)){ANP_goToPage(document.getElementById(&#39;AspNetPager1_input&#39;));}" />
-</div><div class="pagecount" style="float:left;width:25%;">
-	共 28 页
+<div id="AspNetPager1"  class="paginator" style="width:100%;text-align:right;">
+<!--<div align="right" style="width:75%;float:left;">-->
+	<!--<a disabled="disabled" style="margin-right:5px;">上一页</a><span class="cpb" style="margin-right:5px;">1</span><a href="Marketing4658.html?page=2" style="margin-right:5px;">2</a><a href="Marketing9ba9.html?page=3" style="margin-right:5px;">3</a><span style="margin-right:5px;"><a href="Marketingfdb0.html?page=4">...</a></span><a href="Marketing4658.html?page=2" style="margin-right:5px;">下一页</a>&nbsp;&nbsp;到   <input type="text" value="1" class="text" name="AspNetPager1_input" id="AspNetPager1_input" onkeydown="ANP_keydown(event,&#39;AspNetPager1_btn&#39;);" style="width:30px;width:40px" /> 页 <input type="Button" name="AspNetPager1" id="AspNetPager1_btn" value="确定" class="submit" onclick="if(ANP_checkInput(&#39;AspNetPager1_input&#39;,28)){ANP_goToPage(document.getElementById(&#39;AspNetPager1_input&#39;));}" />-->
+<!--</div><div class="pagecount" style="float:left;width:25%;">-->
+	<!--共 28 页-->
+<!--</div>-->
 </div>
-</div>
+                <div id="demo1"></div>
 <!-- AspNetPager V7.0.2 for VS2005 & VS2008 End -->
 
 
@@ -763,6 +764,7 @@ if(e.preventDefault) e.preventDefault();else{event.returnValue=false};
                 elem: 'demo1'
                 ,count: total //数据总数
                 ,jump: function(obj){
+//                    console.log(obj)
                     pageOnclick(obj)
                 }
             });
