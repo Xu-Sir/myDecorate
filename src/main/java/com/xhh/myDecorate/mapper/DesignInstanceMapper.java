@@ -25,4 +25,7 @@ public interface DesignInstanceMapper {
 
     @SelectProvider(type = DesignInstanceProveder.class, method = "countDesignInstance")
     Integer countDesignInstance(RequestArgs args);
+
+    @SelectProvider(type = DesignInstanceProveder.class, method = "searchDesignInstance")
+    DesignInstance searchDesignInstance(DesignInstance designInstance);
 }
