@@ -10,13 +10,19 @@ import lombok.Data;
 @Data
 public class DesignInstance {
 
-    public Long id;
-    public Long userId;
-    public String title;
-    public String content;
-    public String url;
-    public Long createTime;
-    public Long updateTime;
-    public String status;
-
+    private Long id;
+    /**
+     * 设计师id
+     */
+    private Long userId;
+    private String title;
+    private String content;
+    private String url;
+    private Long createTime;
+    private Long updateTime;
+    private String status;
+    /**
+     * 作为主要作品 团队页面显示
+     */
+    private Integer mainCase;
 }

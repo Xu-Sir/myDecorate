@@ -29,6 +29,7 @@ public class CampaignController {
         Integer size = args.getSize();
         if (size==null){
             size = 10;
+            args.setSize(size);
         }
         campaignService.checkOverdue(timeNow);
         SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
