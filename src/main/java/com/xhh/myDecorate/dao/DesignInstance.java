@@ -4,6 +4,7 @@ import lombok.Data;
 
 /**
  * 设计案例
+ * 设计的例子、样例
  * @author xuhaihong
  * @create 2018-01-31 18:06
  **/
@@ -25,4 +26,8 @@ public class DesignInstance {
      * 作为主要作品 团队页面显示
      */
     private Integer mainCase;
+    /**
+     * 案例图片路径  以“，”隔开
+     */
+    private String imagesUrl;
 }

@@ -27,6 +27,9 @@ public class DesignInstanceProveder {
         if (instance.getMainCase() != null){
             sql.VALUES("main_case", "#{mainCase}");
         }
+        if (StringUtil.isNotBlank(instance.getImagesUrl())){
+            sql.VALUES("images_url", "#{imagesUrl}");
+        }
         String sqlS = sql.toString();
         System.out.println(sqlS);
         return sqlS;
