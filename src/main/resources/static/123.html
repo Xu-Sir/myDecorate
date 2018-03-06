@@ -15,6 +15,7 @@
 
 
 <script src="./layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
 <script>
     layui.use(['laypage', 'layer'], function(){
@@ -23,9 +24,17 @@
         //总页数大于页码总数
         laypage.render({
             elem: 'demo1'
-            ,count: 70 //数据总数
+            ,count: 50 //数据总数
             ,jump: function(obj){
-                console.log(obj)
+                console.log(obj);
+                $.ajax({
+                    url:'http://www.baidu.com',
+                        type:'post',
+                    success:function (obj) {
+                        alert(obj);
+                    }
+                    }
+                )
             }
         });
     });
