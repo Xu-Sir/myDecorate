@@ -219,8 +219,8 @@ $(document).ready(function () {
         skip_invisible: false,
     });
 
-    $('#openChant').click(function () {
-        doyoo.util.openChat(' g=10067026');
+    $('#online').click(function () {
+        document.getElementsByClassName('nb-icon-bridge-base')[0].click();
         return false;
-    });    
+    });
 });
