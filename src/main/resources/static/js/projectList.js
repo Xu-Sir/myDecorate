@@ -7,9 +7,7 @@ $(function () {
         url:'/projectInsList',
         data:{page:1},
         success: function(data) {
-            var ass = JSON.stringify(data.data.list);
             total = JSON.stringify(data.data.total);
-            var arr = JSON.parse(ass);
             var htmlPage = '';
             htmlPage+='<div id="demo1"></div>'
             aspNetPager1.innerHTML=htmlPage;
@@ -27,7 +25,7 @@ function pageOnclick(objs) {
         success: function(data) {
             var ass = JSON.stringify(data.data.list);
             //total = JSON.stringify(data.data.total);
-            console.log(ass)
+            // console.log(ass)
             var arr = JSON.parse(ass);
             var html = '';
             for (var i = 0; i < arr.length; i++) {
