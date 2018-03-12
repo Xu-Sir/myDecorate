@@ -7,9 +7,7 @@ $(function () {
         url:'/projectInsList',
         data:{page:1},
         success: function(data) {
-            var ass = JSON.stringify(data.data.list);
             total = JSON.stringify(data.data.total);
-            var arr = JSON.parse(ass);
             var htmlPage = '';
             htmlPage+='<div id="demo1"></div>'
             aspNetPager1.innerHTML=htmlPage;
@@ -27,26 +25,37 @@ function pageOnclick(objs) {
         success: function(data) {
             var ass = JSON.stringify(data.data.list);
             //total = JSON.stringify(data.data.total);
+            // console.log(ass)
             var arr = JSON.parse(ass);
             var html = '';
             for (var i = 0; i < arr.length; i++) {
-                var types = "";
-                if (arr[i].type==1){
-                    types = "全包"
-                }else if (arr[i].type==2){
-                    types = "面谈"
-                }
-                html+='<li><div class="img_box">'
-                    +'<img class="img lazy" src="'+arr[i].url+'" data-original="http://imgs.bzw315.com/uploadfiles/image/2017/9/22/201709222141046182.jpg?x-oss-process=image/resize,w_290,h_220/sharpen,100" alt="'+arr[i].title+'" style="display: block;">'
-                    +'<a href="/caseDetal.html?id='+arr[i].id+'" title="'+arr[i].title+'" class="mask" target="_blank">' +
-                    '<div class="tit">'+
-                    '<p>装修方式：<span>'+types+'</span></p>'+
-                    '<p>户型面积：<span>'+arr[i].area+'㎡</span></p>'+
-                    '<p>装修预算：<span>'+arr[i].budget+'万</span></p>'+
-                    '</div></a></div>'
-                    +'<div class="txt">'
-                    +'<h6><a href="/caseDetal.html?id='+arr[i].id+'" title="'+arr[i].title+'" target="_blank">'+arr[i].title+'</a></h6>'
-                    +'</div>  </li>'
+                html+='<li class="clearfix">\n' +
+                    '  <div class="fl">\n' +
+                    '     <img alt="" class="lazyload" data-original="'+arr[i].url+'" src="'+arr[i].url+'" />\n' +
+                    ' </div>\n' +
+                    '  <div class="fr">\n' +
+                    '  <h4>'+arr[i].title+'</h4>\n' +
+                    '  <div class="a1 clearfix">\n' +
+                    '   <ul>\n' +
+                    '   <li>地区：'+arr[i].location+'</li>\n' +
+                    '    <li>户型：'+arr[i].type+'</li>\n' +
+                    '    <li>面积：'+arr[i].area+'</li>\n' +
+                    '    <li>预算：'+arr[i].budget+'</li>\n' +
+                    '    </ul>\n' +
+                    '    <a target="_blank" href="projectDetail.html"><i></i>查看工地</a>\n' +
+                    '   </div>\n' +
+                    '   <div class="a2 clearfix on1">\n' +
+                    '  <span class="gb1">开工</span>\n' +
+                    '  <span class="gb1">砌墙阶段</span>\n' +
+                    '  <span class="gb1">水电改造</span>\n' +
+                    ' <span class="gb1">泥瓦阶段</span>\n' +
+                    '  <span class="gb1">木作阶段</span>\n' +
+                    '  <span class="gb1">油漆阶段</span>\n' +
+                    '  <span class="gb1">安装阶段</span>\n' +
+                    ' <span class="gb1">完工</span>\n' +
+                    ' </div>\n' +
+                    '  </div>\n' +
+                    ' </li>'
             }
             obj.innerHTML = html;
         }
