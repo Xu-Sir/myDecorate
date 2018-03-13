@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).load(function () {
     //$(".Nav>ul>li").hover(function () {
     //    $(this).find(".Drop_Down").stop(false, true).slideToggle();
     //});
@@ -218,9 +218,12 @@ $(document).ready(function () {
         threshold: 180,
         skip_invisible: false,
     });
-
-    $('#openChant').click(function () {
-        doyoo.util.openChat(' g=10067026');
-        return false;
-    });    
+    // document.getElementById('openChant').onclick=function () {
+    //     console.log(222)
+    //     document.getElementsByClassName('nb-icon-bridge-base')[0].click();
+    // }
+    document.getElementById('online').onclick=function () {
+        console.log(22)
+        document.getElementsByClassName('nb-icon-bridge-base')[0].click();
+    }
 });

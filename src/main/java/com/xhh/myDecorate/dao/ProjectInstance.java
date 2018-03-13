@@ -20,7 +20,7 @@ public class ProjectInstance {
     private Integer orders;
     private String status;
     /**
-     * 装修方式  1.全包 2.面谈
+     *
      */
     private Integer type;
     /**
