@@ -19,17 +19,30 @@
     <script type="text/javascript" src="js/form_js.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
     <script type="text/javascript" src="js/ajax.js"></script>
+
+    <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+    <script src="./layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/projectList.js"></script>
+
+
     <!--<script type="text/javascript" charset="utf-8" src="../lead.soperson.com/20002178/10068539.html"></script>-->
     <script>
-//        var _hmt = _hmt || [];
-//        (function() {
-//            var hm = document.createElement("script");
-//            hm.src = "../hm.baidu.com/hmcc2d.js?bc4d0695158d3e46228dd96a3b56fee4";
-//            var s = document.getElementsByTagName("script")[0];
-//            s.parentNode.insertBefore(hm, s);
-//        })();
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?72bd579db1eb960a9957cdc59c057a17";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
-
+    <!--翻页按钮居中-->
+    <style>
+        #demo1{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
 
     <!--<script type="text/javascript">-->
 
@@ -280,8 +293,6 @@
                     <img alt="" class="lazyload" data-original="upload/1702/201702230818558672167.png" src="upload/1702/201702230818558672167.png" /></a>
             </div>
             <div class="fl" style="padding: 50px 10px 0 10px; line-height: 16px;">
-                <span class="hc_span">全国</span>
-                <a href="BranchSearch.html">切换</a>
             </div>
             <div class="Nav">
                 <ul class="clearfix">
@@ -669,309 +680,7 @@
     <div class="B-search">
         <div class="wrap clearfix">
             <div class="B-s1">
-                <ul>
-
-                    <li class="clearfix">
-                        <div class="fl">
-                            <img alt="" class="lazyload" data-original="upload/1704/201704111450102797152.jpg" src="upload/1704/201704111450102797152.jpg" />
-                        </div>
-                        <div class="fr">
-                            <h4>金旺大厦4楼工艺馆</h4>
-                            <div class="a1 clearfix">
-                                <ul>
-                                    <li>城市：云浮市</li>
-                                    <li>户型：平层</li>
-                                </ul>
-
-                                <a target="_blank" href="SiteLiveDetefda.html?sitelive_id=4816"><i></i>查看工地</a>
-
-                            </div>
-                            <div class="a2 clearfix on1">
-
-                                <span class="gb1">砌墙阶段</span>
-
-                                <span class="gb1">水电阶段</span>
-
-                                <span class="gb1">泥工阶段</span>
-
-                                <span class="gb1">木工阶段</span>
-
-                                <span class="gb1">油漆阶段</span>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="clearfix">
-                        <div class="fl">
-                            <img alt="" class="lazyload" data-original="upload/1703/201703231058230542574.jpg" src="upload/1703/201703231058230542574.jpg" />
-                        </div>
-                        <div class="fr">
-                            <h4>科城山庄A8栋</h4>
-                            <div class="a1 clearfix">
-                                <ul>
-                                    <li>城市：广州市</li>
-                                    <li>户型：四居</li>
-                                </ul>
-
-                                <a target="_blank" href="SiteLiveDet32f3.html?sitelive_id=376"><i></i>查看工地</a>
-
-                            </div>
-                            <div class="a2 clearfix on1">
-
-                                <span class="gb1">开工大吉</span>
-
-                                <span class="gb1">泥工阶段</span>
-
-                                <span class="gb1">木工阶段</span>
-
-                                <span class="gb1">油漆阶段</span>
-
-                                <span class="gb1">完工</span>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="clearfix">
-                        <div class="fl">
-                            <img alt="" class="lazyload" data-original="upload/1703/201703221046135702090.jpg" src="upload/1703/201703221046135702090.jpg" />
-                        </div>
-                        <div class="fr">
-                            <h4>泊爵广悦轩别墅</h4>
-                            <div class="a1 clearfix">
-                                <ul>
-                                    <li>城市：广州市</li>
-                                    <li>户型：别墅</li>
-                                </ul>
-
-                                <a target="_blank" href="SiteLiveDet83bd.html?sitelive_id=196"><i></i>查看工地</a>
-
-                            </div>
-                            <div class="a2 clearfix on1">
-
-                                <span class="gb1">开工大吉</span>
-
-                                <span class="gb1">水电阶段</span>
-
-                                <span class="gb1">泥工阶段</span>
-
-                                <span class="gb1">木工阶段</span>
-
-                                <span class="gb1">油漆阶段</span>
-
-                                <span class="gb1">完工</span>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="clearfix">
-                        <div class="fl">
-                            <img alt="" class="lazyload" data-original="upload/1703/201703191112519327836.jpg" src="upload/1703/201703191112519327836.jpg" />
-                        </div>
-                        <div class="fr">
-                            <h4>双汇国际</h4>
-                            <div class="a1 clearfix">
-                                <ul>
-                                    <li>城市：扬州市</li>
-                                    <li>户型：四居</li>
-                                </ul>
-
-                                <a target="_blank" href="SiteLiveDetdafc.html?sitelive_id=385"><i></i>查看工地</a>
-
-                            </div>
-                            <div class="a2 clearfix on1">
-
-                                <span class="gb1">开工大吉</span>
-
-                                <span class="gb1">砌墙阶段</span>
-
-                                <span class="gb1">水电阶段</span>
-
-                                <span class="gb1">油漆阶段</span>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="clearfix">
-                        <div class="fl">
-                            <img alt="" class="lazyload" data-original="upload/1703/201703211646468674913.jpg" src="upload/1703/201703211646468674913.jpg" />
-                        </div>
-                        <div class="fr">
-                            <h4>长青御府</h4>
-                            <div class="a1 clearfix">
-                                <ul>
-                                    <li>城市：扬州市</li>
-                                    <li>户型：五居</li>
-                                </ul>
-
-                                <a target="_blank" href="SiteLiveDeta626.html?sitelive_id=386"><i></i>查看工地</a>
-
-                            </div>
-                            <div class="a2 clearfix on1">
-
-                                <span class="gb1">开工大吉</span>
-
-                                <span class="gb1">水电阶段</span>
-
-                                <span class="gb1">泥工阶段</span>
-
-                                <span class="gb1">木工阶段</span>
-
-                                <span class="gb1">完工</span>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="clearfix">
-                        <div class="fl">
-                            <img alt="" class="lazyload" data-original="upload/1703/201703182112314486079.jpg" src="upload/1703/201703182112314486079.jpg" />
-                        </div>
-                        <div class="fr">
-                            <h4>国际公馆</h4>
-                            <div class="a1 clearfix">
-                                <ul>
-                                    <li>城市：扬州市</li>
-                                    <li>户型：三居</li>
-                                </ul>
-
-                                <a target="_blank" href="SiteLiveDeteebd.html?sitelive_id=383"><i></i>查看工地</a>
-
-                            </div>
-                            <div class="a2 clearfix on1">
-
-                                <span class="gb1">开工大吉</span>
-
-                                <span class="gb1">水电阶段</span>
-
-                                <span class="gb1">泥工阶段</span>
-
-                                <span class="gb1">木工阶段</span>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="clearfix">
-                        <div class="fl">
-                            <img alt="" class="lazyload" data-original="upload/1703/201703201403262734705.jpg" src="upload/1703/201703201403262734705.jpg" />
-                        </div>
-                        <div class="fr">
-                            <h4>鼎盛大观1#609郑总</h4>
-                            <div class="a1 clearfix">
-                                <ul>
-                                    <li>城市：泉州市</li>
-                                    <li>户型：三居</li>
-                                </ul>
-
-                                <a target="_blank" href="SiteLiveDeted50.html?sitelive_id=380"><i></i>查看工地</a>
-
-                            </div>
-                            <div class="a2 clearfix on1">
-
-                                <span class="gb1">水电阶段</span>
-
-                                <span class="gb1">泥工阶段</span>
-
-                                <span class="gb1">木工阶段</span>
-
-                                <span class="gb1">油漆阶段</span>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="clearfix">
-                        <div class="fl">
-                            <img alt="" class="lazyload" data-original="upload/1703/201703201404393201122.jpg" src="upload/1703/201703201404393201122.jpg" />
-                        </div>
-                        <div class="fr">
-                            <h4>世纪名郡</h4>
-                            <div class="a1 clearfix">
-                                <ul>
-                                    <li>城市：扬州市</li>
-                                    <li>户型：三居</li>
-                                </ul>
-
-                                <a target="_blank" href="SiteLiveDet6caf.html?sitelive_id=384"><i></i>查看工地</a>
-
-                            </div>
-                            <div class="a2 clearfix on1">
-
-                                <span class="gb1">开工大吉</span>
-
-                                <span class="gb1">水电阶段</span>
-
-                                <span class="gb1">木工阶段</span>
-
-                                <span class="gb1">油漆阶段</span>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="clearfix">
-                        <div class="fl">
-                            <img alt="" class="lazyload" data-original="upload/1705/201705101624215684517.jpg" src="upload/1705/201705101624215684517.jpg" />
-                        </div>
-                        <div class="fr">
-                            <h4>加州阳光徐女士雅居</h4>
-                            <div class="a1 clearfix">
-                                <ul>
-                                    <li>城市：东莞市</li>
-                                    <li>户型：三居</li>
-                                </ul>
-
-                                <a target="_blank" href="SiteLiveDet0808.html?sitelive_id=6856"><i></i>查看工地</a>
-
-                            </div>
-                            <div class="a2 clearfix on1">
-
-                                <span class="gb1">水电阶段</span>
-
-                                <span class="gb1">泥工阶段</span>
-
-                                <span class="gb1">木工阶段</span>
-
-                                <span class="gb1">油漆阶段</span>
-
-                                <span class="gb1">安装阶段</span>
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="clearfix">
-                        <div class="fl">
-                            <img alt="" class="lazyload" data-original="upload/1706/201706121611380694100.jpg" src="upload/1706/201706121611380694100.jpg" />
-                        </div>
-                        <div class="fr">
-                            <h4>依云华府</h4>
-                            <div class="a1 clearfix">
-                                <ul>
-                                    <li>城市：佛山市</li>
-                                    <li>户型：四居</li>
-                                </ul>
-
-                                <a target="_blank" href="SiteLiveDetdd8f.html?sitelive_id=4535"><i></i>查看工地</a>
-
-                            </div>
-                            <div class="a2 clearfix on1">
-
-                                <span class="gb1">水电阶段</span>
-
-                                <span class="gb1">泥工阶段</span>
-
-                                <span class="gb1">木工阶段</span>
-
-                                <span class="gb1">油漆阶段</span>
-
-                            </div>
-                        </div>
-                    </li>
+                <ul id="item-list">
 
                 </ul>
             </div>
@@ -1026,22 +735,6 @@
                 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjM0MTcyMDQ3D2QWAgIDD2QWAgIBDw8WBh4IUGFnZVNpemUCCh4QQ3VycmVudFBhZ2VJbmRleAIBHgtSZWNvcmRjb3VudAKTBmRkZFkOCkLo2Qb/9FAxqKJKMEM1kCTLm4NmGS2Krvx3u8Q4" />
             </div>
 
-            <script language="Javascript"><!--
-            function ANP_goToPage(boxEl){if(boxEl!=null){var pi;if(boxEl.tagName=="SELECT"){pi=boxEl.options[boxEl.selectedIndex].value;}else{pi=boxEl.value;}location.href="SiteLive.aspx?page="+pi+"";}}
-            function ANP_checkInput(bid,mv){var el=document.getElementById(bid);var r=new RegExp("^\\s*(\\d+)\\s*$");
-                if(r.test(el.value)){if(RegExp.$1<1||RegExp.$1>mv){alert("页索引超出范围！");el.focus();el.select();return false;}
-                    return true;}alert("页索引不是有效的数值！");el.focus();el.select();return false;}
-            function ANP_keydown(e,btnId){
-                var kcode;
-                if(window.event){kcode=e.keyCode;}
-                else if(e.which){kcode=e.which;}
-                var validKey=(kcode==8||kcode==46||kcode==37||kcode==39||(kcode>=48&&kcode<=57)||(kcode>=96&&kcode<=105));
-                if(!validKey){
-                    if(kcode==13) document.getElementById(btnId).click();
-                    if(e.preventDefault) e.preventDefault();else{event.returnValue=false};
-                }
-            }
-            --></script>
             <div>
 
                 <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5160E5FC" />
@@ -1049,57 +742,48 @@
 
             <!-- AspNetPager V7.0.2 for VS2005 & VS2008  Copyright:2003-2007 Webdiyer (www.webdiyer.com) -->
             <div id="AspNetPager1" class="paginator" style="width:100%;text-align:right;">
-                <div align="right" style="width:75%;float:left;">
-                    <a disabled="disabled" style="margin-right:5px;">上一页</a><span class="cpb" style="margin-right:5px;">1</span><a href="SiteLive4658.html?page=2" style="margin-right:5px;">2</a><a href="SiteLive9ba9.html?page=3" style="margin-right:5px;">3</a><span style="margin-right:5px;"><a href="SiteLivefdb0.html?page=4">...</a></span><a href="SiteLive4658.html?page=2" style="margin-right:5px;">下一页</a>&nbsp;&nbsp;到   <input type="text" value="1" class="text" name="AspNetPager1_input" id="AspNetPager1_input" onkeydown="ANP_keydown(event,&#39;AspNetPager1_btn&#39;);" style="width:30px;width:40px" /> 页 <input type="Button" name="AspNetPager1" id="AspNetPager1_btn" value="确定" class="submit" onclick="if(ANP_checkInput(&#39;AspNetPager1_input&#39;,79)){ANP_goToPage(document.getElementById(&#39;AspNetPager1_input&#39;));}" />
-                </div><div class="pagecount" style="float:left;width:25%;">
-                共 79 页
-            </div>
             </div>
             <!-- AspNetPager V7.0.2 for VS2005 & VS2008 End -->
 
 
         </form>
     </div>
-    <style type="text/css">
-        #AspNetPager1 a, #AspNetPager1_input, #AspNetPager1_btn {
-            border: 1px solid #c8c8c8;
-            color: #c0c0c0;
-            display: inline-block;
-            /*padding: 3px 12px;*/
-            font-size: 18px;
-            color: #666;
-            vertical-align: middle;
-        }
+    <!--<style type="text/css">-->
+        <!--#AspNetPager1 a, #AspNetPager1_input, #AspNetPager1_btn {-->
+            <!--border: 1px solid #c8c8c8;-->
+            <!--color: #c0c0c0;-->
+            <!--display: inline-block;-->
+            <!--/*padding: 3px 12px;*/-->
+            <!--font-size: 18px;-->
+            <!--color: #666;-->
+            <!--vertical-align: middle;-->
+        <!--}-->
 
-        #AspNetPager1 span {
-            vertical-align: middle;
-        }
+        <!--#AspNetPager1 span {-->
+            <!--vertical-align: middle;-->
+        <!--}-->
 
-        #AspNetPager1 a:hover {
-            border: 1px solid #FF0000;
-            background: #FF0000;
-            color: #fff;
-        }
+        <!--#AspNetPager1 a:hover {-->
+            <!--border: 1px solid #FF0000;-->
+            <!--background: #FF0000;-->
+            <!--color: #fff;-->
+        <!--}-->
 
-        #AspNetPager1 {
-            color: #c0c0c0;
-        }
+        <!--#AspNetPager1 {-->
+            <!--color: #c0c0c0;-->
+        <!--}-->
 
-        .Paging form input[type="text"], .Paging form input[type="button"] {
-            float: initial;
-        }
+        <!--.Paging form input[type="text"], .Paging form input[type="button"] {-->
+            <!--float: initial;-->
+        <!--}-->
 
-        .Paging .pagecount {
-            display: inline-block;
-            height: 40px;
-            line-height: 40px;
-            text-align: center;
-        }
-    </style>
-    <script type="text/javascript">
-        $("#AspNetPager1 span.cpb").eq(0).css("display", "inline-block").css("padding", "3px 12px").css("font-size", "18px");
-        $("#AspNetPager1 a").eq(0).css("margin-left", "10px;");
-    </script>
+        <!--.Paging .pagecount {-->
+            <!--display: inline-block;-->
+            <!--height: 40px;-->
+            <!--line-height: 40px;-->
+            <!--text-align: center;-->
+        <!--}-->
+    <!--</style>-->
 </div>
 
 
@@ -1124,7 +808,7 @@
         </li>
         <li class="a3">
 
-            <a class="_box" id="openChant">
+            <a class="_box" id="online">
                 <i></i>
                 <span>在线咨询</span>
             </a>
@@ -1267,8 +951,7 @@
                     (c)Copyright 2017 广东星艺装饰集团股份有限公司 版权所有 粤ICP备13022898号
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
-
-                    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261996347'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1261996347%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+                    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273089148'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1273089148%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
                 </p>
             </div>
 
@@ -1279,6 +962,19 @@
 
 <script type="text/javascript">
     setNav(5);
+    layui.use(['laypage', 'layer'], function(){
+        var laypage = layui.laypage
+            ,layer = layui.layer;
+        //总页数大于页码总数
+        laypage.render({
+            elem: 'demo1'
+            ,count: total //数据总数
+            ,jump: function(obj){
+//                console.log(obj);
+                pageOnclick(obj)
+            }
+        });
+    });
 </script>
 
 </body>

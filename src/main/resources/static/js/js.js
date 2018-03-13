@@ -1,4 +1,4 @@
-$(window).load(function () {
+$(document).ready(function () {
     //$(".Nav>ul>li").hover(function () {
     //    $(this).find(".Drop_Down").stop(false, true).slideToggle();
     //});
@@ -218,12 +218,9 @@ $(window).load(function () {
         threshold: 180,
         skip_invisible: false,
     });
-    // document.getElementById('openChant').onclick=function () {
-    //     console.log(222)
-    //     document.getElementsByClassName('nb-icon-bridge-base')[0].click();
-    // }
-    document.getElementById('online').onclick=function () {
-        console.log(22)
+
+    $('#online').click(function () {
         document.getElementsByClassName('nb-icon-bridge-base')[0].click();
-    }
+        return false;
+    });
 });
