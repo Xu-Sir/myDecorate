@@ -18,18 +18,18 @@ $(document).ready(function () {
         $(this).find(".Drop_Down").stop(false, true).slideUp();
     });
 
-    $(window).scroll(function () {
-        var wh = $(window).scrollTop();
-        if (wh == 0) {
-            $(".banner-fork").addClass("on");
-            $(".fork-sig").removeClass("on");
-            $(".idc").css("width", "100%");
-        } else {
-            $(".banner-fork").removeClass("on");
-            $(".fork-sig").addClass("on");
-            $(".idc").css("width", "137px");
-        }
-    });
+    // $(window).scroll(function () {
+    //     var wh = $(window).scrollTop();
+    //     if (wh == 0) {
+    //         $(".banner-fork").addClass("on");
+    //         $(".fork-sig").removeClass("on");
+    //         $(".idc").css("width", "100%");
+    //     } else {
+    //         $(".banner-fork").removeClass("on");
+    //         $(".fork-sig").addClass("on");
+    //         $(".idc").css("width", "137px");
+    //     }
+    // });
 
     /*index-banner*/
     $('.banner-fork>i').on('click', function () {
@@ -213,11 +213,11 @@ $(document).ready(function () {
     });
 
     //图片预加载
-    $("img.lazyload").lazyload({
-        effect: "fadeIn",
-        threshold: 180,
-        skip_invisible: false,
-    });
+    // $("img.lazyload").lazyload({
+    //     effect: "fadeIn",
+    //     threshold: 180,
+    //     skip_invisible: false,
+    // });
 
     $('#online').click(function () {
         document.getElementsByClassName('nb-icon-bridge-base')[0].click();
