@@ -43,5 +43,11 @@ public class RequestArgs {
 
     private String units;
 
-    private String ids;
+    private String experience;
+    private String summary;
+    private String grade;
+    private String style;
+    private String works;
+
+    private Integer mainCase;
 }

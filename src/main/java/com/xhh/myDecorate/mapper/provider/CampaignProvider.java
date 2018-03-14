@@ -35,7 +35,6 @@ public class CampaignProvider {
         String status = args.getStatus();
         Long startTime = args.getStartTime();
         Long endTime = args.getEndTime();
-        String ids = args.getIds();
         Integer page = args.getPage();
         Integer size = args.getSize();
 
@@ -58,11 +57,8 @@ public class CampaignProvider {
         if (endTime != null){
             sql.AND().WHERE("create_time <= "+endTime+"");
         }
-        if (StringUtil.isNotBlank(ids)){
-            sql.AND().WHERE("id in ("+ids+")");
-        }
         String pageSql = sql.toString();
-        pageSql += "ORDER BY create_time DESC ,status";
+        pageSql += " ORDER BY create_time DESC ,status ";
         if (page != null){
             pageSql += " Limit "+(page - 1)*size+","+size;
         }
@@ -84,13 +80,12 @@ public class CampaignProvider {
 
         String title = args.getTitle();
         String content = args.getContent();
-        String ids = args.getIds();
+        String status = args.getStatus();
         Long startTime = args.getStartTime();
         Long endTime = args.getEndTime();
 
         SQL sql = new SQL().SELECT("count(*)")
-                .FROM("campaign")
-                .WHERE("status = "+args.getStatus());
+                .FROM("campaign");
 
         if (StringUtil.isNotBlank(title)){
             sql.AND().WHERE("title like '%"+title+"%'");
@@ -98,16 +93,17 @@ public class CampaignProvider {
         if (StringUtil.isNotBlank(content)){
             sql.AND().WHERE("content like '%"+content+"%'");
         }
+        if (StringUtil.isNotBlank(status)){
+            sql.AND().WHERE("content = "+status);
+        }
         if (startTime != null){
             sql.AND().WHERE("create_time >= "+startTime+"");
         }
         if (endTime != null){
             sql.AND().WHERE("create_time <= "+endTime+"");
         }
-        if (StringUtil.isNotBlank(ids)){
-            sql.AND().WHERE("id in ("+ids+")");
-        }
         String pageSql = sql.toString();
+        System.out.println(pageSql);
         return pageSql;
     }
 

@@ -16,5 +16,7 @@ public interface DesignInstanceService {
 
     List<DesignInstance> findDesignInstance(RequestArgs args);
 
+    DesignInstance searchDesignInstance(DesignInstance designInstance);
+
     Integer countDesignInstance(RequestArgs args);
 }

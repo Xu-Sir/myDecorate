@@ -7,6 +7,7 @@ import com.xhh.myDecorate.mapper.provider.ProjectInstanceProvider;
 import com.xhh.myDecorate.service.ProjectInstanceService;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Calendar;
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
  * @author xuhaihong
  * @create 2018-02-02 11:08
  **/
-@Mapper
+@Service
 public class ProjectInstanceServiceImpl implements ProjectInstanceService {
 
     @Autowired

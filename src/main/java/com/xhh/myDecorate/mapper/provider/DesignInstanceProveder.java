@@ -24,6 +24,12 @@ public class DesignInstanceProveder {
         if (instance.getUserId() != null){
             sql.VALUES("user_id", "#{userId}");
         }
+        if (instance.getMainCase() != null){
+            sql.VALUES("main_case", "#{mainCase}");
+        }
+        if (StringUtil.isNotBlank(instance.getImagesUrl())){
+            sql.VALUES("images_url", "#{imagesUrl}");
+        }
         String sqlS = sql.toString();
         System.out.println(sqlS);
         return sqlS;
@@ -93,6 +99,33 @@ public class DesignInstanceProveder {
             sql.AND().WHERE("user_id = "+userId+"");
         }
         String pageSql = sql.toString();
+        return pageSql;
+    }
+
+    public String searchDesignInstance(DesignInstance designInstance){
+
+        String title = designInstance.getTitle();
+        String content = designInstance.getContent();
+        Long userId = designInstance.getUserId();
+        Long createTime = designInstance.getCreateTime();
+
+        SQL sql = new SQL().SELECT("*")
+                .FROM("design_instance");
+
+        if (StringUtil.isNotBlank(title)){
+            sql.AND().WHERE("title like '%"+title+"%'");
+        }
+        if (StringUtil.isNotBlank(content)){
+            sql.AND().WHERE("content like '%"+content+"%'");
+        }
+        if (createTime != null){
+            sql.AND().WHERE("create_time >= "+createTime+"");
+        }
+        if (userId != null){
+            sql.AND().WHERE("user_id = "+userId+"");
+        }
+        String pageSql = sql.toString();
+        System.out.println(pageSql);
         return pageSql;
     }
 }

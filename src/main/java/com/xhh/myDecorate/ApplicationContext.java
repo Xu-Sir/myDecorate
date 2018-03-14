@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author xuhaihong
  * @create 2018-01-19 14:25
  **/
-
+//@EnableDiscoveryClient	/*服务注册与发现*/
 @SpringBootApplication
 public class ApplicationContext {
 

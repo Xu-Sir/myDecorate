@@ -32,7 +32,7 @@ public class IndexController {
     @RequestMapping(value = "/home")
     public String home(){
 
-        System.out.println("进入首页");
+        System.out.println("进入首页home");
         return "page/homepage";
     }
     /**

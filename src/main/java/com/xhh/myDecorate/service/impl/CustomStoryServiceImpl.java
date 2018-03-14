@@ -35,4 +35,9 @@ public class CustomStoryServiceImpl implements CustomStoryService{
     public Integer countCustomStory(RequestArgs args){
         return customStoryMapper.countCustomStory(args);
     }
+
+    @Override
+    public CustomStory customStoryDetail(RequestArgs args){
+        return customStoryMapper.customStoryDetail(args);
+    }
 }

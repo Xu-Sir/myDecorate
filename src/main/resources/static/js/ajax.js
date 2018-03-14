@@ -74,7 +74,7 @@
                 ou_id = $("#ou_id").val();
             $.ajax({
                 type: "POST",
-                url: "/ajax/ajax.aspx?action=queryoffer&type=t&t=" + Math.random(),
+                url: "/orderOnlineT?t=" + Math.random(),
                 data: $("#queryOffer").serialize() + "&ou_id=" + ou_id,
                 dataType: "json",
                 beforeSend: function () {
