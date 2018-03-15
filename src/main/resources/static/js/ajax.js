@@ -523,17 +523,17 @@ function validateMsg_B() {
     return true;
 }
 
-function getCase(code) {
-    $.ajax({
-        type: "POST",
-        url: "/ajax/ajax.aspx?action=load_case&t=" + Math.random(),
-        data: { stylecode: code },
-        dataType: "html",
-        success: function (data) {
-            $("#case_list").html(data);
-        }
-    });
-}
+// function getCase(code) {
+//     $.ajax({
+//         type: "POST",
+//         url: "/ajax/ajax.aspx?action=load_case&t=" + Math.random(),
+//         data: { stylecode: code },
+//         dataType: "html",
+//         success: function (data) {
+//             $("#case_list").html(data);
+//         }
+//     });
+// }
 
 function selectCase(type, code) {
     var url = "";
