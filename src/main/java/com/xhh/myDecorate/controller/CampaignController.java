@@ -57,8 +57,8 @@ public class CampaignController {
                 c.setCreateTimeSYM(createTimes.substring(0,createTimes.lastIndexOf("/")));
             }
             c.setOverdueTimeS(format.format(new Date(c.getOverdueTime())));
-            if (c.getContent()!=null){
-                c.setContentSimp(StringUtil.subStr(c.getContent(),70));
+            if (c.getSubject()!=null){
+                c.setContentSimp(StringUtil.subStr(c.getSubject(),70));
             }
         }
         Map map = new HashMap();

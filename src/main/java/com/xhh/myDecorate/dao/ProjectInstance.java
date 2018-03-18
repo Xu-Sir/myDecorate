@@ -47,5 +47,8 @@ public class ProjectInstance {
      * 小区
      */
     private String village;
-
+    /**
+     * 风格
+     */
+    private String style;
 }

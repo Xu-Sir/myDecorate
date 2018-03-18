@@ -51,6 +51,7 @@ $(function () {
             var arr = JSON.parse(ass);
             var html ='';
             for (var i = 0; i < arr.length; i++) {
+
                 html += '<li>\n' +
                     '<a target="_blank" href="SiteLive8592.html?buliding=%e4%be%9d%e4%ba%91%e5%8d%8e%e5%ba%9c">\n' +
                     '<div class="a1">\n' +
@@ -68,7 +69,9 @@ $(function () {
 
             }
             // console.log(html);
-            objP.innerHTML = html;
+           objP.innerHTML = html;
+            //初始化样式
+            jQuery(".index_03 .mian").slide({ mainCell: ".bd_i3", autoPage: true, effect: "left", vis: 4, scroll: 2 });
         }
 
     });

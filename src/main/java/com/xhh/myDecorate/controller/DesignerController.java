@@ -29,6 +29,7 @@ public class DesignerController {
             args.setSize(8);
         }
         List<Designer> list = designerService.findDesignerList(args);
+
         if (list.size() < 1){
             Map map = new HashMap();
             map.put("list", list);

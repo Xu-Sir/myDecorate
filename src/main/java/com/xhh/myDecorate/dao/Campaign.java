@@ -40,4 +40,8 @@ public class Campaign {
     private String titleNext;
     private Long idLast;
     private Long idNext;
+    /**
+     * 简介  用于列表页的详情
+     */
+    private String subject;
 }

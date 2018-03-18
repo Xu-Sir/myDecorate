@@ -11,6 +11,9 @@ public class Designer {
     private Long id ;
     private String name;
     private String experience;
+    /**
+     * 设计理念
+     */
     private String summary;
     /**
      * 1.总设计师，2.设计总监，3.设计经理，4.首席设计师，5.高级设计师，6.专家设计师，7.主笔设计师，8.设计师
@@ -18,6 +21,9 @@ public class Designer {
     private String grade;
     private String style;
     private String works;
+    /**
+     * 头像
+     */
     private String images;
     /**
      * 主要作品  名称
@@ -31,4 +37,9 @@ public class Designer {
      * 主要作品 id
      */
     private Long caseId;
+    /**
+     * 毕业院校
+     */
+    private String school;
+
 }

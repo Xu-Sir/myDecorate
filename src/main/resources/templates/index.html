@@ -29,15 +29,19 @@
     <script type="text/javascript" src="js/uaredirect.js"></script>
     <script type='text/javascript' src='jss/layerslider.kreaturamedia.jquery.js'></script>
 
-
-
-
-
-
     <script type="text/javascript">
         <!-- 手机网页访问时候 跳转到指定网页 -->
 //        uaredirect("101.200.63.82");
     </script>
+
+    <script type="text/javascript">
+        var jiathis_config = {
+            url: window.location.href,
+            title: document.title,
+            summary: "设计师：" + document.getElementsByName("keywords") + "设计理念：" + document.getElementsByName("description")
+        }
+    </script>
+
 
     <script>
         var _hmt = _hmt || [];
@@ -193,7 +197,7 @@
                                 </li>
 
                                 <li id="nav-menu-item-16090" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  has_sub narrow">
-                                    <a href="index.php/about.html" class=""><i class="menu_icon fa blank"></i><span>走进高起</span><span class="plus"></span></a>
+                                    <a href="aboutUs.html" class=""><i class="menu_icon fa blank"></i><span>走进高起</span><span class="plus"></span></a>
                                     <!--<div class="second">-->
                                         <!--<div class="inner">-->
                                             <!--<ul>-->
@@ -269,7 +273,7 @@
 
 </header>
 
-<div class="content  has_slider">
+<div class="content  has_slider" style="min-height: 990px;">
 
     <div class="content_inner  ">
         <script>
@@ -277,7 +281,8 @@
         </script>
 <div class="q_slider">
     <div class="q_slider_inner">
-        <div id="qode-home-slider-3"  class="carousel slide fade  responsive_height q_auto_start   header_not_transparent" data-slide_animation="6000" data-height='600' data-parallax="no" style="height: 600px;">
+        <!--调整banner高度-->
+        <div id="qode-home-slider-3"  class="carousel slide fade  responsive_height q_auto_start   header_not_transparent" data-slide_animation="6000" data-height='1000' data-parallax="no" style="height: 1000px;">
             <div class="qode_slider_preloader">
                 <div class="ajax_loader" >
                     <div class="ajax_loader_1">
@@ -892,8 +897,32 @@
                     (c)Copyright 2017 广东星艺装饰集团股份有限公司 版权所有 粤ICP备13022898号
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-                    
-                    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261996347'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1261996347%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+                <!--分享按钮-->
+                <div class="fr">
+                    <ul>
+                        <li class="fx">
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style">
+                                <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt" target="_blank"><i></i>分享</a>
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+                            <!-- JiaThis Button END -->
+                        </li>
+                    </ul>
+                </div>
+                    <!--站长统计-->
+                    <script>
+                        (function() {
+                            var cnzzCreateScript = document.createElement("script");
+                            cnzzCreateScript.type = 'text/javascript';
+                            cnzzCreateScript.async = true;
+                            cnzzCreateScript.src = "https://s22.cnzz.com/z_stat.php?id=1273089148&web_id=1273089148";
+                            var getCnzzScript = document.getElementsByTagName("script")[0];
+                            getCnzzScript.parentNode.insertBefore(cnzzCreateScript, getCnzzScript);
+                        })();
+                    </script>
+
                 </p>
             </div>
             

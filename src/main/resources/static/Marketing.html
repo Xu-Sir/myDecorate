@@ -29,6 +29,7 @@
 <script type="text/javascript" src="js/form_js.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/ajax.js"></script>
+
 <script type="text/javascript" src="js/htmljs.js"></script>
     <link rel="stylesheet" href="./layui/css/layui.css"  media="all">
     <script src="./layui/layui.js" charset="utf-8"></script>
@@ -45,101 +46,6 @@
 
 
     <script type="text/javascript" src="js/YMDClass.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            var type = '';
-            switch (type) {
-                case "new":
-                    $(".new").css("color", "#ff0000");
-                    $(".new").siblings().css("color", "#666");
-                    $(".fsx").css("color", "#999");
-                    break;
-                case "hot":
-                    $(".hot").css("color", "#ff0000");
-                    $(".hot").siblings().css("color", "#666");
-                    $(".fsx").css("color", "#999");
-                    break;
-                case "all":
-                    $(".fsx").css("color", "#ff0000");
-                    $(".fsx").siblings().css("color", "#666");
-                    break;
-            }
-
-            new YMDselect("year", "month");
-
-            $(".bc_m_select").change(function () {
-                var url = window.location.href;
-                if ($(".bp_m_select").val() != "" && $(".bp_m_select").val() != undefined)
-                    url = UrlAddParams(url, "provincecode", $(".bp_m_select").val());
-                if ($(".bc_m_select").val() != "" && $(".bc_m_select").val() != undefined)
-                    url = UrlAddParams(url, "citycode", $(".bc_m_select").val());
-                location.href = url;
-            });
-
-            $(".bp_m_select").change(function () {
-                var provinceid = $(".bp_m_select").val();
-                var citycode = '';
-                if (provinceid != "-1") {
-                    $.ajax({
-                        type: "POST",
-                        url: "/ajax/ajax.aspx?action=load_city&t=" + Math.random(),
-                        data: { id: provinceid },
-                        dataType: "json",
-                        success: function (data) {
-                            if (data != "") {
-                                $(".bc_m_select").empty();
-                                $(".bc_m_select").append("<option value=\"-1\">城市</option>");
-                                $(data).each(function (ck, cv) {
-                                    $(".bc_m_select").append("<option value=\"" + cv.id + "\">" + cv.areaname + "</option>");
-                                });
-
-                                if (citycode == -1) {
-                                    $(".bc_m_select option:eq(0)").prop("selected", true);
-                                } else {
-                                    $(".bc_m_select").find("option").each(function () {
-                                        if ($(this).val() == citycode)
-                                            $(this).prop("selected", true);
-                                    });
-                                }
-                            }
-                        }
-                    });
-                }
-            });
-
-            $("#iTime").click(function () {
-                var url = window.location.href;
-                if ($("#year").val())
-                    url = UrlAddParams(url, "year", $("#year").val());
-                if ($("#month").val())
-                    url = UrlAddParams(url, "month", $("#month").val());
-                location.href = url;
-            });
-
-            $("#btnkeyword").click(function () {
-                var url = window.location.href;
-                if ($("#keyword").val())
-                    url = UrlAddParams(url, "keyword", $("#keyword").val());
-                location.href = url;
-            });
-
-            setA();
-        });
-
-        function setA() {
-            var provincecode = '';
-            if (provincecode == -1) {
-                $(".bp_m_select option:eq(0)").prop("selected", true);
-            } else {
-                $(".bp_m_select").find("option").each(function () {
-                    if ($(this).val() == provincecode) {
-                        $(this).prop("selected", true);
-                        $(".bp_m_select").change();
-                    }
-                });
-            }
-        }
-    </script>
 </head>
 <body>
     
@@ -699,7 +605,16 @@ if(e.preventDefault) e.preventDefault();else{event.returnValue=false};
                     (c)Copyright 2017 广东星艺装饰集团股份有限公司 版权所有 粤ICP备13022898号
 
 &nbsp;&nbsp;&nbsp;&nbsp;
-                    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273089148'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1273089148%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+                    <script>
+                        (function() {
+                            var cnzzCreateScript = document.createElement("script");
+                            cnzzCreateScript.type = 'text/javascript';
+                            cnzzCreateScript.async = true;
+                            cnzzCreateScript.src = "https://s22.cnzz.com/z_stat.php?id=1273089148&web_id=1273089148";
+                            var getCnzzScript = document.getElementsByTagName("script")[0];
+                            getCnzzScript.parentNode.insertBefore(cnzzCreateScript, getCnzzScript);
+                        })();
+                    </script>
                 </p>
             </div>
             
@@ -724,7 +639,7 @@ if(e.preventDefault) e.preventDefault();else{event.returnValue=false};
             });
         });
     </script>
-    
+
 </body>
 
 <!-- Mirrored from www.xydec.com.cn/Marketing.aspx by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 01 Feb 2018 03:12:58 GMT -->
