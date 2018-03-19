@@ -27,12 +27,62 @@ $(function () {
             var ass = JSON.stringify(data.data.list);
             var arr = JSON.parse(ass);
             var html ='';
+            var type ;
+            var style;
+
             for (var i = 0; i < arr.length; i++) {
-                 html += '<div class="a'+i+'">\n' +
-                    '<a target="_blank" href="caseDetail.html?id='+arr[i].id+'">\n' +
-                    '<img alt="" class="lazyload" data-original="'+arr[i].url+'" src="'+arr[i].url+'" /><span>\n' +
-                    '<font>'+arr[i].url+'</font><font>'+arr[i].type+'  |  '+arr[i].style+'  |  '+arr[i].style+'平米 </font></span></a>\n' +
-                    '</div>'
+
+                switch (arr[i].type){
+                    case 1 :type = "商品房";
+                        break;
+                    case 2 :type = "别墅";
+                        break;
+                    case 3 :type = "复式";
+                        break;
+                    case 4 :type = "自建房";
+                        break;
+                    case 5 :type = "商业大厦";
+                        break;
+                    case 6 :type = "其他";
+                        break;
+                    default: ;
+                }
+                switch (arr[i].style){
+                    case 1 :style = "现代";
+                        break;
+                    case 2 :style = "中式";
+                        break;
+                    case 3 :style = "欧式";
+                        break;
+                    case 4 :style = "古典";
+                        break;
+                    case 5 :style = "美式";
+                        break;
+                    case 6 :style = "田园";
+                        break;
+                    case 7 :style = "其他";
+                        break;
+                    default: ;
+                }
+                if (i==0){
+                    html +=   '<div class="a'+(i+1)+'">' +
+                        '<a target="_blank" href="caseDetail.html?id='+arr[i].id+'" style="background-image:url('+arr[i].url+');">\n' +
+                        '<img alt="" class="lazyload" data-original="'+arr[i].url+'"/><span>\n'+
+                        '<font>'+arr[i].title+'</font><font>'+type+'  |  '+style+'  |  '+arr[i].area+'平米 </font></span></a>\n' +
+                        '</div>'
+                }else if (i==4){
+                    html +=   '<div class="a'+(i+1)+'" style="background-image:url('+arr[i].url+');">' +
+                        '<a target="_blank" href="caseDetail.html?id='+arr[i].id+'" >\n' +
+                        '<img alt="" class="lazyload" data-original="'+arr[i].url+'"  /><span>\n' +
+                        '<font>'+arr[i].title+'</font><font>'+type+'  |  '+style+'  |  '+arr[i].area+'平米 </font></span></a>\n' +
+                        '</div>'
+                }else {
+                    html +=   '<div class="a'+(i+1)+'">' +
+                        '<a target="_blank" href="caseDetail.html?id='+arr[i].id+'" >\n' +
+                        '<img alt="" class="lazyload" data-original="'+arr[i].url+'" src="'+arr[i].url+'" /><span>\n' +
+                        '<font>'+arr[i].title+'</font><font>'+type+'  |  '+style+'  |  '+arr[i].area+'平米 </font></span></a>\n' +
+                        '</div>'
+                }
 
             }
             // console.log(html);
