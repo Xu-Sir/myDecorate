@@ -12,5 +12,9 @@ public class Constant {
 
     public static final String ERROR = "error";
 
-
+    /**
+     * 配置文件
+     */
+    public static final String DEV = "dev";
+    public static final String LOCAL = "local";
 }
