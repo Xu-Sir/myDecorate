@@ -2,6 +2,7 @@ package com.xhh.myDecorate.controller;
 
 import com.xhh.myDecorate.common.Constant;
 import com.xhh.myDecorate.common.VerifyCodeUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,6 +27,8 @@ import java.util.Map;
 public class AuthImageController extends HttpServlet implements Servlet{
 
     static final long serialVersionUID = 1L;
+    @Value("${spring.profiles.active}")
+    private String profiles;
 
     @ResponseBody
     @RequestMapping(value = "/verifyCode")
@@ -60,9 +63,18 @@ public class AuthImageController extends HttpServlet implements Servlet{
         session.setAttribute("verCode", verifyCode.toLowerCase());
         //生成图片
         int w = 100, h = 30;
-        String classPath = this.getClass().getResource("/").getPath();
-        File dir =  new File(classPath+"/static/tools");
-        File file = new File(dir, verifyCode + ".jpg");
+        File file ;
+        if (Constant.DEV.equals(profiles)){
+
+            file = new File("/home/images/verifyImage",verifyCode+".jpg");
+        }else{
+
+            String classPath = this.getClass().getResource("/").getPath();
+            File dir =  new File(classPath+"/static/tools");
+             file = new File(dir, verifyCode + ".jpg");
+        }
+
+
         VerifyCodeUtils.outputImage(w, h,file, verifyCode);
 
         return verifyCode;
