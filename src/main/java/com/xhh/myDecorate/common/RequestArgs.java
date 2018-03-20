@@ -50,4 +50,8 @@ public class RequestArgs {
     private String works;
 
     private Integer mainCase;
+    /**
+     * 主页显示标注
+     */
+    private Integer showInIndex;
 }

@@ -33,6 +33,7 @@ public class ProjectInstanceProvider {
 
     public String findProjectInstance(RequestArgs args){
 
+        Long id = args.getId();
         String title = args.getTitle();
         String content = args.getContent();
         Long startTime = args.getStartTime();
@@ -43,6 +44,9 @@ public class ProjectInstanceProvider {
         SQL sql = new SQL().SELECT("*")
                 .FROM("project_instance");
 
+        if (id != null){
+            sql.AND().WHERE("id ="+id);
+        }
         if (StringUtil.isNotBlank(title)){
             sql.AND().WHERE("title like '%"+title+"%'");
         }
@@ -65,6 +69,7 @@ public class ProjectInstanceProvider {
 
     public String countProjectInstance(RequestArgs args){
 
+        Long id = args.getId();
         String title = args.getTitle();
         String content = args.getContent();
         Long startTime = args.getStartTime();
@@ -73,6 +78,9 @@ public class ProjectInstanceProvider {
         SQL sql = new SQL().SELECT("count(*)")
                 .FROM("project_instance");
 
+        if (id != null){
+            sql.AND().WHERE("id ="+id);
+        }
         if (StringUtil.isNotBlank(title)){
             sql.AND().WHERE("title like '%"+title+"%'");
         }

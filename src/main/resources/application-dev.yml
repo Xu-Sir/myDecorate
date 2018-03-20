@@ -19,18 +19,18 @@ spring:
     generate-ddl: false
 
 #服务注册与发现
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://101.200.63.82:5003/eureka/  #Eureka Server
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://101.200.63.82:5003/eureka/  #Eureka Server
 
   #服务注册时，在Eureka的实例配置
   #metadata-map.cluster：指定服务集群名称（一个服务集群包括多个app）
-  instance:
-    preferIpAddress: true
-    statusPageUrlPath: /info
-    metadata-map:
-      cluster: MAIN
+#  instance:
+#    preferIpAddress: true
+#    statusPageUrlPath: /info
+#    metadata-map:
+#      cluster: MAIN
 
 
 #Freemark 配置#

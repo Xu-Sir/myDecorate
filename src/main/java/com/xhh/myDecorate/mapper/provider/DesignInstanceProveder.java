@@ -43,6 +43,7 @@ public class DesignInstanceProveder {
         Long userId = args.getUserId();
         Long startTime = args.getStartTime();
         Long endTime = args.getEndTime();
+        Integer showInIndex = args.getShowInIndex();
         Integer page = args.getPage();
         Integer size = args.getSize();
 
@@ -64,7 +65,13 @@ public class DesignInstanceProveder {
         if (userId != null){
             sql.AND().WHERE("user_id = "+userId+"");
         }
+        if (showInIndex != null){
+            sql.AND().WHERE("show_in_index IS NOT NULL");
+        }
         String pageSql = sql.toString();
+        if (showInIndex != null){
+            pageSql += " ORDER BY show_in_index ASC ";
+        }
         if (page != null){
             pageSql += " Limit "+(page - 1)*size+","+size;
         }

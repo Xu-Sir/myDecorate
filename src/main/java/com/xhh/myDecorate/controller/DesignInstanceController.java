@@ -49,6 +49,25 @@ public class DesignInstanceController {
         return new ResultR(CodeEnum.SUCCESS, map);
 
     }
+    @RequestMapping(value = "/caseIndexList")
+    public ResultR caseIndexList(RequestArgs args){
+        args.setShowInIndex(1);//限制只查询主页的
+        List<DesignInstance> list = designInstanceService.findDesignInstance(args);
+        if (list.size() < 1){
+            Map map = new HashMap();
+            map.put("list", list);
+            map.put("page", args.getPage());
+            map.put("size", args.getSize());
+            return new ResultR(CodeEnum.SUCCESS,map);
+        }
+        Map map = new HashMap();
+        map.put("list", list);
+        map.put("page", args.getPage());
+        map.put("size", args.getSize());
+
+        return new ResultR(CodeEnum.SUCCESS, map);
+
+    }
 
 
 }

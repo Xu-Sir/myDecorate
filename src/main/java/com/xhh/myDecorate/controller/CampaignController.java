@@ -51,7 +51,15 @@ public class CampaignController {
                 c.setStatus("活动结束");
             }
             c.setCreateTimeS(format.format(new Date(c.getCreateTime())));
+            String createTimes = c.getCreateTimeS();
+            if(createTimes!=null){
+                c.setCreateTimeSDay(createTimes.substring(createTimes.lastIndexOf("/")+1));
+                c.setCreateTimeSYM(createTimes.substring(0,createTimes.lastIndexOf("/")));
+            }
             c.setOverdueTimeS(format.format(new Date(c.getOverdueTime())));
+            if (c.getSubject()!=null){
+                c.setContentSimp(StringUtil.subStr(c.getSubject(),70));
+            }
         }
         Map map = new HashMap();
         map.put("list", list);
