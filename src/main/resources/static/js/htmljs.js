@@ -1,7 +1,6 @@
 var total;
 $(function () {
     //marketList 列表
-    var obj = document.getElementById("xmnvls");
     var aspNetPager1 = document.getElementById("AspNetPager1")
     $.ajax({
         type:'post',
@@ -14,7 +13,15 @@ $(function () {
             aspNetPager1.innerHTML=htmlPage;
         }
     })
-
+//验证码
+    $.ajax({
+        type:'post',
+        url:'/createImage',
+        success: function (data) {
+            $("#msg_code").attr('src',"tools/"+data+".jpg");
+            $("#xd_code").attr('src',"tools/"+data+".jpg");
+        }
+    })
 
 
 });
@@ -56,7 +63,6 @@ function pageOnclick(objs) {
                     ' </h6> ' +
                     ' </div> ' +
                     ' </li> </ul>'
-
             }
             obj.innerHTML = html;
         }

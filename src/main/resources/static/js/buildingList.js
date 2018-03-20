@@ -14,10 +14,20 @@ $(function () {
         }
     })
 
+    //验证码
+    $.ajax({
+        type:'post',
+        url:'/createImage',
+        success: function (data) {
+            $("#msg_code").attr('src',"tools/"+data+".jpg");
+            $("#xd_code").attr('src',"tools/"+data+".jpg");
+        }
+    })
+
 });
 function pageOnclick(objs) {
     var obj = document.getElementById("item-list");
-    console.log(objs)
+    // console.log(objs)
     $.ajax({
         type:'post',
         url:'/projectInsList',
