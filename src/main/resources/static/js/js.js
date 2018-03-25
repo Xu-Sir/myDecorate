@@ -98,7 +98,7 @@ $(document).ready(function () {
     });
     //预算弹出
     $('.tachu4').on('click', function () {
-        $('.customer-04.div4').fadeIn();
+        $('.c1114.div4').fadeIn();
     });
 
     //楼层滚动
