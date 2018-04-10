@@ -136,7 +136,7 @@ $(function () {
             var html ='';
             for (var i = 0; i < arr.length; i++) {
                 html += '<li>\n' +
-                    '<a target="_blank" href="Detailfa28.html?code=0606&amp;id=3911" class="clearfix">\n' +
+                    '<a target="_blank" href="/MarketingDetail.html?id='+arr[i].id+'" class="clearfix">\n' +
                     '<div class="a1">\n' +
                     '<h4>'+arr[i].createTimeSDay+'</h4>\n' +
                     '<h6>'+arr[i].createTimeSYM+'</h6>\n' +
