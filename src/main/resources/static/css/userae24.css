@@ -3862,7 +3862,7 @@ input[type="button"].add_addDesigner {
 
 /***********计算器 开始*****************************************************************************************************************/
 .jsq {
-    padding: 75px 0;
+    padding: 0px 0;
     background: url(../images/user/bg_jsq.png) no-repeat center 0;
     background-size: 100% 100%;
 	text-align: center;
@@ -3975,7 +3975,7 @@ input[type="button"].add_addDesigner {
 	top: 185px;
 	left: 50%;
 	margin-left: -55px;
-	background: url(../images/user/yuan_hong.png) no-repeat center center;
+	background: url(../images/yuan_hong.png) no-repeat center center;
 	background-size: 100% 100%;
 }
 .jsqBox div.luo {

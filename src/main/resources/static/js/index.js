@@ -13,8 +13,8 @@ $(function () {
         type:'post',
         url:'/createImage',
         success: function (data) {
-           $("#msg_code").attr('src',"tools/"+data+".jpg");
-           $("#xd_code").attr('src',"tools/"+data+".jpg");
+           $("#msg_code").attr('src',"http://118.31.76.209:8080/verifyImage/"+data+".jpg");
+           $("#xd_code").attr('src',"http://118.31.76.209:8080/verifyImage/"+data+".jpg");
         }
     })
 //加载设计案例
@@ -136,7 +136,7 @@ $(function () {
             var html ='';
             for (var i = 0; i < arr.length; i++) {
                 html += '<li>\n' +
-                    '<a target="_blank" href="Detailfa28.html?code=0606&amp;id=3911" class="clearfix">\n' +
+                    '<a target="_blank" href="/MarketingDetail.html?id='+arr[i].id+'" class="clearfix">\n' +
                     '<div class="a1">\n' +
                     '<h4>'+arr[i].createTimeSDay+'</h4>\n' +
                     '<h6>'+arr[i].createTimeSYM+'</h6>\n' +

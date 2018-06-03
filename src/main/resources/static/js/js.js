@@ -96,6 +96,10 @@ $(document).ready(function () {
     $('.tachu3').on('click', function () {
         $('.customer-04.div3').fadeIn();
     });
+    //预算弹出
+    $('.tachu4').on('click', function () {
+        $('.c1114.div4').fadeIn();
+    });
 
     //楼层滚动
     function side(el1, el2, zt, _top, prve, next) {

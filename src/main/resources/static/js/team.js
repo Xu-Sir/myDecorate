@@ -19,8 +19,8 @@ $(function () {
         type:'post',
         url:'/createImage',
         success: function (data) {
-            $("#msg_code").attr('src',"tools/"+data+".jpg");
-            $("#xd_code").attr('src',"tools/"+data+".jpg");
+            $("#msg_code").attr('src',"http://118.31.76.209:8080/verifyImage/"+data+".jpg");
+            $("#xd_code").attr('src',"http://118.31.76.209:8080/verifyImage/"+data+".jpg");
         }
     })
 
